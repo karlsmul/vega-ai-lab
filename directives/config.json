@@ -1,0 +1,109 @@
+{
+  "sources": {
+    "rss": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/blog/rss.xml",
+        "category": "ai_news"
+      },
+      {
+        "name": "Google AI Blog",
+        "url": "https://blog.google/technology/ai/rss/",
+        "category": "ai_news"
+      },
+      {
+        "name": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/feed.xml",
+        "category": "ai_news"
+      },
+      {
+        "name": "TechCrunch AI",
+        "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+        "category": "ai_news"
+      },
+      {
+        "name": "MIT AI News",
+        "url": "https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml",
+        "category": "ai_news"
+      }
+    ],
+    "web": [
+      {
+        "name": "GitHub Trending AI",
+        "url": "https://github.com/trending?since=daily&spoken_language_code=en",
+        "category": "tech_trends"
+      },
+      {
+        "name": "HackerNews AI",
+        "url": "https://hn.algolia.com/api/v1/search?query=AI+LLM+GPT&tags=story&hitsPerPage=30",
+        "category": "tech_trends",
+        "type": "json"
+      },
+      {
+        "name": "HackerNews Show AI",
+        "url": "https://hn.algolia.com/api/v1/search?query=AI+tool+launch&tags=show_hn&hitsPerPage=20",
+        "category": "tech_trends",
+        "type": "json"
+      },
+      {
+        "name": "ProductHunt AI",
+        "url": "https://www.producthunt.com/topics/artificial-intelligence",
+        "category": "business_signals"
+      },
+      {
+        "name": "IndieHackers",
+        "url": "https://hn.algolia.com/api/v1/search?query=AI+SaaS+automation+bot&tags=story&hitsPerPage=20",
+        "category": "business_signals",
+        "type": "json"
+      }
+    ]
+  },
+  "user_profile": {
+    "type": "technical_founder",
+    "team_size": 1,
+    "skills": [
+      "typescript", "javascript", "node", "python", "react", "nextjs",
+      "express", "api", "rest", "sql", "postgres", "redis",
+      "docker", "vercel", "aws", "git",
+      "llm", "openai", "anthropic", "langchain", "ollama", "rag",
+      "embedding", "vector", "chromadb", "whisper",
+      "scraping", "cheerio", "puppeteer",
+      "stripe", "auth", "oauth"
+    ],
+    "domains": [
+      "developer_tools", "saas", "automation", "bots",
+      "content_generation", "data_processing", "local_ai",
+      "ai_agents", "browser_extensions", "cli_tools"
+    ],
+    "builds": ["AI tools", "automation", "SaaS", "bots", "local AI solutions"],
+    "strengths": ["full-stack development", "AI/ML integration", "rapid prototyping", "API design"],
+    "constraints": {
+      "max_mvp_weeks": 4,
+      "solo_developer": true,
+      "prefer_recurring_revenue": true,
+      "prefer_b2b": true,
+      "prefer_low_competition": true,
+      "prefer_ai_native": true,
+      "avoid": ["mobile_native", "hardware", "enterprise_sales", "regulated_industries"]
+    }
+  },
+  "dedupe": {
+    "titleSimilarityThreshold": 0.6
+  },
+  "clustering": {
+    "mergeThreshold": 0.35,
+    "minClusterSize": 1
+  },
+  "schedule": {
+    "cron": "0 7 * * *",
+    "timezone": "Europe/Berlin"
+  },
+  "output": {
+    "deliverables_dir": "./deliverables",
+    "tmp_dir": "./.tmp",
+    "keep_days": 30
+  },
+  "dashboard": {
+    "port": 3456
+  }
+}

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Opportunity Machine v2</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #0a0a0f;
+      --surface: #12121a;
+      --surface2: #1a1a2e;
+      --border: #2a2a3e;
+      --text: #e0e0e8;
+      --text-dim: #8888a0;
+      --accent: #6c5ce7;
+      --accent2: #00cec9;
+      --accent3: #fd79a8;
+      --green: #00b894;
+      --orange: #fdcb6e;
+      --red: #e17055;
+    }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    a { color: var(--accent2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+    .logo { display: flex; align-items: center; gap: 12px; }
+    .logo h1 { font-size: 20px; font-weight: 700; background: linear-gradient(135deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .date-selector { display: flex; align-items: center; gap: 8px; }
+    .date-selector select { background: var(--surface2); color: var(--text); border: 1px solid var(--border); padding: 8px 12px; border-radius: 8px; font-size: 14px; cursor: pointer; }
+    .date-selector select:focus { outline: none; border-color: var(--accent); }
+    .status-badge { padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+    .status-badge.live { background: rgba(0,184,148,0.2); color: var(--green); }
+    .status-badge.error { background: rgba(225,112,85,0.2); color: var(--red); }
+
+    main { max-width: 1400px; margin: 0 auto; padding: 24px; }
+
+    /* Top Opportunity Hero */
+    .top-opp-hero { background: linear-gradient(135deg, #1a1030, #0d1f2d); border: 1px solid var(--accent); border-radius: 16px; padding: 24px; margin-bottom: 24px; }
+    .top-opp-hero h2 { font-size: 14px; color: var(--accent3); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+    .top-opp-hero h3 { font-size: 22px; color: var(--accent2); margin-bottom: 12px; }
+    .top-opp-hero .scores { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 12px; }
+    .top-opp-hero .score-pill { background: var(--surface2); padding: 4px 12px; border-radius: 20px; font-size: 13px; }
+    .top-opp-hero .problem { color: var(--text-dim); font-size: 15px; margin-bottom: 8px; }
+    .top-opp-hero .next-step { background: var(--surface2); border-left: 3px solid var(--green); padding: 8px 12px; border-radius: 0 8px 8px 0; font-size: 14px; margin-top: 12px; }
+
+    /* Stats Grid */
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 24px; }
+    .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; text-align: center; }
+    .stat-card .value { font-size: 28px; font-weight: 700; background: linear-gradient(135deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .stat-card .label { font-size: 12px; color: var(--text-dim); margin-top: 2px; }
+    .stat-card.highlight { border-color: var(--accent); }
+
+    /* Tabs */
+    .tabs { display: flex; gap: 4px; margin-bottom: 24px; background: var(--surface); border-radius: 12px; padding: 4px; border: 1px solid var(--border); overflow-x: auto; }
+    .tab { flex: 1; padding: 10px 12px; background: none; border: none; color: var(--text-dim); font-size: 13px; font-weight: 600; cursor: pointer; border-radius: 8px; transition: all 0.2s; white-space: nowrap; }
+    .tab:hover { color: var(--text); background: var(--surface2); }
+    .tab.active { color: white; background: var(--accent); }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    /* Report container */
+    .report-container { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 32px; }
+    .report-container h1 { font-size: 24px; margin-bottom: 8px; color: var(--accent2); }
+    .report-container h2 { font-size: 20px; margin: 24px 0 12px; color: var(--accent); }
+    .report-container h3 { font-size: 17px; margin: 20px 0 8px; color: var(--accent3); }
+    .report-container h4 { font-size: 15px; margin: 16px 0 8px; color: var(--orange); }
+    .report-container p { margin-bottom: 12px; }
+    .report-container strong { color: var(--accent2); }
+    .report-container ul, .report-container ol { margin: 8px 0 16px 24px; }
+    .report-container li { margin-bottom: 6px; }
+    .report-container hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
+    .report-container code { background: var(--surface2); padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+    .report-container blockquote { border-left: 3px solid var(--accent); padding-left: 16px; color: var(--text-dim); margin: 12px 0; }
+    .report-container table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+    .report-container th, .report-container td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; font-size: 14px; }
+    .report-container th { background: var(--surface2); color: var(--accent2); }
+    .report-container pre { background: var(--surface2); padding: 12px; border-radius: 8px; overflow-x: auto; font-size: 13px; white-space: pre-wrap; margin: 12px 0; }
+
+    /* Delta section */
+    .delta-section { margin-bottom: 16px; }
+    .delta-section h4 { margin-bottom: 8px; }
+    .delta-item { display: flex; align-items: center; gap: 8px; padding: 6px 0; font-size: 14px; }
+    .delta-badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 12px; font-weight: 600; }
+    .delta-badge.new { background: rgba(0,184,148,0.2); color: var(--green); }
+    .delta-badge.dropped { background: rgba(225,112,85,0.2); color: var(--red); }
+    .delta-badge.up { background: rgba(108,92,231,0.2); color: var(--accent); }
+    .delta-badge.down { background: rgba(253,203,110,0.2); color: var(--orange); }
+    .delta-badge.recurring { background: rgba(0,206,201,0.2); color: var(--accent2); }
+
+    .empty-state { text-align: center; padding: 80px 24px; color: var(--text-dim); }
+    .empty-state h2 { font-size: 24px; margin-bottom: 12px; color: var(--text); }
+    .empty-state code { display: inline-block; background: var(--surface2); padding: 8px 16px; border-radius: 8px; margin-top: 12px; font-size: 14px; color: var(--accent2); }
+
+    @media (max-width: 768px) {
+      .tabs { flex-wrap: nowrap; overflow-x: auto; }
+      .stat-card .value { font-size: 22px; }
+      .report-container { padding: 16px; }
+      header { flex-wrap: wrap; gap: 12px; }
+      .top-opp-hero { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <span style="font-size:24px">&#9889;</span>
+      <h1>AI Opportunity Machine v2</h1>
+    </div>
+    <div class="date-selector">
+      <span class="status-badge live" id="healthBadge">OK</span>
+      <select id="dateSelect"><option value="">Loading...</option></select>
+    </div>
+  </header>
+
+  <main>
+    <!-- Top Opportunity Hero -->
+    <div id="topOppHero" class="top-opp-hero" style="display:none"></div>
+
+    <!-- Stats -->
+    <div id="statsGrid" class="stats-grid"></div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab active" data-tab="delta">Neu heute</button>
+      <button class="tab" data-tab="trends">Trends</button>
+      <button class="tab" data-tab="opportunities">Opportunities</button>
+      <button class="tab" data-tab="action_plan">Action Plan</button>
+      <button class="tab" data-tab="ideas">Ideen</button>
+      <button class="tab" data-tab="content">Content</button>
+    </div>
+
+    <div id="delta" class="tab-content active">
+      <div class="report-container" id="deltaContent">Loading...</div>
+    </div>
+    <div id="trends" class="tab-content">
+      <div class="report-container" id="trendsContent">Loading...</div>
+    </div>
+    <div id="opportunities" class="tab-content">
+      <div class="report-container" id="opportunitiesContent">Loading...</div>
+    </div>
+    <div id="action_plan" class="tab-content">
+      <div class="report-container" id="actionPlanContent">Loading...</div>
+    </div>
+    <div id="ideas" class="tab-content">
+      <div class="report-container" id="ideasContent">Loading...</div>
+    </div>
+    <div id="content" class="tab-content">
+      <div class="report-container" id="contentContent">Loading...</div>
+    </div>
+
+    <div id="emptyState" class="empty-state" style="display:none">
+      <h2>Noch keine Reports</h2>
+      <p>Starte die Pipeline:</p>
+      <code>npm run daily</code>
+    </div>
+  </main>
+
+  <script>
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.tab).classList.add('active');
+      });
+    });
+
+    async function loadDates() {
+      const res = await fetch('/api/dates');
+      const dates = await res.json();
+      const select = document.getElementById('dateSelect');
+      if (dates.length === 0) {
+        select.innerHTML = '<option value="">Keine Reports</option>';
+        document.querySelector('.tabs').style.display = 'none';
+        document.querySelectorAll('.tab-content').forEach(c => c.style.display = 'none');
+        document.getElementById('emptyState').style.display = 'block';
+        return;
+      }
+      select.innerHTML = dates.map(d => '<option value="' + d + '">' + d + '</option>').join('');
+      select.addEventListener('change', () => loadReport(select.value));
+      loadReport(dates[0]);
+    }
+
+    async function loadReport(date) {
+      const res = await fetch('/api/report/' + date);
+      if (!res.ok) return;
+      const d = await res.json();
+
+      // Health badge
+      const badge = document.getElementById('healthBadge');
+      if (d.health) {
+        const errs = (d.health.errors || []).length;
+        badge.textContent = errs > 0 ? errs + ' Fehler' : 'OK';
+        badge.className = 'status-badge ' + (errs > 0 ? 'error' : 'live');
+      }
+
+      // Top Opportunity Hero
+      const hero = document.getElementById('topOppHero');
+      if (d.top_opportunity && d.top_opportunity.name) {
+        const o = d.top_opportunity;
+        hero.style.display = 'block';
+        hero.innerHTML = '<h2>Top Opportunity</h2>'
+          + '<h3>' + esc(o.name) + '</h3>'
+          + '<div class="scores">'
+          + '<span class="score-pill">Score: ' + o.final_score + '</span>'
+          + '<span class="score-pill">Fit: ' + o.builder_fit_score + '/5</span>'
+          + '<span class="score-pill">Markt: ' + o.market_score + '/5</span>'
+          + '<span class="score-pill">MVP: ' + o.mvp_weeks + ' Wo.</span>'
+          + '</div>'
+          + '<div class="problem">' + esc(o.problem) + '</div>'
+          + (o.next_actions ? '<div class="next-step"><strong>Erster Schritt (30 Min):</strong> ' + esc(o.next_actions.step_30_min) + '</div>' : '');
+      } else {
+        hero.style.display = 'none';
+      }
+
+      // Stats
+      const sg = document.getElementById('statsGrid');
+      const s = d.stats || {};
+      const bd = s.before_dedupe || {};
+      sg.innerHTML = statCard(s.total || 0, 'Signale (dedupliziert)', true)
+        + statCard(bd.total || s.total || 0, 'Signale (roh)')
+        + statCard(s.rss || 0, 'RSS News')
+        + statCard(s.hackernews || 0, 'HN Diskussionen')
+        + statCard(s.github || 0, 'GitHub Repos')
+        + statCard(d.health?.topics_count || '?', 'Topics')
+        + statCard(d.health?.opportunities_count || '?', 'Opportunities');
+
+      // Delta tab
+      renderDelta(d.delta);
+
+      // Markdown tabs
+      document.getElementById('trendsContent').innerHTML = d.trends?.html || '<p>Nicht verfügbar.</p>';
+      document.getElementById('opportunitiesContent').innerHTML = d.opportunities?.html || '<p>Nicht verfügbar.</p>';
+      document.getElementById('actionPlanContent').innerHTML = d.action_plan?.html || '<p>Nicht verfügbar.</p>';
+      document.getElementById('ideasContent').innerHTML = d.ideas?.html || '<p>Nicht verfügbar.</p>';
+      document.getElementById('contentContent').innerHTML = d.content?.html || '<p>Nicht verfügbar.</p>';
+    }
+
+    function renderDelta(delta) {
+      const el = document.getElementById('deltaContent');
+      if (!delta) { el.innerHTML = '<p>Kein Delta verfügbar (erster Lauf?).</p>'; return; }
+
+      let html = '<h1>Was ist neu heute?</h1>';
+
+      if (delta.compared_to) {
+        html += '<p style="color:var(--text-dim)">Verglichen mit ' + esc(delta.compared_to) + '</p>';
+      }
+
+      // New topics
+      if (delta.new_topics && delta.new_topics.length > 0) {
+        html += '<div class="delta-section"><h4>Neue Themen</h4>';
+        for (const t of delta.new_topics) {
+          html += '<div class="delta-item"><span class="delta-badge new">NEU</span> '
+            + esc(t.topic_title) + ' <span style="color:var(--text-dim)">(Rang ' + t.rank + ', Stärke ' + t.signal_strength + ')</span></div>';
+        }
+        html += '</div>';
+      }
+
+      // Movers up
+      if (delta.movers_up && delta.movers_up.length > 0) {
+        html += '<div class="delta-section"><h4>Aufsteiger</h4>';
+        for (const t of delta.movers_up) {
+          html += '<div class="delta-item"><span class="delta-badge up">+' + t.rank_change + '</span> '
+            + esc(t.topic_title) + ' <span style="color:var(--text-dim)">(Rang ' + t.rank + ' ← ' + t.previous_rank + ')</span></div>';
+        }
+        html += '</div>';
+      }
+
+      // Movers down
+      if (delta.movers_down && delta.movers_down.length > 0) {
+        html += '<div class="delta-section"><h4>Absteiger</h4>';
+        for (const t of delta.movers_down) {
+          html += '<div class="delta-item"><span class="delta-badge down">' + t.rank_change + '</span> '
+            + esc(t.topic_title) + ' <span style="color:var(--text-dim)">(Rang ' + t.rank + ' ← ' + t.previous_rank + ')</span></div>';
+        }
+        html += '</div>';
+      }
+
+      // Recurring
+      if (delta.recurring_topics && delta.recurring_topics.length > 0) {
+        html += '<div class="delta-section"><h4>Dauerbrenner (3+ Tage)</h4>';
+        for (const t of delta.recurring_topics) {
+          html += '<div class="delta-item"><span class="delta-badge recurring">' + t.days_seen + 'd</span> '
+            + esc(t.topic_title) + '</div>';
+        }
+        html += '</div>';
+      }
+
+      // Dropped
+      if (delta.dropped_topics && delta.dropped_topics.length > 0) {
+        html += '<div class="delta-section"><h4>Verschwunden</h4>';
+        for (const t of delta.dropped_topics) {
+          html += '<div class="delta-item"><span class="delta-badge dropped">WEG</span> '
+            + esc(t.topic_title) + '</div>';
+        }
+        html += '</div>';
+      }
+
+      if (!delta.new_topics?.length && !delta.movers_up?.length && !delta.dropped_topics?.length) {
+        html += '<p>Keine wesentlichen Veränderungen seit gestern.</p>';
+      }
+
+      el.innerHTML = html;
+    }
+
+    function statCard(value, label, highlight) {
+      return '<div class="stat-card' + (highlight ? ' highlight' : '') + '">'
+        + '<div class="value">' + value + '</div>'
+        + '<div class="label">' + label + '</div></div>';
+    }
+
+    function esc(s) {
+      if (!s) return '';
+      const d = document.createElement('div');
+      d.textContent = s;
+      return d.innerHTML;
+    }
+
+    loadDates();
+  </script>
+</body>
+</html>

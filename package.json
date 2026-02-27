@@ -1,0 +1,21 @@
+{
+  "name": "ai-opportunity-machine",
+  "version": "1.0.0",
+  "description": "Autopilot system that scans AI trends and identifies business opportunities",
+  "type": "module",
+  "scripts": {
+    "start": "node execution/index.js",
+    "dashboard": "node execution/index.js --dashboard",
+    "collect": "node execution/index.js --collect-only",
+    "analyze": "node execution/index.js --analyze-only",
+    "daily": "node execution/index.js --full-run",
+    "autopilot": "node execution/index.js --autopilot"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "rss-parser": "^3.13.0",
+    "cheerio": "^1.0.0",
+    "marked": "^15.0.0",
+    "node-cron": "^3.0.3"
+  }
+}

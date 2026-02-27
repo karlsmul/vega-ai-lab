@@ -1,7 +1,17 @@
 // Top Opportunity + Action Plan generator
 
+const CATEGORY_LABELS = {
+  micro_saas: 'Micro SaaS',
+  automation_system: 'Automation System',
+  bot_platform: 'Bot Platform',
+  social_sector_tools: 'Social Sector',
+  local_ai_tools: 'Local AI',
+  other: 'Other',
+};
+
 /**
  * Select the top opportunity and generate an action plan.
+ * Only strong opportunities can be top. If none are strong, top = null.
  *
  * @param {Array} opportunities - Scored opportunity objects
  * @param {Array} topics - Clustered topics
@@ -14,23 +24,45 @@ export function generateActionPlan(opportunities, topics) {
     return { topOpportunity: null, actionPlan: '# Keine Opportunities gefunden\n\nHeute wurden keine passenden Opportunities erkannt.\n' };
   }
 
-  // Top opportunity is already #1 after sorting
-  const top = opportunities[0];
+  // Only strong opportunities can be top
+  const strongOpps = opportunities.filter(o => o.is_strong);
 
+  if (strongOpps.length === 0) {
+    const weakCount = opportunities.length;
+    let plan = `# Keine starke Opportunity heute\n\n`;
+    plan += `Es wurden ${weakCount} Opportunities erkannt, aber keine erfüllt alle Brutal-Realism-Kriterien:\n\n`;
+    plan += `- Klarer Käufer identifiziert\n`;
+    plan += `- Klares Problem definiert\n`;
+    plan += `- MVP in ≤4 Wochen machbar\n`;
+    plan += `- Revenue-Modell vorhanden\n\n`;
+    plan += `## Schwachstellen der heutigen Opportunities\n\n`;
+    for (const opp of opportunities.slice(0, 5)) {
+      plan += `- **${opp.name}:** ${opp.weak_reasons?.join(', ') || 'unbekannt'}\n`;
+    }
+    plan += `\n*Empfehlung: Signale weiter beobachten, morgen erneut prüfen.*\n`;
+
+    console.log(`  ⚠ No strong opportunities — ${weakCount} weak`);
+    return { topOpportunity: null, actionPlan: plan };
+  }
+
+  // Top is best strong opportunity (already sorted by final_score)
+  const top = strongOpps[0];
   const actionPlan = buildActionPlan(top, topics);
 
-  console.log(`  ✓ Top opportunity: ${top.name} (Score: ${top.final_score})`);
+  console.log(`  ✓ Top opportunity: ${top.name} (Score: ${top.final_score}, ${CATEGORY_LABELS[top.category] || top.category})`);
   return { topOpportunity: top, actionPlan };
 }
 
 function buildActionPlan(opp, topics) {
+  const catLabel = CATEGORY_LABELS[opp.category] || opp.category;
+
   let plan = `# Top Opportunity: ${opp.name}\n\n`;
-  plan += `**Final Score:** ${opp.final_score} · **Builder Fit:** ${opp.builder_fit_score}/5 · **Schwierigkeit:** ${opp.difficulty}/5\n\n`;
+  plan += `**Kategorie:** ${catLabel} · **Final Score:** ${opp.final_score} · **Builder Fit:** ${opp.builder_fit_score}/5 · **Schwierigkeit:** ${opp.difficulty}/5\n\n`;
 
   // Summary
   plan += `## Zusammenfassung\n\n`;
   plan += `**Problem:** ${opp.problem}\n\n`;
-  plan += `**Zielkunde:** ${opp.who_has_pain}\n\n`;
+  plan += `**Zielkunde:** ${opp.target_buyer}\n\n`;
   plan += `**Lösung:** ${opp.proposed_solution}\n\n`;
   plan += `**Warum jetzt:** ${opp.why_now}\n\n`;
   plan += `**Revenue-Modell:** ${opp.revenue_model} · **MVP in:** ${opp.mvp_weeks} Wochen\n\n`;
@@ -73,7 +105,7 @@ function buildActionPlan(opp, topics) {
   // Validation Script
   plan += `## Validierungs-Skript\n\n`;
   plan += `**Wen kontaktieren:**\n`;
-  plan += `- ${opp.who_has_pain}\n`;
+  plan += `- ${opp.target_buyer}\n`;
   plan += `- Suche in: LinkedIn, relevante Slack-Communities, Reddit r/SaaS, IndieHackers\n\n`;
   plan += `**Wo posten:**\n`;
   plan += `- HackerNews (Show HN)\n`;

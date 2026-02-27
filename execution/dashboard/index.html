@@ -89,6 +89,18 @@
     .delta-badge.down { background: rgba(253,203,110,0.2); color: var(--orange); }
     .delta-badge.recurring { background: rgba(0,206,201,0.2); color: var(--accent2); }
 
+    /* Category badges */
+    .cat-badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; margin-right: 6px; }
+    .cat-badge.micro_saas { background: rgba(108,92,231,0.2); color: var(--accent); }
+    .cat-badge.automation_system { background: rgba(0,206,201,0.2); color: var(--accent2); }
+    .cat-badge.bot_platform { background: rgba(253,203,110,0.2); color: var(--orange); }
+    .cat-badge.social_sector_tools { background: rgba(0,184,148,0.2); color: var(--green); }
+    .cat-badge.local_ai_tools { background: rgba(225,112,85,0.2); color: var(--red); }
+    .cat-badge.other { background: rgba(136,136,160,0.15); color: var(--text-dim); }
+    .strong-badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 700; }
+    .strong-badge.strong { background: rgba(0,184,148,0.2); color: var(--green); }
+    .strong-badge.weak { background: rgba(225,112,85,0.2); color: var(--red); }
+
     .empty-state { text-align: center; padding: 80px 24px; color: var(--text-dim); }
     .empty-state h2 { font-size: 24px; margin-bottom: 12px; color: var(--text); }
     .empty-state code { display: inline-block; background: var(--surface2); padding: 8px 16px; border-radius: 8px; margin-top: 12px; font-size: 14px; color: var(--accent2); }
@@ -200,15 +212,23 @@
       const hero = document.getElementById('topOppHero');
       if (d.top_opportunity && d.top_opportunity.name) {
         const o = d.top_opportunity;
+        const catLabels = { micro_saas: 'Micro SaaS', automation_system: 'Automation', bot_platform: 'Bot Platform', social_sector_tools: 'Social Sector', local_ai_tools: 'Local AI', other: 'Other' };
+        const catClass = o.category || 'other';
+        const catLabel = catLabels[catClass] || catClass;
+        const strongLabel = o.is_strong !== false ? 'STRONG' : 'WEAK';
+        const strongClass = o.is_strong !== false ? 'strong' : 'weak';
         hero.style.display = 'block';
-        hero.innerHTML = '<h2>Top Opportunity</h2>'
+        hero.innerHTML = '<h2>Top Opportunity Today</h2>'
           + '<h3>' + esc(o.name) + '</h3>'
+          + '<div style="margin-bottom:8px"><span class="cat-badge ' + catClass + '">' + catLabel + '</span>'
+          + '<span class="strong-badge ' + strongClass + '">' + strongLabel + '</span></div>'
           + '<div class="scores">'
           + '<span class="score-pill">Score: ' + o.final_score + '</span>'
           + '<span class="score-pill">Fit: ' + o.builder_fit_score + '/5</span>'
           + '<span class="score-pill">Markt: ' + o.market_score + '/5</span>'
           + '<span class="score-pill">MVP: ' + o.mvp_weeks + ' Wo.</span>'
           + '</div>'
+          + '<div class="problem"><strong>Zielkunde:</strong> ' + esc(o.target_buyer || o.who_has_pain || '') + '</div>'
           + '<div class="problem">' + esc(o.problem) + '</div>'
           + (o.next_actions ? '<div class="next-step"><strong>Erster Schritt (30 Min):</strong> ' + esc(o.next_actions.step_30_min) + '</div>' : '');
       } else {

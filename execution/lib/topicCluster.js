@@ -6,27 +6,52 @@
 import { tokenize, jaccardSimilarity, stableHash } from './normalize.js';
 
 // Well-known AI theme patterns
+// Aligned with opportunity categories: micro_saas, automation/bots, b2b_productivity, social_sector, local_ai
 const THEME_PATTERNS = [
-  { theme: 'AI Agents & Autonomie', pattern: /\b(agent|agentic|multi.?agent|autonomous|crew|swarm|tool.?use|mcp|function.?call)\b/i },
-  { theme: 'Open Source AI', pattern: /\b(open.?source|oss|llama|mistral|qwen|deepseek|phi|gemma|mixtral|falcon)\b/i },
-  { theme: 'RAG & Retrieval', pattern: /\b(rag|retriev|vector|embed|knowledge.?base|semantic.?search|chunk)\b/i },
-  { theme: 'Model Fine-tuning & Training', pattern: /\b(fine.?tun|lora|qlora|train|dataset|benchmark|eval)\b/i },
-  { theme: 'Voice & Audio AI', pattern: /\b(voice|speech|whisper|tts|audio|transcri|podcast|sound)\b/i },
-  { theme: 'Image & Vision AI', pattern: /\b(image|vision|diffusion|stable|flux|comfy|dall.?e|midjourney|ocr|screenshot)\b/i },
-  { theme: 'AI Coding & Dev Tools', pattern: /\b(code|coding|copilot|dev.?tool|ide|vscode|cursor|cline|swe.?bench|programming)\b/i },
-  { theme: 'AI Automation & Workflows', pattern: /\b(automat|workflow|pipeline|n8n|zapier|make\.com|no.?code|rpa)\b/i },
-  { theme: 'Local & Privacy AI', pattern: /\b(local|ollama|llama\.cpp|gguf|privacy|on.?prem|offline|self.?host)\b/i },
-  { theme: 'AI Infrastructure & APIs', pattern: /\b(api|sdk|platform|infra|deploy|scale|gpu|cloud|server|hosting)\b/i },
-  { theme: 'AI Produkte & SaaS', pattern: /\b(saas|startup|launch|product.?hunt|indie|ship|pricing|mvp|revenue)\b/i },
-  { theme: 'Video & Multimedia AI', pattern: /\b(video|sora|gen.?3|runway|animation|render|3d|music)\b/i },
-  { theme: 'AI Reasoning & Chains', pattern: /\b(reasoning|o1|o3|o4|think|chain.?of.?thought|cot|step.?by.?step)\b/i },
-  { theme: 'Chatbots & Conversational AI', pattern: /\b(chat|chatbot|gpt|claude|gemini|conversation|dialog|assistant)\b/i },
-  { theme: 'AI Safety & Regulation', pattern: /\b(safety|alignment|regulat|bias|ethic|responsible|guardrail|restrict|ban)\b/i },
-  { theme: 'AI in Forschung & Wissenschaft', pattern: /\b(research|paper|arxiv|study|scientific|academ|university|lab)\b/i },
-  { theme: 'NLP & Text AI', pattern: /\b(nlp|text|language|translat|summar|classif|sentiment|token|bert)\b/i },
-  { theme: 'AI Sales & Marketing', pattern: /\b(sales|marketing|outreach|lead|crm|email|content.?creat|seo|copywriting)\b/i },
-  { theme: 'Data & Analytics AI', pattern: /\b(data|analytics|dashboard|insight|monitor|sql|database|warehouse)\b/i },
-  { theme: 'AI Bots & Integrationen', pattern: /\b(bot|slack|discord|telegram|whatsapp|integrat|webhook|notif)\b/i },
+  // Automation & Workflows (maps to: automation_system)
+  { theme: 'AI Automation & Workflows', pattern: /\b(automat|workflow|pipeline|n8n|zapier|make\.com|no.?code|rpa|cron|trigger)\b/i, opp_category: 'automation_system' },
+  // Agents (maps to: automation_system)
+  { theme: 'AI Agents & Autonomie', pattern: /\b(agent|agentic|multi.?agent|autonomous|crew|swarm|tool.?use|mcp|function.?call)\b/i, opp_category: 'automation_system' },
+  // Bots & Integrations (maps to: bot_platform)
+  { theme: 'AI Bots & Integrationen', pattern: /\b(bot|slack|discord|telegram|whatsapp|integrat|webhook|notif)\b/i, opp_category: 'bot_platform' },
+  // Chatbots (maps to: bot_platform)
+  { theme: 'Chatbots & Conversational AI', pattern: /\b(chat|chatbot|gpt|claude|gemini|conversation|dialog|assistant)\b/i, opp_category: 'bot_platform' },
+  // SaaS & Products (maps to: micro_saas)
+  { theme: 'AI Produkte & SaaS', pattern: /\b(saas|startup|launch|product.?hunt|indie|ship|pricing|mvp|revenue|micro.?saas)\b/i, opp_category: 'micro_saas' },
+  // Dev Tools (maps to: micro_saas)
+  { theme: 'AI Coding & Dev Tools', pattern: /\b(code|coding|copilot|dev.?tool|ide|vscode|cursor|cline|swe.?bench|programming)\b/i, opp_category: 'micro_saas' },
+  // Sales & Marketing (maps to: micro_saas)
+  { theme: 'AI Sales & Marketing', pattern: /\b(sales|marketing|outreach|lead|crm|email|content.?creat|seo|copywriting)\b/i, opp_category: 'micro_saas' },
+  // B2B Productivity (maps to: micro_saas)
+  { theme: 'B2B Productivity & Tools', pattern: /\b(productivity|project.?manage|team|collaborat|workspace|notion|linear|task)\b/i, opp_category: 'micro_saas' },
+  // Data & Analytics (maps to: automation_system)
+  { theme: 'Data & Analytics AI', pattern: /\b(data|analytics|dashboard|insight|monitor|sql|database|warehouse|report)\b/i, opp_category: 'automation_system' },
+  // RAG & Retrieval (maps to: micro_saas)
+  { theme: 'RAG & Retrieval', pattern: /\b(rag|retriev|vector|embed|knowledge.?base|semantic.?search|chunk)\b/i, opp_category: 'micro_saas' },
+  // Local & Privacy AI (maps to: local_ai_tools)
+  { theme: 'Local & Privacy AI', pattern: /\b(local|ollama|llama\.cpp|gguf|privacy|on.?prem|offline|self.?host|gdpr|datenschutz)\b/i, opp_category: 'local_ai_tools' },
+  // Social Sector (maps to: social_sector)
+  { theme: 'Social Sector & Sozialarbeit', pattern: /\b(social.?work|jugend|youth|welfare|ngo|nonprofit|gemeinnütz|sozial|kommune|verwaltung)\b/i, opp_category: 'social_sector' },
+  // Voice & Audio (maps to: automation_system)
+  { theme: 'Voice & Audio AI', pattern: /\b(voice|speech|whisper|tts|audio|transcri|podcast|sound|meeting)\b/i, opp_category: 'automation_system' },
+  // NLP & Text (maps to: micro_saas)
+  { theme: 'NLP & Text AI', pattern: /\b(nlp|text|language|translat|summar|classif|sentiment|token|bert)\b/i, opp_category: 'micro_saas' },
+  // Open Source Models (informational)
+  { theme: 'Open Source AI', pattern: /\b(open.?source|oss|llama|mistral|qwen|deepseek|phi|gemma|mixtral|falcon)\b/i, opp_category: 'other' },
+  // Image & Vision
+  { theme: 'Image & Vision AI', pattern: /\b(image|vision|diffusion|stable|flux|comfy|dall.?e|midjourney|ocr|screenshot)\b/i, opp_category: 'other' },
+  // Infrastructure (informational)
+  { theme: 'AI Infrastructure & APIs', pattern: /\b(api|sdk|platform|infra|deploy|scale|gpu|cloud|server|hosting)\b/i, opp_category: 'other' },
+  // Fine-tuning / Training (informational — not our focus)
+  { theme: 'Model Fine-tuning & Training', pattern: /\b(fine.?tun|lora|qlora|train|dataset|benchmark|eval)\b/i, opp_category: 'other' },
+  // Video & Multimedia
+  { theme: 'Video & Multimedia AI', pattern: /\b(video|sora|gen.?3|runway|animation|render|3d|music)\b/i, opp_category: 'other' },
+  // Safety & Regulation
+  { theme: 'AI Safety & Regulation', pattern: /\b(safety|alignment|regulat|bias|ethic|responsible|guardrail|restrict|ban)\b/i, opp_category: 'other' },
+  // Reasoning
+  { theme: 'AI Reasoning & Chains', pattern: /\b(reasoning|o1|o3|o4|think|chain.?of.?thought|cot|step.?by.?step)\b/i, opp_category: 'other' },
+  // Research (informational)
+  { theme: 'AI in Forschung & Wissenschaft', pattern: /\b(research|paper|arxiv|study|scientific|academ|university|lab)\b/i, opp_category: 'other' },
 ];
 
 /**
@@ -48,17 +73,17 @@ export function clusterTopics(items, opts = {}) {
   if (!items || items.length === 0) return [];
 
   // Phase 1: Keyword theme assignment
-  const themeMap = {};  // theme name → items[]
+  const themeMap = {};  // theme name → { items[], opp_category }
   const assigned = new Set();
 
   for (let i = 0; i < items.length; i++) {
     const item = items[i];
     const text = `${item.title} ${item.summary || ''}`;
 
-    for (const { theme, pattern } of THEME_PATTERNS) {
+    for (const { theme, pattern, opp_category } of THEME_PATTERNS) {
       if (pattern.test(text)) {
-        if (!themeMap[theme]) themeMap[theme] = [];
-        themeMap[theme].push(item);
+        if (!themeMap[theme]) themeMap[theme] = { items: [], opp_category: opp_category || 'other' };
+        themeMap[theme].items.push(item);
         assigned.add(i);
         break; // Each item goes to at most one theme
       }
@@ -73,9 +98,9 @@ export function clusterTopics(items, opts = {}) {
   const topics = [];
 
   // Theme topics
-  for (const [theme, themeItems] of Object.entries(themeMap)) {
+  for (const [theme, { items: themeItems, opp_category }] of Object.entries(themeMap)) {
     if (themeItems.length >= minClusterSize) {
-      topics.push(buildTopic(themeItems, theme));
+      topics.push(buildTopic(themeItems, theme, opp_category));
     }
   }
 
@@ -136,8 +161,9 @@ function clusterByJaccard(items, threshold) {
  * Build a topic object from a cluster of items.
  * @param {Array} items - Items in this topic
  * @param {string|null} themeName - If from keyword theme, the theme name. Otherwise null.
+ * @param {string} oppCategory - Opportunity category tag for scoring flow.
  */
-function buildTopic(items, themeName) {
+function buildTopic(items, themeName, oppCategory = 'other') {
   // Sort by descriptiveness (title length) then by engagement
   const sorted = [...items].sort((a, b) => {
     const scoreA = (a.points || 0) + (a.starsToday || 0) * 10 + (a.title?.length || 0);
@@ -201,6 +227,7 @@ function buildTopic(items, themeName) {
   return {
     topic_id: topicId,
     topic_title: topicTitle,
+    opp_category: oppCategory,
     summary: summaryBullets,
     signal_strength: Math.round(signal_strength * 10) / 10,
     evidence_links: evidenceLinks,

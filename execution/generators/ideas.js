@@ -36,129 +36,182 @@ async function generateIdeasWithAI(trendsReport, opportunitiesReport) {
 }
 
 // --- Signal-driven idea library ---
-// Each idea template includes trigger patterns so ideas are matched to today's signals.
+// Optimized for: A) Micro SaaS, B) Automation/Bots, C) Social Sector optional
+// Every idea is: solo-realistic, 2-4 weeks, clear buyer, recurring revenue, MVP + anti-scope.
 
 const IDEA_LIBRARY = [
+  // === A: MICRO SAAS ===
   {
     triggers: /automat|workflow|pipeline|zapier|n8n|make/i,
-    name: 'AI Workflow Automator für [Nische]',
-    oneliner: 'Ein fokussiertes Automations-Tool das einen spezifischen Business-Workflow mit KI erledigt.',
-    description: 'Wähle einen konkreten Workflow (z.B. Invoice-Processing, Meeting-Followups, Lead-Qualification) und automatisiere ihn end-to-end mit LLMs. Nicht generisch — ein Workflow, perfekt gelöst.',
-    stack: 'Node.js, Express, Claude/GPT API, Cron, optional: Slack SDK',
-    plan: ['Tag 1: Workflow analysieren + Kernlogik implementieren', 'Tag 2-3: API-Endpunkte + Trigger-System', 'Tag 4-5: Dashboard + Monitoring', 'Tag 6-7: Onboarding-Flow + Launch'],
-    monetization: '€29/Monat pro Workflow. Enterprise: €99/Mo mit Custom-Workflows.',
-    launch: 'ProductHunt, relevante Subreddits, LinkedIn mit konkretem ROI-Beispiel.',
-    differentiator: 'Kein generischer Automations-Builder. Ein Workflow, perfekt gelöst, sofort einsatzbereit.'
+    category: 'micro_saas',
+    name: 'Niche Workflow SaaS',
+    oneliner: 'Ein Micro-SaaS das genau einen Business-Workflow mit KI automatisiert — kein generischer Builder.',
+    buyer: 'Ops-Manager in KMUs, Freelancer mit wiederkehrenden Prozessen',
+    description: 'Wähle einen konkreten Workflow (z.B. Invoice-Processing, Termin-Followups, Angebotsversand) und automatisiere ihn end-to-end. Kein Zapier-Klon — ein Workflow, sofort einsatzbereit.',
+    stack: 'Node.js, Express, Claude/GPT API, Cron, Hetzner VPS',
+    plan: ['Tag 1-3: Workflow analysieren + Kernlogik + API-Endpunkte', 'Tag 4-7: Web-UI + Trigger-System + Monitoring', 'Tag 8-10: Onboarding-Flow + Stripe + Launch'],
+    monetization: '€29/Monat pro Workflow-Instanz. €99/Mo für Custom-Konfiguration.',
+    mvp_scope: 'Ein Workflow, ein Trigger, ein Output-Format, Web-Dashboard',
+    anti_scope: 'Kein Workflow-Builder, keine Custom-Logik-UI, keine Mobile App, max 1 Integration',
+    differentiator: 'Kein generischer Automations-Builder. Ein Workflow, perfekt gelöst, Setup in 5 Minuten.'
   },
   {
-    triggers: /local|ollama|privacy|self.?host|gguf|offline/i,
-    name: 'Local AI Document Analyst',
-    oneliner: 'Chatten mit privaten Dokumenten — 100% lokal, keine Daten verlassen den Rechner.',
-    description: 'Desktop-App: PDFs, Verträge, Research Papers droppen und Fragen stellen. Läuft komplett lokal mit Ollama + Embedding-Modellen. Ideal für Anwälte, Forscher, datenschutzbewusste Unternehmen.',
-    stack: 'Tauri oder Electron, Ollama, ChromaDB, Node.js/Python',
-    plan: ['Tag 1-2: Document Ingestion + lokale RAG-Pipeline', 'Tag 3-4: Desktop-UI + Chat-Interface', 'Tag 5-6: Multi-Document-Support + Export', 'Tag 7: Polish + Launch'],
-    monetization: '€39 Einmalkauf oder €9/Monat. Keine Usage-Limits da lokal.',
-    launch: 'HackerNews Show HN, Privacy-Communities, Legal-Tech-Foren.',
-    differentiator: 'Zero Cloud-Abhängigkeit. Nutzer behalten volle Datenhoheit. Funktioniert offline.'
-  },
-  {
-    triggers: /agent|agentic|autonomous|crew|swarm/i,
-    name: 'Vertikaler AI-Agent als Service',
-    oneliner: 'Ein spezialisierter KI-Agent der einen kompletten Branchenprozess automatisiert.',
-    description: 'Wähle eine Branche (Legal, HR, Support, Real Estate) und baue einen Agenten der 5-10 Schritte eines häufigen Prozesses autonom erledigt. Z.B.: Mietvertragsprüfung, Bewerber-Screening, Support-Ticket-Triage.',
-    stack: 'Node.js, Claude API (tool_use), PostgreSQL, React Dashboard',
-    plan: ['Tag 1: Branche wählen + Prozess-Mapping', 'Tag 2-3: Agent-Logik + Tool-Definitionen', 'Tag 4-5: Web-Dashboard + Ergebnis-Review-UI', 'Tag 6-7: Fehlerbehandlung + Launch'],
-    monetization: '€49-149/Monat je nach Volumen. ROI ist klar messbar.',
-    launch: 'Branchenspezifische LinkedIn-Gruppen, Cold Outreach an 20 potentielle Kunden.',
-    differentiator: 'Kein generischer Agent-Builder. Ein Prozess, eine Branche, sofort produktiv.'
-  },
-  {
-    triggers: /api|sdk|developer|devtool|cli|terminal|vscode/i,
-    name: 'AI-Powered Dev CLI Tool',
-    oneliner: 'Ein CLI-Tool das einen nervigen Developer-Workflow mit KI löst.',
-    description: 'Z.B.: AI-gestütztes Code Review, automatische Changelog-Generierung, intelligente Git-Commit-Messages, API-Dokumentation aus Code. Ein Tool, ein Problem, perfekt gelöst.',
-    stack: 'Node.js, Commander.js, Claude/GPT API, npm-Paket',
-    plan: ['Tag 1: Problem wählen + CLI-Grundgerüst', 'Tag 2-3: KI-Integration + Kernfeature', 'Tag 4-5: Config, .rc-Datei, Dokumentation', 'Tag 6-7: npm publish + Show HN'],
-    monetization: 'Freemium: 10 Aufrufe/Tag frei, €9/Mo unlimited. Teams: €29/Mo.',
-    launch: 'npm registry, Show HN, Dev Twitter, relevante GitHub Discussions.',
-    differentiator: 'Fokus auf einen Workflow statt Swiss Army Knife. Läuft im Terminal, keine Web-App nötig.'
-  },
-  {
-    triggers: /content|write|copy|blog|market|seo/i,
-    name: 'AI Content Repurposer',
-    oneliner: 'Aus einem Blogpost 10 Social-Media-Posts, Newsletter-Snippets und Threads generieren.',
-    description: 'Tool das Long-Form-Content nimmt und plattformoptimierte Versionen erstellt. Versteht Tonalität, extrahiert Kernaussagen, formatiert für LinkedIn, X, Newsletter. Spart Content Creators Stunden pro Beitrag.',
-    stack: 'Node.js, Claude API, React Frontend, optional: Scheduling via Buffer API',
-    plan: ['Tag 1-2: Repurposing-Engine + Template-System', 'Tag 3-4: Web-UI + Vorschau', 'Tag 5-6: Ton-Kalibrierung + Plattform-Presets', 'Tag 7: Launch'],
-    monetization: '€19/Mo für 50 Repurposes, €49/Mo unlimited.',
-    launch: 'IndieHackers, ProductHunt, Content-Creator-Communities.',
-    differentiator: 'Behält Stimme/Stil konsistent über Plattformen. Nicht nur Umformatierung — strategische Anpassung.'
-  },
-  {
-    triggers: /voice|speech|audio|whisper|transcri|podcast/i,
-    name: 'Meeting-zu-Action-Items Pipeline',
-    oneliner: 'Meeting aufnehmen → automatisch Transkript, Zusammenfassung, Action Items, Follow-up-Draft.',
-    description: 'Nimmt Audio/Video von Meetings und extrahiert: Transkript, 3-Satz-Zusammenfassung, Action Items mit Verantwortlichen, Follow-up-Email-Draft. Integration in Slack/Notion/Email.',
-    stack: 'Node.js, Whisper API oder lokal, Claude für Zusammenfassung, Slack SDK',
-    plan: ['Tag 1-2: Audio → Transkript → Zusammenfassungs-Pipeline', 'Tag 3-4: Action-Item-Extraktion + Slack-Integration', 'Tag 5-6: Web-Dashboard + History', 'Tag 7: Launch'],
-    monetization: '€15/Mo für 10 Meetings, €39/Mo unlimited.',
-    launch: 'ProductHunt, Remote-Work-Communities, Slack App Directory.',
-    differentiator: 'Nicht nur Transkription — extrahiert konkret wer was bis wann tun muss.'
-  },
-  {
-    triggers: /rag|retriev|search|knowledge|document|pdf/i,
-    name: 'Docs-to-Chatbot Builder',
-    oneliner: 'Lade deine Docs hoch, bekomme in 5 Minuten einen Chatbot der alles darüber weiß.',
-    description: 'SaaS das Unternehmen erlaubt, ihre Dokumentation (PDFs, Notion, Confluence) hochzuladen und sofort einen Chatbot zu bekommen. Für internen Wissenstransfer oder Kunden-Support.',
-    stack: 'Node.js, OpenAI Embeddings, Postgres+pgvector, React, Vercel',
-    plan: ['Tag 1-2: Document Ingestion + Embedding Pipeline', 'Tag 3-4: Chat-Interface + Widget-Embed', 'Tag 5-6: Admin-Dashboard + Analytics', 'Tag 7: Launch'],
-    monetization: '€29/Mo für 100 Docs, €79/Mo für 1000 Docs + Custom Branding.',
-    launch: 'ProductHunt, SaaS-Communities, LinkedIn mit Demo-Video.',
-    differentiator: 'Setup in 5 Minuten statt Tagen. Kein technisches Wissen nötig.'
-  },
-  {
-    triggers: /bot|chatbot|slack|discord|telegram/i,
-    name: 'AI Support Bot für KMUs',
-    oneliner: 'Slack/Discord Bot der Team-Fragen beantwortet basierend auf eurer Dokumentation.',
-    description: 'Bot der sich in Slack/Discord integriert, die Team-Dokumentation kennt und Fragen beantwortet. Reduziert interne "Wo finde ich X?"-Anfragen um 80%. Setup: Docs verlinken, Bot einladen, fertig.',
-    stack: 'Node.js, Slack/Discord SDK, Claude API, Vector DB',
-    plan: ['Tag 1-2: Bot-Framework + Docs-Anbindung', 'Tag 3-4: RAG-Pipeline + Antwort-Qualität', 'Tag 5-6: Admin-Commands + Feedback-Loop', 'Tag 7: Launch'],
-    monetization: '€19/Mo pro Workspace. Enterprise: €49/Mo mit SSO.',
-    launch: 'Slack App Directory, ProductHunt, Remote-Team-Communities.',
-    differentiator: 'Lernt aus dem Team-Wissen. Nicht generisch — kennt eure Prozesse.'
-  },
-  {
-    triggers: /image|vision|design|figma|ui|screenshot/i,
-    name: 'Screenshot-zu-Code Konverter',
-    oneliner: 'Screenshot hochladen, funktionierenden Code rausbekommen.',
-    description: 'Web-Tool: Screenshot oder Mockup hochladen → bekomme clean HTML/CSS/React Code zurück. Nutzt Vision-Modelle um Layout, Farben, Abstände zu erkennen und in sauberen Code umzusetzen.',
-    stack: 'Node.js, Claude Vision API, React Frontend, Tailwind',
-    plan: ['Tag 1-2: Vision API Integration + Code-Generierung', 'Tag 3-4: Web-UI + Live-Preview', 'Tag 5-6: Framework-Auswahl (React/Vue/HTML) + Export', 'Tag 7: Launch'],
-    monetization: '€9/Mo für 20 Konvertierungen, €29/Mo unlimited.',
-    launch: 'Designer-Communities, Frontend-Dev Twitter, ProductHunt.',
-    differentiator: 'Generiert echten, sauberen Code — nicht nur ein Bild-Overlay.'
+    triggers: /rag|retriev|search|knowledge|document|pdf|compliance/i,
+    category: 'micro_saas',
+    name: 'Document Q&A SaaS',
+    oneliner: 'Dokumente hochladen, Fragen stellen, Antworten mit Quellenangaben bekommen.',
+    buyer: 'Legal-Teams, Compliance-Abteilungen, Consulting-Firmen',
+    description: 'Fokussiertes RAG-Tool für eine Dokumenten-Nische. Z.B.: Vertragsprüfung, Compliance-Checks, internes Wiki-Q&A. Upload → Frage → Antwort mit Seitenangabe.',
+    stack: 'Node.js, Claude/OpenAI Embeddings, SQLite + Vektoren, Express, Hetzner',
+    plan: ['Tag 1-3: Document Ingestion + RAG-Pipeline + Chat-API', 'Tag 4-7: Web-UI + Quellen-Links + Multi-Doc', 'Tag 8-14: Auth + Stripe + Admin + Launch'],
+    monetization: '€39/Mo für 100 Dokumente, €99/Mo unlimited.',
+    mvp_scope: 'PDF-Upload, Chat-Interface, Quellenangaben, ein Nutzer-Typ',
+    anti_scope: 'Kein Notion/Confluence-Connector, kein Team-Management, kein eigenes Embedding-Modell',
+    differentiator: 'Setup in 5 Minuten. Fokus auf eine Nische statt generischer Chatbot-Builder.'
   },
   {
     triggers: /email|outreach|sales|crm|lead/i,
-    name: 'AI Cold-Outreach Personalizer',
-    oneliner: 'Importiere eine Lead-Liste, bekomme personalisierte Emails die tatsächlich geöffnet werden.',
-    description: 'Tool das LinkedIn/Website eines Leads scraped, relevante Talking Points findet und eine personalisierte Email generiert. Kein generisches "Ich habe gesehen dass Sie bei X arbeiten" — echte, relevante Anknüpfungspunkte.',
-    stack: 'Node.js, Puppeteer/Cheerio, Claude API, CSV Import/Export',
-    plan: ['Tag 1-2: Lead-Research-Pipeline + Scraping', 'Tag 3-4: Email-Generierung + Template-System', 'Tag 5-6: Batch-Processing + CSV-Workflow', 'Tag 7: Launch'],
+    category: 'micro_saas',
+    name: 'AI Outreach Personalizer',
+    oneliner: 'CSV mit Leads rein, personalisierte Emails raus — basierend auf echtem Research.',
+    buyer: 'SDRs, Freelancer, kleine Sales-Teams',
+    description: 'Tool das LinkedIn/Website eines Leads crawlt, relevante Talking Points findet und personalisierte Email-Drafts generiert. Nicht "Hi {name}" — echte Anknüpfungspunkte.',
+    stack: 'Node.js, Cheerio, Claude API, Express, CSV-Parser',
+    plan: ['Tag 1-3: Lead-Research-Pipeline + Email-Generierung', 'Tag 4-7: Web-UI + Batch-Processing + Ton-Presets', 'Tag 8-10: Stripe + Export + Launch'],
     monetization: '€29/Mo für 200 Leads, €79/Mo für 1000 Leads.',
-    launch: 'Sales-Communities, LinkedIn, IndieHackers.',
+    mvp_scope: 'CSV-Import, Web-Scraping, personalisierte Drafts, CSV-Export',
+    anti_scope: 'Kein CRM, kein Email-Versand, kein Tracking, keine Sequenzen',
     differentiator: 'Tiefes Research pro Lead statt oberflächliches Merge-Tagging.'
   },
   {
-    triggers: /data|analytics|insight|monitor|dashboard/i,
-    name: 'KPI-Dashboard mit AI-Insights',
-    oneliner: 'Verbinde deine Datenquellen, bekomme tägliche AI-Insights statt nur Zahlen.',
-    description: 'Dashboard das sich mit Stripe, Google Analytics, Posthog etc. verbindet und nicht nur Zahlen zeigt, sondern erklärt: Warum ist der Umsatz gestiegen? Was korreliert mit Churn? Welcher Kanal performt überproportional?',
-    stack: 'Node.js, React, Stripe/GA APIs, Claude für Insights, PostgreSQL',
-    plan: ['Tag 1-2: API-Integrationen + Daten-Sammlung', 'Tag 3-4: Insight-Engine + Dashboard-UI', 'Tag 5-6: Alerting + Trend-Erkennung', 'Tag 7: Launch'],
-    monetization: '€39/Mo für 3 Datenquellen, €99/Mo für 10+ Quellen.',
-    launch: 'IndieHackers, SaaS-Founder-Communities, ProductHunt.',
-    differentiator: 'Nicht nur Visualisierung — erklärt warum Zahlen sich ändern.'
+    triggers: /content|write|copy|blog|seo|newsletter/i,
+    category: 'micro_saas',
+    name: 'Content Repurposer SaaS',
+    oneliner: 'Ein Blogpost rein → 10 plattformoptimierte Social-Posts raus.',
+    buyer: 'B2B-Marketing-Manager, Solopreneure, kleine Agenturen',
+    description: 'Nimmt Long-Form-Content und erstellt plattformoptimierte Versionen: LinkedIn-Post, X-Thread, Newsletter-Snippet, Instagram-Caption. Versteht Tonalität und Plattform-Regeln.',
+    stack: 'Node.js, Claude API, Express, React Frontend',
+    plan: ['Tag 1-3: Repurposing-Engine + Template-System', 'Tag 4-7: Web-UI + Vorschau + Tone-Kalibrierung', 'Tag 8-10: Stripe + Plattform-Presets + Launch'],
+    monetization: '€19/Mo für 50 Repurposes, €49/Mo unlimited.',
+    mvp_scope: 'Text-Input, 3 Plattformen (LinkedIn, X, Newsletter), Tone-Wahl',
+    anti_scope: 'Kein Scheduling, kein Social-Media-Connector, keine Bild-Generierung',
+    differentiator: 'Behält Stimme/Stil konsistent. Strategische Anpassung, nicht nur Umformatierung.'
+  },
+  {
+    triggers: /api|sdk|developer|devtool|cli|terminal/i,
+    category: 'micro_saas',
+    name: 'AI Dev CLI Tool',
+    oneliner: 'Ein CLI-Tool das einen nervigen Developer-Workflow mit KI löst — npm install und los.',
+    buyer: 'Solo-Entwickler, kleine Dev-Teams, DevOps-Engineers',
+    description: 'Fokussiert auf einen Workflow: Changelog-Gen, PR-Review, Error-Triage, API-Doc-Gen, oder Commit-Messages. npm-Paket, Config-File, Freemium-Modell.',
+    stack: 'Node.js, Commander.js, Claude API, npm Registry',
+    plan: ['Tag 1-3: CLI-Gerüst + KI-Integration + Kernfeature', 'Tag 4-7: Config, .rc-Datei, Edge Cases, Tests', 'Tag 8-10: npm publish + Stripe + Show HN'],
+    monetization: '10 Aufrufe/Tag frei, €9/Mo unlimited. Teams: €29/Mo.',
+    mvp_scope: 'Ein Feature, CLI-Interface, npm-Paket, Config-File',
+    anti_scope: 'Keine GUI, keine IDE-Extension, keine Team-Features, max 1 LLM-Provider',
+    differentiator: 'Ein Workflow, perfekt gelöst. Läuft im Terminal, keine Web-App nötig.'
+  },
+
+  // === B: AUTOMATION / BOT ===
+  {
+    triggers: /bot|chatbot|slack|discord|telegram|whatsapp/i,
+    category: 'bot_platform',
+    name: 'AI Knowledge Bot für Teams',
+    oneliner: 'Slack/WhatsApp Bot der Team-Fragen beantwortet basierend auf eurer Dokumentation.',
+    buyer: 'HR-Leads, Support-Teamleiter, Ops-Manager in KMUs',
+    description: 'Bot der Unternehmensdokumente kennt und interne Fragen beantwortet. "Wo finde ich X?", "Was ist unsere Policy zu Y?" — 80% weniger repetitive Fragen. Setup: Docs verlinken, Bot einladen.',
+    stack: 'Node.js, Slack/WhatsApp SDK, Claude API, Vector Store',
+    plan: ['Tag 1-3: Bot-Framework + Docs-Ingestion + RAG', 'Tag 4-7: Antwort-Qualität + Admin-Commands + Feedback-Loop', 'Tag 8-14: Multi-Workspace + Stripe + Launch'],
+    monetization: '€19/Mo pro Workspace. €49/Mo mit Custom Branding.',
+    mvp_scope: 'Ein Messaging-Kanal, Markdown/PDF-Upload, Q&A-Bot, Admin-Commands',
+    anti_scope: 'Kein Bot-Builder, keine Custom-Flows, kein CRM-Connector',
+    differentiator: 'Lernt aus Team-Wissen. Setup in 10 Minuten statt Tagen.'
+  },
+  {
+    triggers: /agent|agentic|autonomous|crew|swarm|tool.?use/i,
+    category: 'automation_system',
+    name: 'Vertikaler AI-Agent',
+    oneliner: 'Ein spezialisierter KI-Agent der einen kompletten Branchenprozess end-to-end automatisiert.',
+    buyer: 'Ops-Manager in KMUs, Agenturen, Support-Leads',
+    description: 'Wähle eine Branche (Support, HR, Legal, Sales) und baue einen Agenten der 5-10 Schritte eines häufigen Prozesses autonom erledigt. Z.B.: Support-Ticket → Kategorisierung → Antwort-Draft → Eskalation.',
+    stack: 'Node.js, Claude API (tool_use), Express, PostgreSQL',
+    plan: ['Tag 1-3: Branche wählen + Prozess-Mapping + Agent-Logik', 'Tag 4-7: Tool-Definitionen + Review-UI + Error-Handling', 'Tag 8-14: Dashboard + Stripe + Launch'],
+    monetization: '€49-149/Mo je nach Volumen. ROI klar messbar.',
+    mvp_scope: 'Ein Prozess, 5 Schritte, Review-UI, Email-Notification',
+    anti_scope: 'Kein Agent-Builder, keine Custom-Tools, keine Multi-Branche',
+    differentiator: 'Kein generischer Agent-Builder. Ein Prozess, eine Branche, sofort produktiv.'
+  },
+  {
+    triggers: /voice|speech|audio|whisper|transcri|podcast|meeting/i,
+    category: 'automation_system',
+    name: 'Meeting-to-Actions Pipeline',
+    oneliner: 'Meeting aufnehmen → Transkript → Zusammenfassung → Action Items → Follow-up-Draft.',
+    buyer: 'Remote-Teams (5-20 Personen), Consulting-Firmen, Agenturen',
+    description: 'Automatisierte Pipeline: Audio-Upload → Whisper-Transkription → KI-Zusammenfassung → Action Items mit Verantwortlichen → Follow-up-Email-Draft. Integration in Slack oder Email.',
+    stack: 'Node.js, Whisper API, Claude API, Express, Slack SDK',
+    plan: ['Tag 1-3: Audio → Transkript → Zusammenfassung Pipeline', 'Tag 4-7: Action-Item-Extraktion + Slack-Integration', 'Tag 8-14: Web-Dashboard + History + Stripe + Launch'],
+    monetization: '€15/Mo für 10 Meetings, €39/Mo unlimited.',
+    mvp_scope: 'Audio-Upload, Transkript, Zusammenfassung, Action Items, Email-Export',
+    anti_scope: 'Kein Live-Recording, keine Video-Analyse, kein eigenes STT-Modell',
+    differentiator: 'Nicht nur Transkription — extrahiert wer was bis wann tun muss.'
+  },
+  {
+    triggers: /intake|form|onboard|questionnaire|survey/i,
+    category: 'bot_platform',
+    name: 'AI Intake Bot',
+    oneliner: 'Conversational Bot der Onboarding-Prozesse intelligent führt und strukturierte Daten liefert.',
+    buyer: 'Agenturen, Kanzleien, Berater mit Kunden-Onboarding',
+    description: 'Statt starrer Formulare: ein Bot der Fragen stellt, nachfragt, validiert und strukturierte Daten liefert. Für Mandantenaufnahme, Projekt-Briefs, Versicherungsanfragen.',
+    stack: 'Node.js, Claude API, Express, WhatsApp/Telegram SDK',
+    plan: ['Tag 1-3: Conversational Engine + Flow-Definition + JSON-Output', 'Tag 4-7: WhatsApp/Web-Widget + Admin-Dashboard', 'Tag 8-14: Flow-Builder + Stripe + Launch'],
+    monetization: '€29/Mo pro Bot-Instanz. €79/Mo mit Custom Branding.',
+    mvp_scope: 'Ein Intake-Flow, Web-Chat, JSON-Export, Admin-View',
+    anti_scope: 'Kein Formular-Builder, kein CRM-Connector, keine Analyse',
+    differentiator: 'Conversational statt starr. Bot fragt nach, validiert, liefert saubere Daten.'
+  },
+  {
+    triggers: /data|analytics|insight|monitor|dashboard|report/i,
+    category: 'automation_system',
+    name: 'AI Weekly Report Generator',
+    oneliner: 'Verbinde Datenquellen, bekomme wöchentlich KI-Insights-Reports — automatisch per Email.',
+    buyer: 'Marketing-Manager, Ops-Leads in KMUs, SaaS-Gründer',
+    description: 'Automatisierte Report-Pipeline: Stripe/GA/eigene API anbinden → KI analysiert Trends → wöchentlicher Insights-Report per Email/Slack. Kein Dashboard-Bauen, kein SQL.',
+    stack: 'Node.js, Stripe/GA APIs, Claude API, Express, Cron',
+    plan: ['Tag 1-3: API-Connectors + Daten-Extraktion + Report-Template', 'Tag 4-7: KI-Insight-Engine + Email/Slack-Delivery', 'Tag 8-14: Web-Config + Stripe + Launch'],
+    monetization: '€29/Mo für 3 Quellen, €79/Mo für 10+ Quellen.',
+    mvp_scope: 'Ein Daten-Connector, wöchentlicher Report, Email-Delivery',
+    anti_scope: 'Kein Live-Dashboard, kein SQL-Editor, keine Custom-Visualisierungen',
+    differentiator: 'Insights statt Zahlen. Automatisch, keine manuelle Report-Erstellung.'
+  },
+
+  // === C: SOCIAL SECTOR (OPTIONAL) ===
+  {
+    triggers: /social|jugend|youth|welfare|gdpr|datenschutz|dokumentation|bericht/i,
+    category: 'social_sector',
+    name: 'GDPR-Safe Dokumentations-Assistent',
+    oneliner: 'KI-Assistent der Gesprächsnotizen in strukturierte Berichte für Sozialarbeit umwandelt.',
+    buyer: 'Leiter von Jugendhilfe-Einrichtungen, kommunale Sozialträger',
+    description: 'Sozialarbeiter verbringen 40%+ ihrer Zeit mit Dokumentation. Dieser Assistent wandelt Freitext-Notizen in Hilfepläne, Verlaufsberichte und Stellungnahmen um. Läuft GDPR-konform auf eigenem Server.',
+    stack: 'Node.js, Claude API (EU-Endpoint), Express, Hetzner VPS',
+    plan: ['Tag 1-5: Bericht-Templates + KI-Transformation + Web-UI', 'Tag 6-10: DSGVO-Maßnahmen + Export (PDF/Word)', 'Tag 11-14: Server-Setup + Test mit 3 Nutzern + Launch'],
+    monetization: '€39/Mo pro Einrichtung. €99/Mo mit Custom Templates.',
+    mvp_scope: 'Freitext → Strukturierter Bericht, 2 Bericht-Typen, PDF-Export, Server-Deployment',
+    anti_scope: 'Kein Fallmanagement-System, keine Aktenführung, keine Fachsoftware-Integration',
+    differentiator: 'DSGVO-konform auf eigenem Server. Versteht Sozialarbeit-Fachsprache. Spart 40% Doku-Zeit.'
+  },
+  {
+    triggers: /local|privacy|self.?host|ollama|on.?prem|offline/i,
+    category: 'social_sector',
+    name: 'Local AI Deployment Service',
+    oneliner: 'Datenschutz-sichere KI für Unternehmen — läuft auf eurem eigenen Server.',
+    buyer: 'IT-Leiter in Mittelstand, Kanzleien, Arztpraxen, öffentliche Verwaltung',
+    description: 'Self-hosted AI-Tool für Dokumenten-Analyse, Q&A und Zusammenfassungen. Läuft auf einem einzelnen Hetzner-Server, keine Cloud-Abhängigkeit. Ideal für DSGVO-sensible Organisationen.',
+    stack: 'Node.js, Ollama, Express, Docker Compose, Hetzner',
+    plan: ['Tag 1-5: Docker-Setup + Ollama + Web-UI + Auth', 'Tag 6-10: Dokument-Upload + RAG-Pipeline + Multi-User', 'Tag 11-14: Deploy-Script + Doku + Test + Launch'],
+    monetization: '€49/Mo Hosting + Support. €149/Mo mit Custom-Modell-Konfiguration.',
+    mvp_scope: 'Docker Compose Setup, Web-UI, Dokument-Upload, Q&A, Auth',
+    anti_scope: 'Kein eigenes Modell-Training, keine GPU-Cluster, kein Multi-Server',
+    differentiator: 'Ein Server, ein Docker-Compose, volle Datenhoheit. Funktioniert offline.'
   },
 ];
 
@@ -172,7 +225,6 @@ function generateIdeasHeuristic(signals) {
     ...(signals.tech_trends?.github_trending || []),
     ...(signals.business_signals || []),
   ];
-  const allText = allItems.map(i => `${i.title} ${i.summary || ''}`).join(' ');
 
   // Score each idea by how many signals match its trigger
   const scored = IDEA_LIBRARY.map(idea => {
@@ -190,17 +242,26 @@ function generateIdeasHeuristic(signals) {
     selected.push(...remaining.slice(0, 5 - selected.length));
   }
 
+  const CATEGORY_LABELS = {
+    micro_saas: 'Micro SaaS',
+    bot_platform: 'Bot Platform',
+    automation_system: 'Automation System',
+    social_sector: 'Social Sector',
+  };
+
   let report = `# Projekt-Ideen — ${today}\n\n`;
-  report += `*${selected.length} konkrete Build-Ideen, basierend auf heutigen Signalen. Jede ist auf 1-Wochen-MVP ausgelegt.*\n\n`;
+  report += `*${selected.length} konkrete Build-Ideen, optimiert für Solo-Builder. Fokus: Micro SaaS, Automation, Bots. Jede ist auf 2-4 Wochen MVP ausgelegt.*\n\n`;
 
   for (const idea of selected) {
     const signalNote = idea.matchCount > 0
       ? `*(${idea.matchCount} passende Signale heute)*`
       : `*(Evergreen-Idee)*`;
+    const catLabel = CATEGORY_LABELS[idea.category] || idea.category;
 
     report += `### ${idea.name}\n\n`;
-    report += `${signalNote}\n\n`;
+    report += `**Kategorie:** ${catLabel} · ${signalNote}\n\n`;
     report += `**Pitch:** ${idea.oneliner}\n\n`;
+    report += `**Zielkunde:** ${idea.buyer}\n\n`;
     report += `**Was es tut:** ${idea.description}\n\n`;
     report += `**Tech Stack:** ${idea.stack}\n\n`;
     report += `**Build Plan:**\n`;
@@ -208,7 +269,8 @@ function generateIdeasHeuristic(signals) {
       report += `- ${step}\n`;
     }
     report += `\n**Monetarisierung:** ${idea.monetization}\n\n`;
-    report += `**Launch-Strategie:** ${idea.launch}\n\n`;
+    report += `**MVP Scope:** ${idea.mvp_scope}\n\n`;
+    report += `**Anti-Scope:** ${idea.anti_scope}\n\n`;
     report += `**Differenzierung:** ${idea.differentiator}\n\n---\n\n`;
   }
 

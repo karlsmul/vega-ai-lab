@@ -59,32 +59,54 @@
     ]
   },
   "user_profile": {
-    "type": "technical_founder",
-    "team_size": 1,
+    "type": "solo_ai_builder",
+    "focus": [
+      "micro_saas",
+      "automation",
+      "ai_bots",
+      "b2b_tools",
+      "social_sector_optional"
+    ],
     "skills": [
-      "typescript", "javascript", "node", "python", "react", "nextjs",
-      "express", "api", "rest", "sql", "postgres", "redis",
-      "docker", "vercel", "aws", "git",
-      "llm", "openai", "anthropic", "langchain", "ollama", "rag",
-      "embedding", "vector", "chromadb", "whisper",
-      "scraping", "cheerio", "puppeteer",
-      "stripe", "auth", "oauth"
+      "nodejs",
+      "python",
+      "api_integration",
+      "automation",
+      "ai_agents",
+      "bot_building",
+      "server_deployment"
     ],
-    "domains": [
-      "developer_tools", "saas", "automation", "bots",
-      "content_generation", "data_processing", "local_ai",
-      "ai_agents", "browser_extensions", "cli_tools"
+    "strengths": [
+      "rapid_prototyping",
+      "solo_building",
+      "practical_tools"
     ],
-    "builds": ["AI tools", "automation", "SaaS", "bots", "local AI solutions"],
-    "strengths": ["full-stack development", "AI/ML integration", "rapid prototyping", "API design"],
     "constraints": {
+      "team_size": 1,
       "max_mvp_weeks": 4,
-      "solo_developer": true,
+      "prefer_simple_architecture": true
+    },
+    "preferences": {
+      "preferred_opportunity_types": [
+        "micro_saas",
+        "automation_system",
+        "bot_platform"
+      ],
+      "secondary_opportunity_types": [
+        "social_sector_tools",
+        "local_ai_tools"
+      ],
       "prefer_recurring_revenue": true,
       "prefer_b2b": true,
-      "prefer_low_competition": true,
-      "prefer_ai_native": true,
-      "avoid": ["mobile_native", "hardware", "enterprise_sales", "regulated_industries"]
+      "prefer_existing_market": true,
+      "avoid": [
+        "foundation_models",
+        "model_training",
+        "data_labeling_business",
+        "heavy_ml_research",
+        "consumer_social_apps",
+        "mobile_only_apps"
+      ]
     }
   },
   "dedupe": {

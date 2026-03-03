@@ -9,7 +9,9 @@
     "collect": "node execution/index.js --collect-only",
     "analyze": "node execution/index.js --analyze-only",
     "daily": "node execution/index.js --full-run",
-    "autopilot": "node execution/index.js --autopilot"
+    "autopilot": "node execution/index.js --autopilot",
+    "pipeline": "node execution/index.js --pipeline-only",
+    "build:site": "node build-site.js"
   },
   "dependencies": {
     "express": "^4.21.0",

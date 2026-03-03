@@ -2,3 +2,5 @@ node_modules/
 .tmp/
 .env
 *.log
+site/
+.DS_Store

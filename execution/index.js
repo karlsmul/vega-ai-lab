@@ -4,6 +4,9 @@ import { findOpportunities } from './analyzers/opportunities.js';
 import { generateIdeas } from './generators/ideas.js';
 import { generateContent } from './generators/content.js';
 import { generateActionPlan } from './generators/action-plan.js';
+import { generateRecommendations } from './generators/recommendations.js';
+import { generateValidation } from './generators/validation.js';
+import { generateOutreach } from './generators/outreach.js';
 import { computeDelta } from './lib/delta.js';
 import { HealthTracker } from './lib/health.js';
 import { startDashboard } from './dashboard/server.js';
@@ -20,7 +23,7 @@ async function runPipeline() {
   const today = new Date().toISOString().split('T')[0];
 
   console.log('='.repeat(60));
-  console.log(`⚡ AI Opportunity Machine v2 — ${today}`);
+  console.log(`⚡ AI Opportunity Machine v3 — ${today}`);
   console.log('='.repeat(60));
 
   health.log(`Pipeline started: ${today}`);
@@ -92,6 +95,41 @@ async function runPipeline() {
     topOppResult = { topOpportunity: null, actionPlan: '# Action plan generation failed\n' };
   }
 
+  // Step 5b: Generate business recommendations
+  const config = JSON.parse(readFileSync(join(ROOT, 'directives', 'config.json'), 'utf-8'));
+  const profile = config.user_profile;
+  let recsResult;
+  try {
+    recsResult = generateRecommendations(oppsResult.opportunities, profile);
+    health.recordStep('recommendations', true);
+  } catch (err) {
+    health.recordError('Recommendations failed: ' + err.message, err.stack);
+    health.recordStep('recommendations', false);
+    recsResult = { recommendations: [], report: '# Recommendations failed\n' };
+  }
+
+  // Step 5c: Generate validation plans
+  let validationResult;
+  try {
+    validationResult = generateValidation(recsResult.recommendations);
+    health.recordStep('validation', true);
+  } catch (err) {
+    health.recordError('Validation failed: ' + err.message, err.stack);
+    health.recordStep('validation', false);
+    validationResult = { plans: [], report: '# Validation failed\n' };
+  }
+
+  // Step 5d: Generate outreach templates
+  let outreachResult;
+  try {
+    outreachResult = generateOutreach(recsResult.recommendations, profile);
+    health.recordStep('outreach', true);
+  } catch (err) {
+    health.recordError('Outreach failed: ' + err.message, err.stack);
+    health.recordStep('outreach', false);
+    outreachResult = { templates: [], report: '# Outreach failed\n' };
+  }
+
   // Step 6: Generate project ideas
   let ideasReport;
   try {
@@ -126,6 +164,12 @@ async function runPipeline() {
   writeFileSync(join(dayDir, 'opportunities.json'), JSON.stringify(oppsResult.opportunities, null, 2));
   writeFileSync(join(dayDir, 'top_opportunity.json'), JSON.stringify(topOppResult.topOpportunity, null, 2));
   writeFileSync(join(dayDir, 'action_plan.md'), topOppResult.actionPlan);
+  writeFileSync(join(dayDir, 'recommendations.md'), recsResult.report);
+  writeFileSync(join(dayDir, 'recommendations.json'), JSON.stringify(recsResult.recommendations, null, 2));
+  writeFileSync(join(dayDir, 'validation.md'), validationResult.report);
+  writeFileSync(join(dayDir, 'validation.json'), JSON.stringify(validationResult.plans, null, 2));
+  writeFileSync(join(dayDir, 'outreach.md'), outreachResult.report);
+  writeFileSync(join(dayDir, 'outreach.json'), JSON.stringify(outreachResult.templates, null, 2));
   writeFileSync(join(dayDir, 'ideas.md'), ideasReport);
   writeFileSync(join(dayDir, 'content.md'), contentResult.report);
   writeFileSync(join(dayDir, 'content.json'), JSON.stringify(contentResult.posts, null, 2));
@@ -142,6 +186,7 @@ async function runPipeline() {
   console.log(`   trends.md, topics.json, delta.json`);
   console.log(`   opportunities.md, opportunities.json`);
   console.log(`   top_opportunity.json, action_plan.md`);
+  console.log(`   recommendations.md, validation.md, outreach.md`);
   console.log(`   ideas.md, content.md, content.json`);
   console.log(`   stats.json, health.json`);
   if (health.errors.length > 0) {
@@ -199,12 +244,14 @@ if (mode === '--collect-only') {
     console.log(result.report);
     process.exit(0);
   });
+} else if (mode === '--pipeline-only') {
+  runPipeline().then(() => process.exit(0)).catch(err => { console.error(err); process.exit(1); });
 } else if (mode === '--dashboard') {
   const config = JSON.parse(readFileSync(join(ROOT, 'directives', 'config.json'), 'utf-8'));
   startDashboard(config.dashboard.port);
 } else if (mode === '--autopilot') {
   const config = JSON.parse(readFileSync(join(ROOT, 'directives', 'config.json'), 'utf-8'));
-  console.log(`⚡ AI Opportunity Machine v2 — Autopilot`);
+  console.log(`⚡ AI Opportunity Machine v3 — Autopilot`);
   console.log(`   Schedule: ${config.schedule.cron} (${config.schedule.timezone})`);
   console.log(`   Dashboard: http://localhost:${config.dashboard.port}\n`);
 

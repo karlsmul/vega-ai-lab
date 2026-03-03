@@ -40,7 +40,7 @@ app.get('/api/report/:date', (req, res) => {
   const reports = {};
 
   // Markdown files → raw + HTML
-  const mdFiles = ['trends.md', 'opportunities.md', 'ideas.md', 'content.md', 'action_plan.md'];
+  const mdFiles = ['trends.md', 'opportunities.md', 'ideas.md', 'content.md', 'action_plan.md', 'recommendations.md', 'validation.md', 'outreach.md'];
   for (const file of mdFiles) {
     const filePath = join(dayDir, file);
     if (existsSync(filePath)) {
@@ -50,14 +50,20 @@ app.get('/api/report/:date', (req, res) => {
     }
   }
 
-  // JSON files → parsed
-  const jsonFiles = ['stats.json', 'delta.json', 'top_opportunity.json', 'health.json', 'topics.json', 'opportunities.json', 'content.json'];
+  // JSON files → parsed (merge into existing MD entries if present)
+  const jsonFiles = ['stats.json', 'delta.json', 'top_opportunity.json', 'health.json', 'topics.json', 'opportunities.json', 'content.json', 'recommendations.json', 'validation.json', 'outreach.json'];
   for (const file of jsonFiles) {
     const filePath = join(dayDir, file);
     if (existsSync(filePath)) {
       try {
         const key = file.replace('.json', '');
-        reports[key] = JSON.parse(readFileSync(filePath, 'utf-8'));
+        const parsed = JSON.parse(readFileSync(filePath, 'utf-8'));
+        if (reports[key] && reports[key].html) {
+          // MD already loaded — keep html/raw and add JSON as .data
+          reports[key].data = parsed;
+        } else {
+          reports[key] = parsed;
+        }
       } catch {}
     }
   }

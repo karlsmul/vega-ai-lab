@@ -89,11 +89,18 @@ const OPPORTUNITY_TEMPLATES = [
     required_focus: ['micro_saas', 'automation'],
     integrations: 1,
     infra_burden: 'low',
+    buyer_specificity: 4,
+    pricing_anchor: '29-49€/Monat',
+    revenue_potential: 'MEDIUM',
+    needs_sustained_focus: false,
+    needs_complex_ui: false,
     risks: ['Zapier/Make sind etabliert — Nische muss eng genug sein', 'Kunden erwarten sofort Ergebnisse', 'Support-Aufwand bei Edge Cases'],
     next_actions: {
       step_30_min: 'Identifiziere 3 spezifische Workflows die schlecht automatisiert sind (Reddit/HN/eigene Erfahrung)',
       step_2_hours: 'Baue einen Prototyp für einen Workflow mit Node.js + Claude API und teste mit echten Daten',
-      step_6_hours: 'Implementiere einen funktionierenden API-Endpunkt + Cron-Trigger + minimales Web-Dashboard'
+      step_6_hours: 'Implementiere einen funktionierenden API-Endpunkt + Cron-Trigger + minimales Web-Dashboard',
+      artifact_type: 'working_script',
+      artifact_description: 'Node.js API-Endpunkt + Cron-Job der einen konkreten Workflow automatisiert (z.B. Invoice-Verarbeitung).',
     }
   },
   {
@@ -109,11 +116,18 @@ const OPPORTUNITY_TEMPLATES = [
     required_focus: ['micro_saas'],
     integrations: 1,
     infra_burden: 'low',
+    buyer_specificity: 4,
+    pricing_anchor: '19-39€/Monat',
+    revenue_potential: 'MEDIUM',
+    needs_sustained_focus: false,
+    needs_complex_ui: false,
     risks: ['GitHub/JetBrains integrieren ähnliche Features nativ', 'Preis-Sensitivität bei Dev-Tools', 'Schnelllebiger Markt'],
     next_actions: {
       step_30_min: 'Liste 5 nervige Dev-Workflows auf die du selbst hast und prüfe existierende Lösungen',
       step_2_hours: 'Baue ein CLI-Tool (Node.js + Commander.js) das einen davon löst und teste es an 3 eigenen Repos',
-      step_6_hours: 'Veröffentliche als npm-Paket mit README, Config-Support und Freemium-Limit'
+      step_6_hours: 'Veröffentliche als npm-Paket mit README, Config-Support und Freemium-Limit',
+      artifact_type: 'github_repo',
+      artifact_description: 'npm-Paket auf GitHub mit CLI-Tool, README, Installationsanleitung und Freemium-Limit.',
     }
   },
   {
@@ -129,11 +143,18 @@ const OPPORTUNITY_TEMPLATES = [
     required_focus: ['micro_saas'],
     integrations: 1,
     infra_burden: 'low',
+    buyer_specificity: 3,
+    pricing_anchor: '19-49€/Monat',
+    revenue_potential: 'MEDIUM',
+    needs_sustained_focus: false,
+    needs_complex_ui: false,
     risks: ['Jasper/Copy.ai dominieren den breiten Markt', 'Differenzierung nur über Nische möglich', 'API-Kosten bei hohem Volumen'],
     next_actions: {
       step_30_min: 'Analysiere 3 Content-Formate (Changelog, Case Study, Thread) und prüfe welches das schlechteste Tooling hat',
       step_2_hours: 'Baue einen Repurposer für ein Nischen-Format mit Template-System',
-      step_6_hours: 'Füge Web-UI mit Vorschau + Export und Tone-of-Voice-Kalibrierung hinzu'
+      step_6_hours: 'Füge Web-UI mit Vorschau + Export und Tone-of-Voice-Kalibrierung hinzu',
+      artifact_type: 'demo_app',
+      artifact_description: 'Web-App: Text einfügen, Format wählen, plattformoptimierte Variante erhalten und exportieren.',
     }
   },
   {
@@ -149,11 +170,18 @@ const OPPORTUNITY_TEMPLATES = [
     required_focus: ['micro_saas'],
     integrations: 1,
     infra_burden: 'low',
+    buyer_specificity: 4,
+    pricing_anchor: '49-99€/Monat',
+    revenue_potential: 'HIGH',
+    needs_sustained_focus: true,
+    needs_complex_ui: false,
     risks: ['RAG-Qualität schwankt je nach Dokument-Typ', 'Onboarding-Hürde bei Dokumenten-Upload', 'Notion AI als Konkurrent'],
     next_actions: {
       step_30_min: 'Sammle 10 Beispiel-Dokumente einer Nische und teste eine einfache RAG-Pipeline',
       step_2_hours: 'Baue ein Chat-Interface das Fragen über die Dokumente beantwortet mit Quellen-Links',
-      step_6_hours: 'Füge Batch-Upload, Chunk-Visualisierung und Export (Markdown/PDF) hinzu'
+      step_6_hours: 'Füge Batch-Upload, Chunk-Visualisierung und Export (Markdown/PDF) hinzu',
+      artifact_type: 'demo_app',
+      artifact_description: 'Web-App: Dokument hochladen, Fragen stellen, Antworten mit Quellenlinks erhalten.',
     }
   },
   {
@@ -169,11 +197,18 @@ const OPPORTUNITY_TEMPLATES = [
     required_focus: ['micro_saas', 'automation'],
     integrations: 1,
     infra_burden: 'low',
+    buyer_specificity: 4,
+    pricing_anchor: '39-79€/Monat',
+    revenue_potential: 'HIGH',
+    needs_sustained_focus: false,
+    needs_complex_ui: false,
     risks: ['Spam-Perception — muss hochwertig sein', 'Apollo/Lemlist haben ähnliche Features', 'Deliverability ist nicht unser Problem'],
     next_actions: {
       step_30_min: 'Scrape 5 Company-Websites und generiere personalisierte Email-Drafts mit Claude API',
       step_2_hours: 'Baue eine Pipeline: CSV-Import → Research → Draft → Export',
-      step_6_hours: 'Füge Web-UI mit Batch-Processing, Ton-Auswahl und CSV-Export hinzu'
+      step_6_hours: 'Füge Web-UI mit Batch-Processing, Ton-Auswahl und CSV-Export hinzu',
+      artifact_type: 'working_script',
+      artifact_description: 'Node.js Pipeline: CSV-Import → Prospect-Research per API → personalisierte Email-Drafts → CSV-Export.',
     }
   },
 
@@ -191,11 +226,18 @@ const OPPORTUNITY_TEMPLATES = [
     required_focus: ['automation', 'ai_bots'],
     integrations: 2,
     infra_burden: 'low',
+    buyer_specificity: 4,
+    pricing_anchor: '99-199€/Monat',
+    revenue_potential: 'HIGH',
+    needs_sustained_focus: true,
+    needs_complex_ui: false,
     risks: ['Zuverlässigkeit bei autonomen Aktionen', 'Vertrauen der Nutzer in AI-Entscheidungen', 'Edge Cases in der Branche'],
     next_actions: {
       step_30_min: 'Wähle eine Branche und identifiziere den repetitivsten 5-Schritt-Prozess (eigene Erfahrung oder Reddit-Research)',
       step_2_hours: 'Baue einen Agent-Prototyp mit Claude tool_use der 3 Schritte des Workflows automatisiert',
-      step_6_hours: 'Teste den Agenten an 10 echten Beispielen, miss Fehlerrate, baue Review-UI'
+      step_6_hours: 'Teste den Agenten an 10 echten Beispielen, miss Fehlerrate, baue Review-UI',
+      artifact_type: 'working_script',
+      artifact_description: 'Node.js Agent mit Claude tool_use der einen Branchenprozess in 3-5 Schritten automatisiert + Review-Dashboard.',
     }
   },
   {
@@ -211,11 +253,18 @@ const OPPORTUNITY_TEMPLATES = [
     required_focus: ['automation'],
     integrations: 2,
     infra_burden: 'low',
+    buyer_specificity: 3,
+    pricing_anchor: '29-59€/Monat',
+    revenue_potential: 'MEDIUM',
+    needs_sustained_focus: false,
+    needs_complex_ui: false,
     risks: ['Otter.ai/Fireflies als Konkurrenten', 'Audio-Qualität variiert stark', 'Transcription-Kosten bei Skalierung'],
     next_actions: {
       step_30_min: 'Teste Whisper API mit 3 Meeting-Recordings und miss Qualität + Kosten',
       step_2_hours: 'Baue die Pipeline: Audio → Transkript → Claude Zusammenfassung → Action Items JSON',
-      step_6_hours: 'Füge Web-Upload, Slack-Integration und Export hinzu'
+      step_6_hours: 'Füge Web-Upload, Slack-Integration und Export hinzu',
+      artifact_type: 'demo_app',
+      artifact_description: 'Web-App: Audio hochladen → Transkript + Zusammenfassung + Action Items als JSON/Markdown.',
     }
   },
   {
@@ -231,11 +280,18 @@ const OPPORTUNITY_TEMPLATES = [
     required_focus: ['automation', 'micro_saas'],
     integrations: 2,
     infra_burden: 'low',
+    buyer_specificity: 3,
+    pricing_anchor: '49-99€/Monat',
+    revenue_potential: 'HIGH',
+    needs_sustained_focus: true,
+    needs_complex_ui: true,
     risks: ['Daten-Integrationen sind komplex', 'Posthog/Mixpanel integrieren eigene KI', 'Onboarding-Hürde bei Datenquellen'],
     next_actions: {
       step_30_min: 'Verbinde dich mit einer Datenquelle (Stripe oder GA) und extrahiere 3 Key Metrics per API',
       step_2_hours: 'Baue eine Pipeline: API-Daten → Claude Insights → Markdown-Report → Email',
-      step_6_hours: 'Füge Web-Dashboard mit Report-History und Cron-Scheduling hinzu'
+      step_6_hours: 'Füge Web-Dashboard mit Report-History und Cron-Scheduling hinzu',
+      artifact_type: 'demo_app',
+      artifact_description: 'Web-Dashboard: Datenquelle anbinden, wöchentliche KI-Reports generieren und per Email versenden.',
     }
   },
 
@@ -253,11 +309,18 @@ const OPPORTUNITY_TEMPLATES = [
     required_focus: ['ai_bots', 'b2b_tools'],
     integrations: 1,
     infra_burden: 'low',
+    buyer_specificity: 4,
+    pricing_anchor: '49-99€/Monat',
+    revenue_potential: 'HIGH',
+    needs_sustained_focus: false,
+    needs_complex_ui: false,
     risks: ['Slack/Discord ändern Bot-APIs', 'Intercom/Zendesk integrieren eigene KI', 'Bot-Fatigue bei Nutzern'],
     next_actions: {
       step_30_min: 'Baue einen minimalen Slack-Bot der auf /frage reagiert und eine FAQ aus Markdown beantwortet',
       step_2_hours: 'Füge RAG über Team-Dokumente hinzu (Markdown/PDF-Ingestion)',
-      step_6_hours: 'Teste mit einem echten Team (5 Personen), sammle Feedback, füge Admin-Commands hinzu'
+      step_6_hours: 'Teste mit einem echten Team (5 Personen), sammle Feedback, füge Admin-Commands hinzu',
+      artifact_type: 'bot_prototype',
+      artifact_description: 'Slack-Bot: /frage Befehl → durchsucht Team-Dokumente per RAG → antwortet mit Quellenlinks.',
     }
   },
   {
@@ -273,11 +336,18 @@ const OPPORTUNITY_TEMPLATES = [
     required_focus: ['ai_bots'],
     integrations: 1,
     infra_burden: 'low',
+    buyer_specificity: 4,
+    pricing_anchor: '39-79€/Monat',
+    revenue_potential: 'MEDIUM',
+    needs_sustained_focus: false,
+    needs_complex_ui: false,
     risks: ['Typeform/Tally haben KI-Features', 'Nutzer-Akzeptanz von Bot-basierten Formularen', 'Domain-spezifische Fragen brauchen Konfiguration'],
     next_actions: {
       step_30_min: 'Definiere einen konkreten Intake-Prozess (z.B. Mandanten-Aufnahme bei Anwalt) und schreibe den Frage-Flow',
       step_2_hours: 'Baue einen Web-Chat der den Flow conversational durchführt und JSON-Output generiert',
-      step_6_hours: 'Füge WhatsApp/Telegram-Integration und Admin-Dashboard für Flow-Konfiguration hinzu'
+      step_6_hours: 'Füge WhatsApp/Telegram-Integration und Admin-Dashboard für Flow-Konfiguration hinzu',
+      artifact_type: 'bot_prototype',
+      artifact_description: 'Web-Chat: Conversational Intake-Flow mit Validierung, Rückfragen und JSON-Output.',
     }
   },
 
@@ -295,11 +365,18 @@ const OPPORTUNITY_TEMPLATES = [
     required_focus: ['social_sector_optional'],
     integrations: 0,
     infra_burden: 'low',
+    buyer_specificity: 5,
+    pricing_anchor: '49-149€/Monat pro Einrichtung',
+    revenue_potential: 'HIGH',
+    needs_sustained_focus: true,
+    needs_complex_ui: false,
     risks: ['Öffentliche Träger haben lange Beschaffungszyklen', 'DSGVO-Anforderungen sind streng', 'Domain-Wissen nötig'],
     next_actions: {
       step_30_min: 'Recherchiere 3 Dokumentations-Anforderungen in der Jugendhilfe (SGB VIII)',
       step_2_hours: 'Baue einen Prototyp: Freitext-Notizen → strukturierter Hilfeplanbericht per Claude API',
-      step_6_hours: 'Deploye auf eigenem Server (Hetzner), teste DSGVO-Konformität, baue Export-Funktion'
+      step_6_hours: 'Deploye auf eigenem Server (Hetzner), teste DSGVO-Konformität, baue Export-Funktion',
+      artifact_type: 'demo_app',
+      artifact_description: 'Web-App auf Hetzner: Gesprächsnotizen eingeben → strukturierter Hilfeplanbericht als PDF.',
     }
   },
 
@@ -317,11 +394,18 @@ const OPPORTUNITY_TEMPLATES = [
     required_focus: ['social_sector_optional'],
     integrations: 0,
     infra_burden: 'low',
+    buyer_specificity: 4,
+    pricing_anchor: '99-249€/Monat',
+    revenue_potential: 'HIGH',
+    needs_sustained_focus: true,
+    needs_complex_ui: false,
     risks: ['Ollama-UX wird besser — Differenzierung nötig', 'Hardware-Anforderungen variieren', 'Support-Komplexität'],
     next_actions: {
       step_30_min: 'Teste 3 lokale Modelle via Ollama für Dokument-Q&A und miss Qualität vs Geschwindigkeit',
       step_2_hours: 'Baue eine Web-App die auf einem Server läuft: Dokument-Upload → lokale Analyse → Ergebnis',
-      step_6_hours: 'Deploye auf Hetzner VPS, füge Auth + Multi-User-Support hinzu, teste mit 2 Nutzern'
+      step_6_hours: 'Deploye auf Hetzner VPS, füge Auth + Multi-User-Support hinzu, teste mit 2 Nutzern',
+      artifact_type: 'demo_app',
+      artifact_description: 'Self-hosted Web-App: Dokument hochladen → lokale KI-Analyse → Ergebnis ohne Cloud-Abhängigkeit.',
     }
   },
 ];
@@ -416,6 +500,36 @@ function computeComplexityScore(template) {
   if (infra === 'high') score += 2.5;
 
   return Math.max(1, Math.min(5, Math.round(score)));
+}
+
+// --- PART-TIME FIT SCORING ---
+// Score 5 = perfect for part-time builder (1-2hr sessions, 35h/week day job)
+// Score 1 = requires full-time focus, complex UI, many integrations
+
+function computePartTimeFitScore(template) {
+  let score = 5; // start optimistic
+
+  // MVP duration penalty
+  const mvp = template.mvp_weeks || 4;
+  if (mvp > 4) score -= 2;
+  else if (mvp > 3) score -= 1;
+
+  // Integration complexity — more integrations = harder part-time
+  const integrations = template.integrations || 0;
+  if (integrations >= 3) score -= 2;
+  else if (integrations >= 2) score -= 1;
+
+  // Needs sustained focus (can't easily pick up in 1-2hr sessions)
+  if (template.needs_sustained_focus) score -= 1;
+
+  // Needs complex UI (frontend-heavy = more sustained work)
+  if (template.needs_complex_ui) score -= 1;
+
+  // Infra burden
+  if (template.infra_burden === 'high') score -= 2;
+  else if (template.infra_burden === 'medium') score -= 1;
+
+  return Math.max(1, Math.min(5, score));
 }
 
 // --- BRUTAL REALISM GATING ---
@@ -523,6 +637,7 @@ function detectOpportunities(signals, topics, profile) {
     const builderFit = computeBuilderFitScore(template, profile);
     const marketScore = computeMarketScore(template, matchingItems);
     const complexityScore = computeComplexityScore(template);
+    const partTimeFit = computePartTimeFitScore(template);
 
     // Brutal realism assessment
     const realism = assessRealism(template, matchingItems);
@@ -533,8 +648,8 @@ function detectOpportunities(signals, topics, profile) {
     // Positive boost
     const boost = computePositiveBoost(template, matchingItems);
 
-    // Final score with realism gating
-    let rawScore = (signalStrength * builderFit * marketScore) / complexityScore;
+    // Final score with part-time fit included
+    let rawScore = (signalStrength * builderFit * marketScore * partTimeFit) / complexityScore;
     rawScore *= boost;
     rawScore *= penalty.factor;
 
@@ -567,16 +682,23 @@ function detectOpportunities(signals, topics, profile) {
       revenue_model: template.revenue_model,
       risks: template.risks,
       next_actions: template.next_actions,
+      artifact_type: template.next_actions?.artifact_type || 'demo_app',
+      artifact_description: template.next_actions?.artifact_description || '',
       evidence_links: evidenceLinks,
       // Realism
       is_strong: realism.is_strong,
       weak_reasons: realism.weak_reasons,
+      // V3: Business fields
+      buyer_specificity_score: template.buyer_specificity || 2,
+      pricing_anchor: template.pricing_anchor || 'TBD',
+      revenue_potential: template.revenue_potential || 'LOW',
       // Scores
       signal_strength: Math.round(signalStrength * 10) / 10,
       signal_count: matchingItems.length,
       builder_fit_score: builderFit,
       market_score: marketScore,
       complexity_score: complexityScore,
+      part_time_fit_score: partTimeFit,
       final_score: Math.round(rawScore * 10) / 10,
     });
   }
@@ -619,11 +741,14 @@ function buildReport(signals, opportunities) {
     report += `**Lösung:** ${opp.proposed_solution}\n\n`;
     report += `**Warum jetzt:** ${opp.why_now}\n\n`;
     report += `**Schwierigkeit:** ${opp.difficulty}/5 · **MVP:** ${opp.mvp_weeks} Wochen · **Revenue:** ${opp.revenue_model}\n\n`;
+    report += `**Preisanker:** ${opp.pricing_anchor} · **Revenue Potential:** ${opp.revenue_potential}\n\n`;
 
     report += `| Score | Wert |\n|-------|------|\n`;
     report += `| Signal | ${opp.signal_strength} (${opp.signal_count} Signale) |\n`;
     report += `| Builder Fit | ${opp.builder_fit_score}/5 |\n`;
+    report += `| Part-Time Fit | ${opp.part_time_fit_score}/5 |\n`;
     report += `| Markt | ${opp.market_score}/5 |\n`;
+    report += `| Buyer Specificity | ${opp.buyer_specificity_score}/5 |\n`;
     report += `| Komplexität | ${opp.complexity_score}/5 |\n`;
     report += `| **Final Score** | **${opp.final_score}** |\n\n`;
 

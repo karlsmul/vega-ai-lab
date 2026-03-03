@@ -1,0 +1,49 @@
+name: Daily Pipeline + Deploy
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # 06:00 UTC = 07:00 MEZ / 08:00 MESZ
+  workflow_dispatch: {}   # Manuell auslösbar
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  pipeline-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run pipeline
+        run: npm run pipeline
+
+      - name: Commit deliverables
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add deliverables/
+          git diff --staged --quiet || git commit -m "Daily pipeline run $(date +%Y-%m-%d)"
+          git push
+
+      - name: Build static site
+        env:
+          DASHBOARD_PASSWORD: ${{ secrets.DASHBOARD_PASSWORD }}
+        run: npm run build:site
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          force_orphan: true

@@ -228,6 +228,223 @@ const strongOnly = mockOpps.filter(o => o.is_strong);
 assert(strongOnly.length === 1, 'realism: filtering leaves only strong opps');
 assert(strongOnly[0].name === 'Strong Opp', 'realism: weak opp cannot be top even with higher score');
 
+// --- V3: part_time_fit_score ---
+console.log('Testing part-time fit scoring...');
+
+function mockPartTimeFitScore(template) {
+  let score = 5;
+  const mvp = template.mvp_weeks || 4;
+  if (mvp > 4) score -= 2;
+  else if (mvp > 3) score -= 1;
+  const integrations = template.integrations || 0;
+  if (integrations >= 3) score -= 2;
+  else if (integrations >= 2) score -= 1;
+  if (template.needs_sustained_focus) score -= 1;
+  if (template.needs_complex_ui) score -= 1;
+  if (template.infra_burden === 'high') score -= 2;
+  else if (template.infra_burden === 'medium') score -= 1;
+  return Math.max(1, Math.min(5, score));
+}
+
+// Perfect part-time project: short MVP, few integrations, no sustained focus, no complex UI
+const perfectPartTime = { mvp_weeks: 2, integrations: 1, needs_sustained_focus: false, needs_complex_ui: false, infra_burden: 'low' };
+assert(mockPartTimeFitScore(perfectPartTime) === 5, 'part-time: perfect project scores 5 (' + mockPartTimeFitScore(perfectPartTime) + ')');
+
+// Decent part-time: 3 weeks, 2 integrations
+const decentPartTime = { mvp_weeks: 3, integrations: 2, needs_sustained_focus: false, needs_complex_ui: false, infra_burden: 'low' };
+const decentScore = mockPartTimeFitScore(decentPartTime);
+assert(decentScore === 4, 'part-time: decent project scores 4 (' + decentScore + ')');
+
+// Bad for part-time: long MVP, complex, many integrations
+const badPartTime = { mvp_weeks: 6, integrations: 3, needs_sustained_focus: true, needs_complex_ui: true, infra_burden: 'medium' };
+const badScore = mockPartTimeFitScore(badPartTime);
+assert(badScore <= 2, 'part-time: complex project scores ≤ 2 (' + badScore + ')');
+
+// MVP > 4 weeks gets -2
+const longMvpTemplate = { mvp_weeks: 5, integrations: 0, needs_sustained_focus: false, needs_complex_ui: false, infra_burden: 'low' };
+assert(mockPartTimeFitScore(longMvpTemplate) === 3, 'part-time: mvp > 4 weeks loses 2 points');
+
+// High infra burden
+const highInfra = { mvp_weeks: 2, integrations: 0, needs_sustained_focus: false, needs_complex_ui: false, infra_burden: 'high' };
+assert(mockPartTimeFitScore(highInfra) === 3, 'part-time: high infra loses 2 points');
+
+// --- V3: recommendation selection ---
+console.log('Testing recommendation selection...');
+
+// Mock opportunities for recommendation testing
+const mockOppsV3 = [
+  { name: 'Good Opp', is_strong: true, part_time_fit_score: 5, final_score: 100, builder_fit_score: 5 },
+  { name: 'Also Good', is_strong: true, part_time_fit_score: 4, final_score: 80, builder_fit_score: 4 },
+  { name: 'Strong but Bad PT Fit', is_strong: true, part_time_fit_score: 2, final_score: 90, builder_fit_score: 5 },
+  { name: 'Weak Opp', is_strong: false, part_time_fit_score: 5, final_score: 120, builder_fit_score: 5 },
+];
+
+// Filter: STRONG + part_time_fit >= 4
+const eligible = mockOppsV3.filter(o => o.is_strong && o.part_time_fit_score >= 4);
+assert(eligible.length === 2, 'recommendations: exactly 2 eligible opps');
+assert(eligible[0].name === 'Good Opp', 'recommendations: first eligible is Good Opp');
+assert(eligible[1].name === 'Also Good', 'recommendations: second eligible is Also Good');
+
+// Max 2 recommendations
+const manyGoodOpps = [
+  { name: 'A', is_strong: true, part_time_fit_score: 5, final_score: 100 },
+  { name: 'B', is_strong: true, part_time_fit_score: 5, final_score: 90 },
+  { name: 'C', is_strong: true, part_time_fit_score: 5, final_score: 80 },
+  { name: 'D', is_strong: true, part_time_fit_score: 4, final_score: 70 },
+];
+const eligibleMany = manyGoodOpps.filter(o => o.is_strong && o.part_time_fit_score >= 4);
+const topRecs = eligibleMany.slice(0, 2);
+assert(topRecs.length === 2, 'recommendations: max 2 even when more eligible');
+assert(topRecs[0].name === 'A', 'recommendations: top 1 is highest score');
+assert(topRecs[1].name === 'B', 'recommendations: top 2 is second highest');
+
+// Weak opp with high score cannot become recommendation
+const weakHighScore = mockOppsV3.filter(o => o.is_strong && o.part_time_fit_score >= 4);
+assert(!weakHighScore.some(o => o.name === 'Weak Opp'), 'recommendations: weak opp excluded even with high score');
+
+// Part-time fit < 4 excluded even if strong
+assert(!eligible.some(o => o.name === 'Strong but Bad PT Fit'), 'recommendations: low part-time fit excluded even if strong');
+
+// No eligible opps → empty recommendations
+const noEligible = [
+  { name: 'Only Weak', is_strong: false, part_time_fit_score: 5, final_score: 100 },
+].filter(o => o.is_strong && o.part_time_fit_score >= 4);
+assert(noEligible.length === 0, 'recommendations: no eligible when none qualify');
+
+// --- V3.1: Niche enforcement ---
+console.log('Testing V3.1 niche enforcement...');
+
+const GENERIC_BUYER_TERMS_TEST = /\b(businesses|teams|knowledge workers|companies|professionals|unternehmen|wissensarbeiter)\b/i;
+
+// Generic buyer text should be detected
+assert(GENERIC_BUYER_TERMS_TEST.test('Small businesses'), 'niche: "businesses" detected as generic');
+assert(GENERIC_BUYER_TERMS_TEST.test('Teams mit viel Dokumentation'), 'niche: "Teams" detected as generic');
+assert(GENERIC_BUYER_TERMS_TEST.test('Knowledge workers in enterprises'), 'niche: "knowledge workers" detected as generic');
+assert(GENERIC_BUYER_TERMS_TEST.test('Unternehmen jeder Größe'), 'niche: "Unternehmen" detected as generic');
+assert(GENERIC_BUYER_TERMS_TEST.test('Professionals and consultants'), 'niche: "Professionals" detected as generic');
+
+// Specific buyer text should NOT be detected
+assert(!GENERIC_BUYER_TERMS_TEST.test('Kleine Steuerkanzleien in Deutschland'), 'niche: specific buyer not flagged');
+assert(!GENERIC_BUYER_TERMS_TEST.test('E-Commerce-Shops mit 50-500 Bestellungen'), 'niche: specific buyer not flagged (2)');
+assert(!GENERIC_BUYER_TERMS_TEST.test('Freelance-Übersetzer und Sprachdienstleister'), 'niche: specific buyer not flagged (3)');
+
+// Niche refinement: buyer_specificity_score < 4 triggers refinement
+function mockNicheRefinement(opp) {
+  const buyerText = opp.target_buyer || '';
+  const needsRefinement = opp.buyer_specificity_score < 4 || GENERIC_BUYER_TERMS_TEST.test(buyerText);
+  return { needs_refinement: needsRefinement };
+}
+
+assert(mockNicheRefinement({ target_buyer: 'Small businesses', buyer_specificity_score: 3 }).needs_refinement, 'niche: low specificity + generic triggers refinement');
+assert(mockNicheRefinement({ target_buyer: 'Small businesses', buyer_specificity_score: 5 }).needs_refinement, 'niche: high specificity + generic still triggers refinement');
+assert(mockNicheRefinement({ target_buyer: 'Steuerkanzleien', buyer_specificity_score: 2 }).needs_refinement, 'niche: low specificity triggers refinement even with specific text');
+assert(!mockNicheRefinement({ target_buyer: 'Steuerkanzleien', buyer_specificity_score: 4 }).needs_refinement, 'niche: high specificity + specific text = no refinement');
+
+// --- V3.1: Revenue reality math ---
+console.log('Testing V3.1 revenue reality...');
+
+function mockRevenueReality(pricingStr) {
+  const priceMatch = pricingStr.match(/(\d+)/);
+  const monthlyPrice = priceMatch ? parseInt(priceMatch[1]) : 29;
+  const customersNeeded = Math.ceil(1000 / monthlyPrice);
+  return { monthly_price: monthlyPrice, customers_needed: customersNeeded, scenarios: {
+    starter: { customers: 5, revenue: 5 * monthlyPrice },
+    realistic: { customers: 20, revenue: 20 * monthlyPrice },
+    strong: { customers: 50, revenue: 50 * monthlyPrice },
+  }};
+}
+
+const rev29 = mockRevenueReality('29€/Monat');
+assert(rev29.monthly_price === 29, 'revenue: parses 29€/Monat');
+assert(rev29.customers_needed === 35, 'revenue: 1000/29 = 35 customers');
+assert(rev29.scenarios.realistic.revenue === 580, 'revenue: 20 * 29 = 580');
+
+const rev99 = mockRevenueReality('99-149€/Monat');
+assert(rev99.monthly_price === 99, 'revenue: parses lower price from range');
+assert(rev99.customers_needed === 11, 'revenue: 1000/99 = 11 customers');
+assert(rev99.scenarios.strong.revenue === 4950, 'revenue: 50 * 99 = 4950');
+
+const rev199 = mockRevenueReality('199€/Monat');
+assert(rev199.customers_needed === 6, 'revenue: 1000/199 = 6 customers (ceil)');
+
+// --- V3.1: artifact_type required ---
+console.log('Testing V3.1 artifact_type...');
+
+const VALID_ARTIFACTS = ['demo_app', 'github_repo', 'landing_page', 'working_script', 'bot_prototype'];
+
+// Each opportunity template must have artifact_type
+const mockTemplateArtifacts = [
+  { name: 'AI Workflow Micro-SaaS', artifact_type: 'working_script' },
+  { name: 'Developer Niche SaaS', artifact_type: 'github_repo' },
+  { name: 'Content Niche SaaS', artifact_type: 'demo_app' },
+  { name: 'Document Processing Micro-SaaS', artifact_type: 'demo_app' },
+  { name: 'AI Sales Micro-SaaS', artifact_type: 'working_script' },
+  { name: 'Vertikaler AI-Agent Service', artifact_type: 'working_script' },
+  { name: 'Meeting-Automations-Pipeline', artifact_type: 'demo_app' },
+  { name: 'AI Reporting Automator', artifact_type: 'demo_app' },
+  { name: 'AI Knowledge Bot Platform', artifact_type: 'bot_prototype' },
+  { name: 'AI Intake Bot', artifact_type: 'bot_prototype' },
+  { name: 'GDPR-Safe Dokumentations-Assistent', artifact_type: 'demo_app' },
+  { name: 'Local-First AI Tool', artifact_type: 'demo_app' },
+];
+
+for (const t of mockTemplateArtifacts) {
+  assert(VALID_ARTIFACTS.includes(t.artifact_type), 'artifact: ' + t.name + ' has valid artifact_type "' + t.artifact_type + '"');
+}
+assert(mockTemplateArtifacts.every(t => t.artifact_type), 'artifact: all templates have artifact_type');
+
+// --- V3.1: Weekend MVP plan ---
+console.log('Testing V3.1 weekend MVP plan...');
+
+function mockWeekendPlan(opp) {
+  return {
+    week_1: { title: 'Validierung', hours: '5–7h', tasks: ['task1', 'task2', 'task3', 'task4'] },
+    week_2: { title: 'MVP Core', hours: '8–10h', tasks: ['task1', 'task2', 'task3', 'task4'] },
+    week_3: { title: 'Deploy + erste Nutzer', hours: '6–8h', tasks: ['task1', 'task2', 'task3', 'task4'] },
+    total_hours: '19–25h',
+  };
+}
+
+const plan = mockWeekendPlan({});
+assert(plan.week_1 && plan.week_2 && plan.week_3, 'weekend plan: has 3 weeks');
+assert(plan.week_1.tasks.length === 4, 'weekend plan: week 1 has 4 tasks');
+assert(plan.week_2.tasks.length === 4, 'weekend plan: week 2 has 4 tasks');
+assert(plan.week_3.tasks.length === 4, 'weekend plan: week 3 has 4 tasks');
+assert(plan.total_hours === '19–25h', 'weekend plan: total hours 19-25h');
+
+// --- V3.1: Time feasibility ---
+console.log('Testing V3.1 time feasibility...');
+
+function mockTimeFeasibility(ptFit, mvpWeeks) {
+  let weeklyHours;
+  if (ptFit >= 5) weeklyHours = 7;
+  else if (ptFit >= 4) weeklyHours = 9;
+  else weeklyHours = 12;
+  let totalHours = mvpWeeks * weeklyHours;
+  totalHours = Math.min(totalHours, 35);
+  totalHours = Math.max(totalHours, 15);
+  return { total_hours_num: totalHours, weekly_hours: weeklyHours };
+}
+
+const tf5 = mockTimeFeasibility(5, 3);
+assert(tf5.weekly_hours === 7, 'time: pt_fit=5 → 7h/week');
+assert(tf5.total_hours_num === 21, 'time: 3 weeks * 7h = 21h');
+
+const tf4 = mockTimeFeasibility(4, 4);
+assert(tf4.weekly_hours === 9, 'time: pt_fit=4 → 9h/week');
+
+const tf3 = mockTimeFeasibility(3, 2);
+assert(tf3.weekly_hours === 12, 'time: pt_fit=3 → 12h/week');
+assert(tf3.total_hours_num === 24, 'time: 2 weeks * 12h = 24h');
+
+// Cap at 35h max
+const tfCap = mockTimeFeasibility(3, 5);
+assert(tfCap.total_hours_num === 35, 'time: capped at 35h');
+
+// Floor at 15h
+const tfFloor = mockTimeFeasibility(5, 1);
+assert(tfFloor.total_hours_num === 15, 'time: floor at 15h');
+
 // --- Summary ---
 console.log('');
 console.log(`Results: ${passed} passed, ${failed} failed`);

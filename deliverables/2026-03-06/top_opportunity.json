@@ -1,0 +1,48 @@
+{
+  "opportunity_id": "793f0671",
+  "name": "Document Processing Micro-SaaS",
+  "category": "micro_saas",
+  "problem": "Unternehmen haben kritisches Wissen in Dokumenten vergraben das niemand findet",
+  "target_buyer": "Wissensarbeiter, Legal-Teams, Compliance-Abteilungen, Consulting-Firmen",
+  "proposed_solution": "Fokussiertes RAG-Tool für eine Dokumenten-Nische: Vertragsprüfung, Compliance-Check, oder internes Wiki-Q&A.",
+  "why_now": "khoj-ai/khoj (GitHub Trending AI); Introducing GPT-5.4 (OpenAI Blog); Introducing ChatGPT for Excel and new financial data integrations (OpenAI Blog)",
+  "difficulty": 2,
+  "mvp_weeks": 3,
+  "revenue_model": "subscription",
+  "risks": [
+    "RAG-Qualität schwankt je nach Dokument-Typ",
+    "Onboarding-Hürde bei Dokumenten-Upload",
+    "Notion AI als Konkurrent"
+  ],
+  "next_actions": {
+    "step_30_min": "Sammle 10 Beispiel-Dokumente einer Nische und teste eine einfache RAG-Pipeline",
+    "step_2_hours": "Baue ein Chat-Interface das Fragen über die Dokumente beantwortet mit Quellen-Links",
+    "step_6_hours": "Füge Batch-Upload, Chunk-Visualisierung und Export (Markdown/PDF) hinzu",
+    "artifact_type": "demo_app",
+    "artifact_description": "Web-App: Dokument hochladen, Fragen stellen, Antworten mit Quellenlinks erhalten."
+  },
+  "artifact_type": "demo_app",
+  "artifact_description": "Web-App: Dokument hochladen, Fragen stellen, Antworten mit Quellenlinks erhalten.",
+  "evidence_links": [
+    "https://github.com/khoj-ai/khoj",
+    "https://openai.com/index/introducing-gpt-5-4",
+    "https://openai.com/index/chatgpt-for-excel",
+    "https://openai.com/index/continuing-microsoft-partnership",
+    "https://blog.google/company-news/inside-google/googlers/how-google-ai-visual-search-works",
+    "https://blog.google/products-and-platforms/products/search/ai-mode-canvas-writing-coding",
+    "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2",
+    "https://blog.google/products-and-platforms/products/search/circle-to-search-february-2026"
+  ],
+  "is_strong": true,
+  "weak_reasons": [],
+  "buyer_specificity_score": 4,
+  "pricing_anchor": "49-99€/Monat",
+  "revenue_potential": "HIGH",
+  "signal_strength": 50.3,
+  "signal_count": 17,
+  "builder_fit_score": 5,
+  "market_score": 3,
+  "complexity_score": 2,
+  "part_time_fit_score": 4,
+  "final_score": 2375.5
+}

@@ -1,0 +1,40 @@
+{
+  "rss": 74,
+  "hackernews": 64,
+  "github": 5,
+  "producthunt": 0,
+  "total": 143,
+  "before_dedupe": {
+    "rss": 75,
+    "hackernews": 66,
+    "github": 5,
+    "producthunt": 0,
+    "total": 146
+  },
+  "dedupe": {
+    "rss": {
+      "before": 75,
+      "after": 74,
+      "removed_url": 0,
+      "removed_title": 1
+    },
+    "hackernews": {
+      "before": 66,
+      "after": 64,
+      "removed_url": 1,
+      "removed_title": 1
+    },
+    "github": {
+      "before": 5,
+      "after": 5,
+      "removed_url": 0,
+      "removed_title": 0
+    },
+    "producthunt": {
+      "before": 0,
+      "after": 0,
+      "removed_url": 0,
+      "removed_title": 0
+    }
+  }
+}

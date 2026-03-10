@@ -1,0 +1,267 @@
+[
+  {
+    "rank": 1,
+    "name": "AI Intake Bot",
+    "opportunity_id": "6aa9ba35",
+    "category": "bot_platform",
+    "category_label": "Bot Platform",
+    "problem": "Onboarding-Prozesse und Intake-Formulare sind starr — Kunden brechen ab oder geben schlechte Daten",
+    "target_buyer": "Agenturen, Kanzleien, Berater mit Kunden-Onboarding-Prozess",
+    "proposed_solution": "Conversational AI-Bot der Intake-Prozesse führt: Fragen stellt, validiert, nachfragt, strukturierte Daten liefert.",
+    "pricing_anchor": "39-79€/Monat",
+    "revenue_potential": "MEDIUM",
+    "revenue_label": "500–3.000€/Monat",
+    "revenue_model": "subscription",
+    "niche_refinement": {
+      "needs_refinement": false,
+      "recommended_niche": "Agenturen",
+      "possible_niches": [],
+      "reason": "Zielkunde ist bereits spezifisch genug."
+    },
+    "revenue_reality": {
+      "pricing_assumption": "39€/Monat",
+      "monthly_price": 39,
+      "break_even_target": "1000€/Monat",
+      "customers_needed": 26,
+      "scenarios": {
+        "starter": {
+          "customers": 5,
+          "revenue": 195
+        },
+        "realistic": {
+          "customers": 20,
+          "revenue": 780
+        },
+        "strong": {
+          "customers": 50,
+          "revenue": 1950
+        }
+      },
+      "explanation": "26 Kunden bei 39€/Monat sind über 3-6 Monate aufbaubar. Fokus: Content-Marketing + direkter Outreach an Agenturen."
+    },
+    "builder_fit_score": 3,
+    "part_time_fit_score": 5,
+    "buyer_specificity_score": 4,
+    "fit_reasons": [
+      "Perfekt für Teilzeit-Sessions",
+      "Klarer Zielkunde identifiziert",
+      "Starke Marktsignale",
+      "Passt zu Fokus: Bot Platform"
+    ],
+    "time_feasibility": {
+      "total_hours": "10–15 Stunden",
+      "total_hours_num": 15,
+      "weekly_hours": 7,
+      "weekly_schedule": {
+        "dienstag_abend": "1.5h",
+        "donnerstag_abend": "1.5h",
+        "samstag": "3–4h"
+      },
+      "explanation": "Bei ~7h pro Woche neben deinem 35h-Job ist das MVP in 2 Wochen realistisch. Jede Session ist in sich abgeschlossen — du kannst nach 1.5h aufhören und nächste Woche weitermachen. Der Schlüssel: Kleine, abgeschlossene Arbeitspakete statt langer Focus-Sessions."
+    },
+    "weekend_plan": {
+      "week_1": {
+        "title": "Validierung",
+        "hours": "5–7h",
+        "tasks": [
+          "Problem-Recherche: 3 Agenturen identifizieren und ansprechen",
+          "Konkurrenzanalyse: Top-3 Alternativen und ihre Schwächen dokumentieren",
+          "Definiere einen konkreten Intake-Prozess (z.B. Mandanten-Aufnahme bei Anwalt) und schreibe den Frage-Flow",
+          "Entscheidung: Weiterbauen oder Pivot?"
+        ]
+      },
+      "week_2": {
+        "title": "MVP Core",
+        "hours": "8–10h",
+        "tasks": [
+          "Baue einen Web-Chat der den Flow conversational durchführt und JSON-Output generiert",
+          "Füge WhatsApp/Telegram-Integration und Admin-Dashboard für Flow-Konfiguration hinzu",
+          "Build Artifact: Bot Prototype",
+          "Ersten Testlauf mit echten Daten"
+        ]
+      },
+      "week_3": {
+        "title": "Deploy + erste Nutzer",
+        "hours": "6–8h",
+        "tasks": [
+          "Deploy auf Hetzner/Vercel/Railway",
+          "Einfache Landing Page oder README",
+          "3 Agenturen zum Testen einladen",
+          "Feedback sammeln, kritische Bugs fixen"
+        ]
+      },
+      "total_hours": "19–25h"
+    },
+    "artifact": {
+      "type": "bot_prototype",
+      "type_label": "Bot Prototype",
+      "description": "Web-Chat: Conversational Intake-Flow mit Validierung, Rückfragen und JSON-Output."
+    },
+    "next_actions": {
+      "step_30_min": "Definiere einen konkreten Intake-Prozess (z.B. Mandanten-Aufnahme bei Anwalt) und schreibe den Frage-Flow",
+      "step_2_hours": "Baue einen Web-Chat der den Flow conversational durchführt und JSON-Output generiert",
+      "step_6_hours": "Füge WhatsApp/Telegram-Integration und Admin-Dashboard für Flow-Konfiguration hinzu",
+      "artifact_type": "bot_prototype",
+      "artifact_description": "Web-Chat: Conversational Intake-Flow mit Validierung, Rückfragen und JSON-Output."
+    },
+    "risks": [
+      "Typeform/Tally haben KI-Features",
+      "Nutzer-Akzeptanz von Bot-basierten Formularen",
+      "Domain-spezifische Fragen brauchen Konfiguration"
+    ],
+    "evidence_links": [
+      "https://inflection.ai/inflection-1",
+      "https://llm-timeline.com/",
+      "https://news.ycombinator.com/item?id=36865625",
+      "https://openai.com/index/openai-to-acquire-promptfoo",
+      "https://openai.com/index/balyasny-asset-management",
+      "https://huggingface.co/blog/nxp/bringing-robotics-ai-to-embedded-platforms",
+      "https://huggingface.co/blog/moe-transformers",
+      "https://huggingface.co/blog/transformersjs-v4"
+    ],
+    "final_score": 1983.6,
+    "signal_strength": 42,
+    "market_score": 4,
+    "mvp_weeks": 2,
+    "why_now": "Pi.ai LLM Outperforms Palm/GPT3.5 (HackerNews AI); Show HN: AI Timeline – 171 LLMs from Transformer (2017) to GPT-5.3 (2026) (HackerNews AI); Launch HN: Roundtable (YC S23) – Using AI to Simulate Surveys (HackerNews AI)"
+  },
+  {
+    "rank": 2,
+    "name": "Document Processing Micro-SaaS",
+    "opportunity_id": "793f0671",
+    "category": "micro_saas",
+    "category_label": "Micro SaaS",
+    "problem": "Unternehmen haben kritisches Wissen in Dokumenten vergraben das niemand findet",
+    "target_buyer": "Wissensarbeiter, Legal-Teams, Compliance-Abteilungen, Consulting-Firmen",
+    "proposed_solution": "Fokussiertes RAG-Tool für eine Dokumenten-Nische: Vertragsprüfung, Compliance-Check, oder internes Wiki-Q&A.",
+    "pricing_anchor": "49-99€/Monat",
+    "revenue_potential": "HIGH",
+    "revenue_label": "3.000–10.000€/Monat",
+    "revenue_model": "subscription",
+    "niche_refinement": {
+      "needs_refinement": true,
+      "possible_niches": [
+        {
+          "niche": "Kleine Steuerkanzleien in Deutschland (5-15 Mitarbeiter)",
+          "reason": "Klarer Workflow, Dokumentenlast, erreichbar über Steuerberater-Verbände."
+        },
+        {
+          "niche": "Freelance-Übersetzer und Sprachdienstleister",
+          "reason": "Repetitive Dokument-Workflows, preissensitiv aber zahlungsbereit für Zeitersparnis."
+        },
+        {
+          "niche": "Boutique-Personalvermittler (1-5 Personen)",
+          "reason": "Hoher manueller Aufwand, klare Pain Points, reachable über LinkedIn."
+        }
+      ],
+      "recommended_niche": "Kleine Steuerkanzleien in Deutschland (5-15 Mitarbeiter)",
+      "reason": "Klarer Workflow, Dokumentenlast, erreichbar über Steuerberater-Verbände."
+    },
+    "revenue_reality": {
+      "pricing_assumption": "49€/Monat",
+      "monthly_price": 49,
+      "break_even_target": "1000€/Monat",
+      "customers_needed": 21,
+      "scenarios": {
+        "starter": {
+          "customers": 5,
+          "revenue": 245
+        },
+        "realistic": {
+          "customers": 20,
+          "revenue": 980
+        },
+        "strong": {
+          "customers": 50,
+          "revenue": 2450
+        }
+      },
+      "explanation": "21 Kunden bei 49€/Monat sind über 3-6 Monate aufbaubar. Fokus: Content-Marketing + direkter Outreach an Wissensarbeiter."
+    },
+    "builder_fit_score": 5,
+    "part_time_fit_score": 4,
+    "buyer_specificity_score": 4,
+    "fit_reasons": [
+      "Starker Skill-Match",
+      "Gut machbar in 1-2h Sessions",
+      "Klarer Zielkunde identifiziert",
+      "Passt zu Fokus: Micro SaaS"
+    ],
+    "time_feasibility": {
+      "total_hours": "22–27 Stunden",
+      "total_hours_num": 27,
+      "weekly_hours": 9,
+      "weekly_schedule": {
+        "dienstag_abend": "1.5h",
+        "donnerstag_abend": "1.5h",
+        "samstag": "3–4h"
+      },
+      "explanation": "Bei ~9h pro Woche neben deinem 35h-Job ist das MVP in 3 Wochen realistisch. Jede Session ist in sich abgeschlossen — du kannst nach 1.5h aufhören und nächste Woche weitermachen. Der Schlüssel: Kleine, abgeschlossene Arbeitspakete statt langer Focus-Sessions."
+    },
+    "weekend_plan": {
+      "week_1": {
+        "title": "Validierung",
+        "hours": "5–7h",
+        "tasks": [
+          "Problem-Recherche: 3 Wissensarbeiter identifizieren und ansprechen",
+          "Konkurrenzanalyse: Top-3 Alternativen und ihre Schwächen dokumentieren",
+          "Sammle 10 Beispiel-Dokumente einer Nische und teste eine einfache RAG-Pipeline",
+          "Entscheidung: Weiterbauen oder Pivot?"
+        ]
+      },
+      "week_2": {
+        "title": "MVP Core",
+        "hours": "8–10h",
+        "tasks": [
+          "Baue ein Chat-Interface das Fragen über die Dokumente beantwortet mit Quellen-Links",
+          "Füge Batch-Upload",
+          "Build Artifact: Demo App",
+          "Ersten Testlauf mit echten Daten"
+        ]
+      },
+      "week_3": {
+        "title": "Deploy + erste Nutzer",
+        "hours": "6–8h",
+        "tasks": [
+          "Deploy auf Hetzner/Vercel/Railway",
+          "Einfache Landing Page oder README",
+          "3 Wissensarbeiter zum Testen einladen",
+          "Feedback sammeln, kritische Bugs fixen"
+        ]
+      },
+      "total_hours": "19–25h"
+    },
+    "artifact": {
+      "type": "demo_app",
+      "type_label": "Demo App",
+      "description": "Web-App: Dokument hochladen, Fragen stellen, Antworten mit Quellenlinks erhalten."
+    },
+    "next_actions": {
+      "step_30_min": "Sammle 10 Beispiel-Dokumente einer Nische und teste eine einfache RAG-Pipeline",
+      "step_2_hours": "Baue ein Chat-Interface das Fragen über die Dokumente beantwortet mit Quellen-Links",
+      "step_6_hours": "Füge Batch-Upload, Chunk-Visualisierung und Export (Markdown/PDF) hinzu",
+      "artifact_type": "demo_app",
+      "artifact_description": "Web-App: Dokument hochladen, Fragen stellen, Antworten mit Quellenlinks erhalten."
+    },
+    "risks": [
+      "RAG-Qualität schwankt je nach Dokument-Typ",
+      "Onboarding-Hürde bei Dokumenten-Upload",
+      "Notion AI als Konkurrent"
+    ],
+    "evidence_links": [
+      "https://openai.com/index/codex-security-now-in-research-preview",
+      "https://openai.com/index/balyasny-asset-management",
+      "https://openai.com/index/introducing-gpt-5-4",
+      "https://openai.com/index/chatgpt-for-excel",
+      "https://blog.google/company-news/inside-google/googlers/how-google-ai-visual-search-works",
+      "https://blog.google/products-and-platforms/products/search/ai-mode-canvas-writing-coding",
+      "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2",
+      "https://blog.google/products-and-platforms/products/search/circle-to-search-february-2026"
+    ],
+    "final_score": 1982,
+    "signal_strength": 42,
+    "market_score": 3,
+    "mvp_weeks": 3,
+    "why_now": "Codex Security: now in research preview  (OpenAI Blog); How Balyasny Asset Management built an AI research engine for investing (OpenAI Blog); Introducing GPT-5.4 (OpenAI Blog)"
+  }
+]

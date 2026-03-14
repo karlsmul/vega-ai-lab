@@ -1,0 +1,65 @@
+{
+  "timestamp": "2026-03-14T06:56:38.042Z",
+  "runtime_seconds": 2.3,
+  "collectors": {
+    "OpenAI Blog": {
+      "count": 15,
+      "ok": true
+    },
+    "Google AI Blog": {
+      "count": 15,
+      "ok": true
+    },
+    "Hugging Face Blog": {
+      "count": 15,
+      "ok": true
+    },
+    "TechCrunch AI": {
+      "count": 15,
+      "ok": true
+    },
+    "MIT AI News": {
+      "count": 15,
+      "ok": true
+    },
+    "HackerNews AI": {
+      "count": 30,
+      "ok": true
+    },
+    "HackerNews Show AI": {
+      "count": 20,
+      "ok": true
+    },
+    "IndieHackers": {
+      "count": 15,
+      "ok": true
+    },
+    "GitHub Trending AI": {
+      "count": 9,
+      "ok": true
+    },
+    "ProductHunt AI": {
+      "count": 0,
+      "ok": true
+    }
+  },
+  "analyzers_ok": true,
+  "generators_ok": true,
+  "errors": [],
+  "signals_before_dedupe": 149,
+  "signals_after_dedupe": 147,
+  "topics_count": 70,
+  "opportunities_count": 10,
+  "steps": {
+    "collect": true,
+    "trends": true,
+    "delta": true,
+    "opportunities": true,
+    "action_plan": true,
+    "recommendations": true,
+    "validation": true,
+    "outreach": true,
+    "ideas": true,
+    "content": true
+  }
+}

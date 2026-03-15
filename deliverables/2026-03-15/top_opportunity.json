@@ -1,0 +1,48 @@
+{
+  "opportunity_id": "6aa9ba35",
+  "name": "AI Intake Bot",
+  "category": "bot_platform",
+  "problem": "Onboarding-Prozesse und Intake-Formulare sind starr — Kunden brechen ab oder geben schlechte Daten",
+  "target_buyer": "Agenturen, Kanzleien, Berater mit Kunden-Onboarding-Prozess",
+  "proposed_solution": "Conversational AI-Bot der Intake-Prozesse führt: Fragen stellt, validiert, nachfragt, strukturierte Daten liefert.",
+  "why_now": "Pi.ai LLM Outperforms Palm/GPT3.5 (HackerNews AI); Show HN: AI Timeline – 171 LLMs from Transformer (2017) to GPT-5.3 (2026) (HackerNews AI); Launch HN: Roundtable (YC S23) – Using AI to Simulate Surveys (HackerNews AI)",
+  "difficulty": 2,
+  "mvp_weeks": 2,
+  "revenue_model": "subscription",
+  "risks": [
+    "Typeform/Tally haben KI-Features",
+    "Nutzer-Akzeptanz von Bot-basierten Formularen",
+    "Domain-spezifische Fragen brauchen Konfiguration"
+  ],
+  "next_actions": {
+    "step_30_min": "Definiere einen konkreten Intake-Prozess (z.B. Mandanten-Aufnahme bei Anwalt) und schreibe den Frage-Flow",
+    "step_2_hours": "Baue einen Web-Chat der den Flow conversational durchführt und JSON-Output generiert",
+    "step_6_hours": "Füge WhatsApp/Telegram-Integration und Admin-Dashboard für Flow-Konfiguration hinzu",
+    "artifact_type": "bot_prototype",
+    "artifact_description": "Web-Chat: Conversational Intake-Flow mit Validierung, Rückfragen und JSON-Output."
+  },
+  "artifact_type": "bot_prototype",
+  "artifact_description": "Web-Chat: Conversational Intake-Flow mit Validierung, Rückfragen und JSON-Output.",
+  "evidence_links": [
+    "https://inflection.ai/inflection-1",
+    "https://llm-timeline.com/",
+    "https://news.ycombinator.com/item?id=36865625",
+    "https://openai.com/index/new-ways-to-learn-math-and-science-in-chatgpt",
+    "https://openai.com/index/openai-to-acquire-promptfoo",
+    "https://openai.com/index/balyasny-asset-management",
+    "https://blog.google/products-and-platforms/products/workspace/gemini-google-sheets-state-of-the-art",
+    "https://huggingface.co/blog/nxp/bringing-robotics-ai-to-embedded-platforms"
+  ],
+  "is_strong": true,
+  "weak_reasons": [],
+  "buyer_specificity_score": 4,
+  "pricing_anchor": "39-79€/Monat",
+  "revenue_potential": "MEDIUM",
+  "signal_strength": 54,
+  "signal_count": 18,
+  "builder_fit_score": 3,
+  "market_score": 4,
+  "complexity_score": 2,
+  "part_time_fit_score": 5,
+  "final_score": 2549.8
+}

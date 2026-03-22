@@ -1,0 +1,212 @@
+[
+  {
+    "name": "AI Knowledge Bot Platform",
+    "category": "bot_platform",
+    "category_label": "Bot Platform",
+    "target_customers": {
+      "primary": "HR-Leads",
+      "secondary": [
+        "Support-Teamleiter",
+        "Ops-Manager in 10-100 Personen Unternehmen"
+      ],
+      "where_to_find": [
+        "LinkedIn: Suche nach Jobtiteln die zum Zielkunden passen",
+        "Reddit: r/SaaS, r/startups, branchenspezifische Subreddits",
+        "Slack/Discord: relevante Community-Gruppen",
+        "Indie Hackers: Forum + Meetups",
+        "Twitter/X: Hashtags zum Problem-Bereich"
+      ],
+      "how_many": "5-10 Gespräche für initiale Validierung"
+    },
+    "assumptions": [
+      {
+        "id": "A1",
+        "type": "problem",
+        "assumption": "Das Problem \"Teams beantworten dieselben internen Fragen immer wieder — Wissen ist in Docs ve...\" existiert und ist schmerzhaft genug, dass Leute dafür zahlen.",
+        "critical": true
+      },
+      {
+        "id": "A2",
+        "type": "buyer",
+        "assumption": "HR-Leads, Support-Teamleiter, Ops-Manager in 10-100 Personen Unternehmen sind erreichbar und haben Budget für 49-99€/Monat.",
+        "critical": true
+      },
+      {
+        "id": "A3",
+        "type": "solution",
+        "assumption": "Die vorgeschlagene Lösung löst das Problem besser als der aktuelle Workaround.",
+        "critical": true
+      },
+      {
+        "id": "A4",
+        "type": "willingness_to_pay",
+        "assumption": "Zielkunden würden 49-99€/Monat für diese Lösung bezahlen.",
+        "critical": true
+      },
+      {
+        "id": "A5",
+        "type": "feasibility",
+        "assumption": "MVP ist in 2 Wochen mit ~undefinedh/Woche realisierbar.",
+        "critical": false
+      }
+    ],
+    "tests": [
+      {
+        "test_id": "T1",
+        "tests_assumption": "A1",
+        "name": "Problem-Interview",
+        "description": "Führe 5 Gespräche mit HR-Leads, Support-Teamleiter, Ops-Manager in 10-100 Personen Unternehmen. Frage: \"Wie löst du aktuell [Problem]?\" und \"Was stört dich am meisten?\"",
+        "method": "interview",
+        "success_criteria": "≥3 von 5 beschreiben das Problem als Top-3 Pain Point",
+        "effort": "2-3 Stunden"
+      },
+      {
+        "test_id": "T2",
+        "tests_assumption": "A2",
+        "name": "Käufer-Erreichbarkeit",
+        "description": "Schreibe 20 potentielle Käufer auf LinkedIn an. Miss Response-Rate.",
+        "method": "outreach",
+        "success_criteria": "≥15% Response-Rate (≥3 Antworten)",
+        "effort": "1-2 Stunden"
+      },
+      {
+        "test_id": "T3",
+        "tests_assumption": "A3",
+        "name": "Lösung-Demo",
+        "description": "Baue einen klickbaren Prototyp oder Loom-Video der Lösung. Zeige es 5 Leuten.",
+        "method": "prototype",
+        "success_criteria": "≥3 sagen \"Das würde ich sofort ausprobieren\"",
+        "effort": "4-6 Stunden"
+      },
+      {
+        "test_id": "T4",
+        "tests_assumption": "A4",
+        "name": "Preis-Validierung",
+        "description": "Frage direkt: \"Würdest du 49-99€/Monat zahlen?\" oder zeige eine Landing Page mit Pricing.",
+        "method": "pricing_test",
+        "success_criteria": "≥2 von 5 sagen \"Ja, sofort\" oder tragen sich auf Warteliste ein",
+        "effort": "1-2 Stunden"
+      },
+      {
+        "test_id": "T5",
+        "tests_assumption": "A1,A3",
+        "name": "Öffentlicher Signal-Test",
+        "description": "Poste einen konkreten Use-Case auf HackerNews (Show HN), Reddit, oder LinkedIn. Miss Engagement.",
+        "method": "public_post",
+        "success_criteria": "≥50 Upvotes/Likes ODER ≥5 DMs/Kommentare mit \"Wo kann ich das bekommen?\"",
+        "effort": "1 Stunde + warten"
+      }
+    ],
+    "timeline": {
+      "week_1": "Problem-Interviews (T1) + Käufer-Erreichbarkeit (T2)",
+      "week_2": "Lösung-Demo bauen (T3) + Öffentlicher Post (T5)",
+      "week_3": "Preis-Validierung (T4) + Entscheidung: Build or Kill",
+      "decision_gate": "Nach Woche 3: Mindestens 3 von 5 Tests bestanden → Build MVP. Sonst: Pivot oder Kill."
+    }
+  },
+  {
+    "name": "AI Intake Bot",
+    "category": "bot_platform",
+    "category_label": "Bot Platform",
+    "target_customers": {
+      "primary": "Agenturen",
+      "secondary": [
+        "Kanzleien",
+        "Berater mit Kunden-Onboarding-Prozess"
+      ],
+      "where_to_find": [
+        "LinkedIn: Suche nach Jobtiteln die zum Zielkunden passen",
+        "Reddit: r/SaaS, r/startups, branchenspezifische Subreddits",
+        "Slack/Discord: relevante Community-Gruppen",
+        "Indie Hackers: Forum + Meetups",
+        "Twitter/X: Hashtags zum Problem-Bereich"
+      ],
+      "how_many": "5-10 Gespräche für initiale Validierung"
+    },
+    "assumptions": [
+      {
+        "id": "A1",
+        "type": "problem",
+        "assumption": "Das Problem \"Onboarding-Prozesse und Intake-Formulare sind starr — Kunden brechen ab oder geb...\" existiert und ist schmerzhaft genug, dass Leute dafür zahlen.",
+        "critical": true
+      },
+      {
+        "id": "A2",
+        "type": "buyer",
+        "assumption": "Agenturen, Kanzleien, Berater mit Kunden-Onboarding-Prozess sind erreichbar und haben Budget für 39-79€/Monat.",
+        "critical": true
+      },
+      {
+        "id": "A3",
+        "type": "solution",
+        "assumption": "Die vorgeschlagene Lösung löst das Problem besser als der aktuelle Workaround.",
+        "critical": true
+      },
+      {
+        "id": "A4",
+        "type": "willingness_to_pay",
+        "assumption": "Zielkunden würden 39-79€/Monat für diese Lösung bezahlen.",
+        "critical": true
+      },
+      {
+        "id": "A5",
+        "type": "feasibility",
+        "assumption": "MVP ist in 2 Wochen mit ~undefinedh/Woche realisierbar.",
+        "critical": false
+      }
+    ],
+    "tests": [
+      {
+        "test_id": "T1",
+        "tests_assumption": "A1",
+        "name": "Problem-Interview",
+        "description": "Führe 5 Gespräche mit Agenturen, Kanzleien, Berater mit Kunden-Onboarding-Prozess. Frage: \"Wie löst du aktuell [Problem]?\" und \"Was stört dich am meisten?\"",
+        "method": "interview",
+        "success_criteria": "≥3 von 5 beschreiben das Problem als Top-3 Pain Point",
+        "effort": "2-3 Stunden"
+      },
+      {
+        "test_id": "T2",
+        "tests_assumption": "A2",
+        "name": "Käufer-Erreichbarkeit",
+        "description": "Schreibe 20 potentielle Käufer auf LinkedIn an. Miss Response-Rate.",
+        "method": "outreach",
+        "success_criteria": "≥15% Response-Rate (≥3 Antworten)",
+        "effort": "1-2 Stunden"
+      },
+      {
+        "test_id": "T3",
+        "tests_assumption": "A3",
+        "name": "Lösung-Demo",
+        "description": "Baue einen klickbaren Prototyp oder Loom-Video der Lösung. Zeige es 5 Leuten.",
+        "method": "prototype",
+        "success_criteria": "≥3 sagen \"Das würde ich sofort ausprobieren\"",
+        "effort": "4-6 Stunden"
+      },
+      {
+        "test_id": "T4",
+        "tests_assumption": "A4",
+        "name": "Preis-Validierung",
+        "description": "Frage direkt: \"Würdest du 39-79€/Monat zahlen?\" oder zeige eine Landing Page mit Pricing.",
+        "method": "pricing_test",
+        "success_criteria": "≥2 von 5 sagen \"Ja, sofort\" oder tragen sich auf Warteliste ein",
+        "effort": "1-2 Stunden"
+      },
+      {
+        "test_id": "T5",
+        "tests_assumption": "A1,A3",
+        "name": "Öffentlicher Signal-Test",
+        "description": "Poste einen konkreten Use-Case auf HackerNews (Show HN), Reddit, oder LinkedIn. Miss Engagement.",
+        "method": "public_post",
+        "success_criteria": "≥50 Upvotes/Likes ODER ≥5 DMs/Kommentare mit \"Wo kann ich das bekommen?\"",
+        "effort": "1 Stunde + warten"
+      }
+    ],
+    "timeline": {
+      "week_1": "Problem-Interviews (T1) + Käufer-Erreichbarkeit (T2)",
+      "week_2": "Lösung-Demo bauen (T3) + Öffentlicher Post (T5)",
+      "week_3": "Preis-Validierung (T4) + Entscheidung: Build or Kill",
+      "decision_gate": "Nach Woche 3: Mindestens 3 von 5 Tests bestanden → Build MVP. Sonst: Pivot oder Kill."
+    }
+  }
+]

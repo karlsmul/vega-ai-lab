@@ -1,0 +1,48 @@
+{
+  "opportunity_id": "46ba299a",
+  "name": "AI Knowledge Bot Platform",
+  "category": "bot_platform",
+  "problem": "Teams beantworten dieselben internen Fragen immer wieder — Wissen ist in Docs verstreut",
+  "target_buyer": "HR-Leads, Support-Teamleiter, Ops-Manager in 10-100 Personen Unternehmen",
+  "proposed_solution": "Spezialisierter Slack/Discord/WhatsApp-Bot der Unternehmensdokumente kennt und Team-Fragen beantwortet. Setup: Docs verlinken, Bot einladen, fertig.",
+  "why_now": "The Bing AI bot has been secretly running GPT-4 (HackerNews AI); How Descript enables multilingual video dubbing at scale (OpenAI Blog); LeRobot v0.5.0: Scaling Every Dimension (Hugging Face Blog)",
+  "difficulty": 2,
+  "mvp_weeks": 2,
+  "revenue_model": "subscription",
+  "risks": [
+    "Slack/Discord ändern Bot-APIs",
+    "Intercom/Zendesk integrieren eigene KI",
+    "Bot-Fatigue bei Nutzern"
+  ],
+  "next_actions": {
+    "step_30_min": "Baue einen minimalen Slack-Bot der auf /frage reagiert und eine FAQ aus Markdown beantwortet",
+    "step_2_hours": "Füge RAG über Team-Dokumente hinzu (Markdown/PDF-Ingestion)",
+    "step_6_hours": "Teste mit einem echten Team (5 Personen), sammle Feedback, füge Admin-Commands hinzu",
+    "artifact_type": "bot_prototype",
+    "artifact_description": "Slack-Bot: /frage Befehl → durchsucht Team-Dokumente per RAG → antwortet mit Quellenlinks."
+  },
+  "artifact_type": "bot_prototype",
+  "artifact_description": "Slack-Bot: /frage Befehl → durchsucht Team-Dokumente per RAG → antwortet mit Quellenlinks.",
+  "evidence_links": [
+    "https://www.theverge.com/2023/3/14/23639928/microsoft-bing-chatbot-ai-gpt-4-llm",
+    "https://openai.com/index/descript",
+    "https://huggingface.co/blog/lerobot-release-v050",
+    "https://huggingface.co/blog/nxp/bringing-robotics-ai-to-embedded-platforms",
+    "https://techcrunch.com/2026/03/22/do-you-want-to-build-a-robot-snowman",
+    "https://techcrunch.com/video/what-happened-at-nvidia-gtc-nemoclaw-robot-olaf-and-a-1-trillion-bet",
+    "https://techcrunch.com/podcast/nvidia-has-an-openclaw-strategy-do-you",
+    "https://techcrunch.com/2026/03/20/the-best-ai-investment-might-be-in-energy-tech"
+  ],
+  "is_strong": true,
+  "weak_reasons": [],
+  "buyer_specificity_score": 4,
+  "pricing_anchor": "49-99€/Monat",
+  "revenue_potential": "HIGH",
+  "signal_strength": 43.1,
+  "signal_count": 16,
+  "builder_fit_score": 3,
+  "market_score": 4,
+  "complexity_score": 2,
+  "part_time_fit_score": 5,
+  "final_score": 2033.9
+}

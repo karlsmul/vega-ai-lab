@@ -1,0 +1,267 @@
+[
+  {
+    "rank": 1,
+    "name": "AI Knowledge Bot Platform",
+    "opportunity_id": "46ba299a",
+    "category": "bot_platform",
+    "category_label": "Bot Platform",
+    "problem": "Teams beantworten dieselben internen Fragen immer wieder — Wissen ist in Docs verstreut",
+    "target_buyer": "HR-Leads, Support-Teamleiter, Ops-Manager in 10-100 Personen Unternehmen",
+    "proposed_solution": "Spezialisierter Slack/Discord/WhatsApp-Bot der Unternehmensdokumente kennt und Team-Fragen beantwortet. Setup: Docs verlinken, Bot einladen, fertig.",
+    "pricing_anchor": "49-99€/Monat",
+    "revenue_potential": "HIGH",
+    "revenue_label": "3.000–10.000€/Monat",
+    "revenue_model": "subscription",
+    "niche_refinement": {
+      "needs_refinement": true,
+      "possible_niches": [
+        {
+          "niche": "Anwaltskanzleien mit Mandanten-Onboarding",
+          "reason": "Strukturierter Intake-Prozess, hohe Zahlungsbereitschaft, DSGVO-relevant."
+        },
+        {
+          "niche": "Physiotherapie-Praxen",
+          "reason": "Klarer Onboarding-Flow, Patienten-Anamnese, geringe digitale Reife = Chance."
+        },
+        {
+          "niche": "IT-Dienstleister mit Support-Tickets",
+          "reason": "Hohe Ticket-Frequenz, repetitive FAQ, Slack/Teams-Integration naheliegend."
+        }
+      ],
+      "recommended_niche": "Anwaltskanzleien mit Mandanten-Onboarding",
+      "reason": "Strukturierter Intake-Prozess, hohe Zahlungsbereitschaft, DSGVO-relevant."
+    },
+    "revenue_reality": {
+      "pricing_assumption": "49€/Monat",
+      "monthly_price": 49,
+      "break_even_target": "1000€/Monat",
+      "customers_needed": 21,
+      "scenarios": {
+        "starter": {
+          "customers": 5,
+          "revenue": 245
+        },
+        "realistic": {
+          "customers": 20,
+          "revenue": 980
+        },
+        "strong": {
+          "customers": 50,
+          "revenue": 2450
+        }
+      },
+      "explanation": "21 Kunden bei 49€/Monat sind über 3-6 Monate aufbaubar. Fokus: Content-Marketing + direkter Outreach an HR-Leads."
+    },
+    "builder_fit_score": 3,
+    "part_time_fit_score": 5,
+    "buyer_specificity_score": 4,
+    "fit_reasons": [
+      "Perfekt für Teilzeit-Sessions",
+      "Klarer Zielkunde identifiziert",
+      "Starke Marktsignale",
+      "Passt zu Fokus: Bot Platform"
+    ],
+    "time_feasibility": {
+      "total_hours": "10–15 Stunden",
+      "total_hours_num": 15,
+      "weekly_hours": 7,
+      "weekly_schedule": {
+        "dienstag_abend": "1.5h",
+        "donnerstag_abend": "1.5h",
+        "samstag": "3–4h"
+      },
+      "explanation": "Bei ~7h pro Woche neben deinem 35h-Job ist das MVP in 2 Wochen realistisch. Jede Session ist in sich abgeschlossen — du kannst nach 1.5h aufhören und nächste Woche weitermachen. Der Schlüssel: Kleine, abgeschlossene Arbeitspakete statt langer Focus-Sessions."
+    },
+    "weekend_plan": {
+      "week_1": {
+        "title": "Validierung",
+        "hours": "5–7h",
+        "tasks": [
+          "Problem-Recherche: 3 HR-Leads identifizieren und ansprechen",
+          "Konkurrenzanalyse: Top-3 Alternativen und ihre Schwächen dokumentieren",
+          "Baue einen minimalen Slack-Bot der auf /frage reagiert und eine FAQ aus Markdown beantwortet",
+          "Entscheidung: Weiterbauen oder Pivot?"
+        ]
+      },
+      "week_2": {
+        "title": "MVP Core",
+        "hours": "8–10h",
+        "tasks": [
+          "Füge RAG über Team-Dokumente hinzu (Markdown/PDF-Ingestion)",
+          "Teste mit einem echten Team (5 Personen)",
+          "Build Artifact: Bot Prototype",
+          "Ersten Testlauf mit echten Daten"
+        ]
+      },
+      "week_3": {
+        "title": "Deploy + erste Nutzer",
+        "hours": "6–8h",
+        "tasks": [
+          "Deploy auf Hetzner/Vercel/Railway",
+          "Einfache Landing Page oder README",
+          "3 HR-Leads zum Testen einladen",
+          "Feedback sammeln, kritische Bugs fixen"
+        ]
+      },
+      "total_hours": "19–25h"
+    },
+    "artifact": {
+      "type": "bot_prototype",
+      "type_label": "Bot Prototype",
+      "description": "Slack-Bot: /frage Befehl → durchsucht Team-Dokumente per RAG → antwortet mit Quellenlinks."
+    },
+    "next_actions": {
+      "step_30_min": "Baue einen minimalen Slack-Bot der auf /frage reagiert und eine FAQ aus Markdown beantwortet",
+      "step_2_hours": "Füge RAG über Team-Dokumente hinzu (Markdown/PDF-Ingestion)",
+      "step_6_hours": "Teste mit einem echten Team (5 Personen), sammle Feedback, füge Admin-Commands hinzu",
+      "artifact_type": "bot_prototype",
+      "artifact_description": "Slack-Bot: /frage Befehl → durchsucht Team-Dokumente per RAG → antwortet mit Quellenlinks."
+    },
+    "risks": [
+      "Slack/Discord ändern Bot-APIs",
+      "Intercom/Zendesk integrieren eigene KI",
+      "Bot-Fatigue bei Nutzern"
+    ],
+    "evidence_links": [
+      "https://www.theverge.com/2023/3/14/23639928/microsoft-bing-chatbot-ai-gpt-4-llm",
+      "https://openai.com/index/descript",
+      "https://huggingface.co/blog/lerobot-release-v050",
+      "https://huggingface.co/blog/nxp/bringing-robotics-ai-to-embedded-platforms",
+      "https://techcrunch.com/2026/03/22/do-you-want-to-build-a-robot-snowman",
+      "https://techcrunch.com/video/what-happened-at-nvidia-gtc-nemoclaw-robot-olaf-and-a-1-trillion-bet",
+      "https://techcrunch.com/podcast/nvidia-has-an-openclaw-strategy-do-you",
+      "https://techcrunch.com/2026/03/20/the-best-ai-investment-might-be-in-energy-tech"
+    ],
+    "final_score": 2033.9,
+    "signal_strength": 43.1,
+    "market_score": 4,
+    "mvp_weeks": 2,
+    "why_now": "The Bing AI bot has been secretly running GPT-4 (HackerNews AI); How Descript enables multilingual video dubbing at scale (OpenAI Blog); LeRobot v0.5.0: Scaling Every Dimension (Hugging Face Blog)"
+  },
+  {
+    "rank": 2,
+    "name": "AI Intake Bot",
+    "opportunity_id": "6aa9ba35",
+    "category": "bot_platform",
+    "category_label": "Bot Platform",
+    "problem": "Onboarding-Prozesse und Intake-Formulare sind starr — Kunden brechen ab oder geben schlechte Daten",
+    "target_buyer": "Agenturen, Kanzleien, Berater mit Kunden-Onboarding-Prozess",
+    "proposed_solution": "Conversational AI-Bot der Intake-Prozesse führt: Fragen stellt, validiert, nachfragt, strukturierte Daten liefert.",
+    "pricing_anchor": "39-79€/Monat",
+    "revenue_potential": "MEDIUM",
+    "revenue_label": "500–3.000€/Monat",
+    "revenue_model": "subscription",
+    "niche_refinement": {
+      "needs_refinement": false,
+      "recommended_niche": "Agenturen",
+      "possible_niches": [],
+      "reason": "Zielkunde ist bereits spezifisch genug."
+    },
+    "revenue_reality": {
+      "pricing_assumption": "39€/Monat",
+      "monthly_price": 39,
+      "break_even_target": "1000€/Monat",
+      "customers_needed": 26,
+      "scenarios": {
+        "starter": {
+          "customers": 5,
+          "revenue": 195
+        },
+        "realistic": {
+          "customers": 20,
+          "revenue": 780
+        },
+        "strong": {
+          "customers": 50,
+          "revenue": 1950
+        }
+      },
+      "explanation": "26 Kunden bei 39€/Monat sind über 3-6 Monate aufbaubar. Fokus: Content-Marketing + direkter Outreach an Agenturen."
+    },
+    "builder_fit_score": 3,
+    "part_time_fit_score": 5,
+    "buyer_specificity_score": 4,
+    "fit_reasons": [
+      "Perfekt für Teilzeit-Sessions",
+      "Klarer Zielkunde identifiziert",
+      "Starke Marktsignale",
+      "Passt zu Fokus: Bot Platform"
+    ],
+    "time_feasibility": {
+      "total_hours": "10–15 Stunden",
+      "total_hours_num": 15,
+      "weekly_hours": 7,
+      "weekly_schedule": {
+        "dienstag_abend": "1.5h",
+        "donnerstag_abend": "1.5h",
+        "samstag": "3–4h"
+      },
+      "explanation": "Bei ~7h pro Woche neben deinem 35h-Job ist das MVP in 2 Wochen realistisch. Jede Session ist in sich abgeschlossen — du kannst nach 1.5h aufhören und nächste Woche weitermachen. Der Schlüssel: Kleine, abgeschlossene Arbeitspakete statt langer Focus-Sessions."
+    },
+    "weekend_plan": {
+      "week_1": {
+        "title": "Validierung",
+        "hours": "5–7h",
+        "tasks": [
+          "Problem-Recherche: 3 Agenturen identifizieren und ansprechen",
+          "Konkurrenzanalyse: Top-3 Alternativen und ihre Schwächen dokumentieren",
+          "Definiere einen konkreten Intake-Prozess (z.B. Mandanten-Aufnahme bei Anwalt) und schreibe den Frage-Flow",
+          "Entscheidung: Weiterbauen oder Pivot?"
+        ]
+      },
+      "week_2": {
+        "title": "MVP Core",
+        "hours": "8–10h",
+        "tasks": [
+          "Baue einen Web-Chat der den Flow conversational durchführt und JSON-Output generiert",
+          "Füge WhatsApp/Telegram-Integration und Admin-Dashboard für Flow-Konfiguration hinzu",
+          "Build Artifact: Bot Prototype",
+          "Ersten Testlauf mit echten Daten"
+        ]
+      },
+      "week_3": {
+        "title": "Deploy + erste Nutzer",
+        "hours": "6–8h",
+        "tasks": [
+          "Deploy auf Hetzner/Vercel/Railway",
+          "Einfache Landing Page oder README",
+          "3 Agenturen zum Testen einladen",
+          "Feedback sammeln, kritische Bugs fixen"
+        ]
+      },
+      "total_hours": "19–25h"
+    },
+    "artifact": {
+      "type": "bot_prototype",
+      "type_label": "Bot Prototype",
+      "description": "Web-Chat: Conversational Intake-Flow mit Validierung, Rückfragen und JSON-Output."
+    },
+    "next_actions": {
+      "step_30_min": "Definiere einen konkreten Intake-Prozess (z.B. Mandanten-Aufnahme bei Anwalt) und schreibe den Frage-Flow",
+      "step_2_hours": "Baue einen Web-Chat der den Flow conversational durchführt und JSON-Output generiert",
+      "step_6_hours": "Füge WhatsApp/Telegram-Integration und Admin-Dashboard für Flow-Konfiguration hinzu",
+      "artifact_type": "bot_prototype",
+      "artifact_description": "Web-Chat: Conversational Intake-Flow mit Validierung, Rückfragen und JSON-Output."
+    },
+    "risks": [
+      "Typeform/Tally haben KI-Features",
+      "Nutzer-Akzeptanz von Bot-basierten Formularen",
+      "Domain-spezifische Fragen brauchen Konfiguration"
+    ],
+    "evidence_links": [
+      "https://inflection.ai/inflection-1",
+      "https://llm-timeline.com/",
+      "https://news.ycombinator.com/item?id=36865625",
+      "https://openai.com/index/equipping-workers-with-insights-about-compensation",
+      "https://openai.com/index/new-ways-to-learn-math-and-science-in-chatgpt",
+      "https://openai.com/index/openai-to-acquire-promptfoo",
+      "https://blog.google/products-and-platforms/products/workspace/gemini-google-sheets-state-of-the-art",
+      "https://huggingface.co/blog/nxp/bringing-robotics-ai-to-embedded-platforms"
+    ],
+    "final_score": 1936.4,
+    "signal_strength": 41,
+    "market_score": 4,
+    "mvp_weeks": 2,
+    "why_now": "Pi.ai LLM Outperforms Palm/GPT3.5 (HackerNews AI); Show HN: AI Timeline – 171 LLMs from Transformer (2017) to GPT-5.3 (2026) (HackerNews AI); Launch HN: Roundtable (YC S23) – Using AI to Simulate Surveys (HackerNews AI)"
+  }
+]

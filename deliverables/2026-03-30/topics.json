@@ -1,0 +1,2340 @@
+[
+  {
+    "topic_id": "54eb4ba2",
+    "topic_title": "Chatbots & Conversational AI",
+    "opp_category": "bot_platform",
+    "summary": [
+      "MLC-LLM: GPT/Llama on consumer-class GPUs and phones",
+      "Show HN: AI Timeline – 171 LLMs from Transformer (2017) to GPT-5.3 (2026)",
+      "RFC: Banning \"AI\"-backed (LLM/GPT/whatever) contributions to Gentoo",
+      "You can now transfer your chats and personal information from other chatbots directly into Gemini: Google is launching \"switching tools\" that, just as it sounds, will make it easier for users of other chatbots to switch"
+    ],
+    "signal_strength": 82.5,
+    "evidence_links": [
+      "https://openai.com/index/teen-safety-policies-gpt-oss-safeguard",
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live",
+      "https://blog.google/innovation-and-ai/technology/developers-tools/lyria-3-developers",
+      "https://blog.google/products-and-platforms/products/search/personal-intelligence-expansion",
+      "https://blog.google/products-and-platforms/products/workspace/gemini-google-sheets-state-of-the-art",
+      "https://techcrunch.com/2026/03/28/anthropics-claude-popularity-with-paying-consumers-is-skyrocketing",
+      "https://techcrunch.com/2026/03/26/you-can-now-transfer-your-chats-and-personal-information-from-other-chatbots-directly-into-gemini",
+      "https://www.mail-archive.com/gentoo-dev@lists.gentoo.org/msg99042.html"
+    ],
+    "representative_items": [
+      {
+        "title": "MLC-LLM: GPT/Llama on consumer-class GPUs and phones",
+        "source": "HackerNews AI",
+        "url": "https://github.com/mlc-ai/mlc-llm",
+        "published_at": "2023-04-30T15:30:17Z"
+      },
+      {
+        "title": "Show HN: AI Timeline – 171 LLMs from Transformer (2017) to GPT-5.3 (2026)",
+        "source": "HackerNews AI",
+        "url": "https://llm-timeline.com/",
+        "published_at": "2026-02-23T09:07:44Z"
+      },
+      {
+        "title": "RFC: Banning \"AI\"-backed (LLM/GPT/whatever) contributions to Gentoo",
+        "source": "HackerNews AI",
+        "url": "https://www.mail-archive.com/gentoo-dev@lists.gentoo.org/msg99042.html",
+        "published_at": "2024-04-15T09:30:25Z"
+      }
+    ],
+    "categories": [
+      "ai_news",
+      "tech_trends"
+    ],
+    "sources": [
+      "OpenAI Blog",
+      "Google AI Blog",
+      "TechCrunch AI",
+      "HackerNews AI",
+      "HackerNews Show AI"
+    ],
+    "item_count": 17,
+    "rank": 1
+  },
+  {
+    "topic_id": "4f4a1096",
+    "topic_title": "Data & Analytics AI",
+    "opp_category": "automation_system",
+    "summary": [
+      "OpenBB-finance/OpenBB: Financial data platform for analysts, quants and AI agents.",
+      "Show HN: Natural Language to SQL \"Text-to-SQL\" API",
+      "VCs are betting billions on AI’s next wave, so why is OpenAI killing Sora?: When an 82-year-old Kentucky woman was offered $26 million from an AI company that wanted to build a data center on her ",
+      "Show HN: Vibe scrape with AI Web Agents, prompt => get data [video]"
+    ],
+    "signal_strength": 71.5,
+    "evidence_links": [
+      "https://openai.com/index/why-codex-security-doesnt-include-sast",
+      "https://techcrunch.com/2026/03/29/why-openai-really-shut-down-sora",
+      "https://techcrunch.com/podcast/vcs-are-betting-billions-on-ais-next-wave-so-why-is-openai-killing-sora",
+      "https://techcrunch.com/video/openai-shuts-down-sora-while-meta-gets-shut-out-in-court",
+      "https://news.mit.edu/2026/ai-system-keeps-warehouse-robot-traffic-running-smoothly-0326",
+      "https://www.dataherald.com/news/introducing-dhai",
+      "https://twitter.com/rhuncapital/status/1910819028056379413",
+      "https://www.youtube.com/watch?v=ggLDvZKuBlU"
+    ],
+    "representative_items": [
+      {
+        "title": "OpenBB-finance/OpenBB",
+        "source": "GitHub Trending AI",
+        "url": "https://github.com/OpenBB-finance/OpenBB",
+        "published_at": null
+      },
+      {
+        "title": "Show HN: Natural Language to SQL \"Text-to-SQL\" API",
+        "source": "HackerNews AI",
+        "url": "https://www.dataherald.com/news/introducing-dhai",
+        "published_at": "2024-02-14T19:03:55Z"
+      },
+      {
+        "title": "VCs are betting billions on AI’s next wave, so why is OpenAI killing Sora?",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/podcast/vcs-are-betting-billions-on-ais-next-wave-so-why-is-openai-killing-sora",
+        "published_at": "Fri, 27 Mar 2026 15:40:19 +0000"
+      }
+    ],
+    "categories": [
+      "ai_news",
+      "tech_trends",
+      "business_signals"
+    ],
+    "sources": [
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "MIT AI News",
+      "HackerNews AI",
+      "HackerNews Show AI",
+      "IndieHackers",
+      "GitHub Trending AI"
+    ],
+    "item_count": 9,
+    "rank": 2
+  },
+  {
+    "topic_id": "722264e9",
+    "topic_title": "Open Source AI",
+    "opp_category": "other",
+    "summary": [
+      "upscayl/upscayl: 🆙 Upscayl - #1 Free and Open Source AI Image Upscaler for Linux, MacOS and Windows.",
+      "feast-dev/feast: The Open Source Feature Store for AI/ML",
+      "How our open-source AI model SpeciesNet is helping to promote wildlife conservation: An overview of SpeciesNet, our open-source AI model that is helping people around the world protect and conserve wildlif",
+      "Show HN: Roxlit – Open-source launcher that connects AI tools to Roblox Studio"
+    ],
+    "signal_strength": 61,
+    "evidence_links": [
+      "https://blog.google/company-news/outreach-and-initiatives/sustainability/speciesnet-open-source-ai-wildlife",
+      "https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026",
+      "https://huggingface.co/blog/async-rl-training-landscape",
+      "https://github.com/swirlai/swirl-search",
+      "https://github.com/Roxlit/installer",
+      "https://supercheck.io/",
+      "https://github.com/feast-dev/feast",
+      "https://github.com/upscayl/upscayl"
+    ],
+    "representative_items": [
+      {
+        "title": "upscayl/upscayl",
+        "source": "GitHub Trending AI",
+        "url": "https://github.com/upscayl/upscayl",
+        "published_at": null
+      },
+      {
+        "title": "feast-dev/feast",
+        "source": "GitHub Trending AI",
+        "url": "https://github.com/feast-dev/feast",
+        "published_at": null
+      },
+      {
+        "title": "How our open-source AI model SpeciesNet is helping to promote wildlife conservation",
+        "source": "Google AI Blog",
+        "url": "https://blog.google/company-news/outreach-and-initiatives/sustainability/speciesnet-open-source-ai-wildlife",
+        "published_at": "Fri, 06 Mar 2026 18:00:00 +0000"
+      }
+    ],
+    "categories": [
+      "ai_news",
+      "tech_trends",
+      "business_signals"
+    ],
+    "sources": [
+      "Google AI Blog",
+      "Hugging Face Blog",
+      "HackerNews AI",
+      "HackerNews Show AI",
+      "IndieHackers",
+      "GitHub Trending AI"
+    ],
+    "item_count": 8,
+    "rank": 3
+  },
+  {
+    "topic_id": "321894ca",
+    "topic_title": "AI Produkte & SaaS",
+    "opp_category": "micro_saas",
+    "summary": [
+      "Launch HN: Patterns (YC S21) – A much faster way to build and deploy data apps",
+      "Launch HN: Lume (YC W23) – Generate custom data integrations with AI",
+      "Launch HN: Roundtable (YC S23) – Using AI to Simulate Surveys",
+      "Show HN: SvelteKit SaaS Boilerplate to help launch your product fast"
+    ],
+    "signal_strength": 59,
+    "evidence_links": [
+      "https://techcrunch.com/2026/03/26/openai-abandons-yet-another-side-quest-chatgpts-erotic-mode",
+      "https://news.ycombinator.com/item?id=43897764",
+      "https://news.ycombinator.com/item?id=36865625",
+      "https://glad-ia-tor.com/",
+      "https://news.ycombinator.com/item?id=43984093",
+      "https://www.herebeshovels.com/",
+      "https://launchleopard.com/",
+      "https://landmarkai.dev/"
+    ],
+    "representative_items": [
+      {
+        "title": "Launch HN: Patterns (YC S21) – A much faster way to build and deploy data apps",
+        "source": "IndieHackers",
+        "url": "https://news.ycombinator.com/item?id=33801314",
+        "published_at": "2022-11-30T14:37:36Z"
+      },
+      {
+        "title": "Launch HN: Lume (YC W23) – Generate custom data integrations with AI",
+        "source": "IndieHackers",
+        "url": "https://news.ycombinator.com/item?id=35232171",
+        "published_at": "2023-03-20T14:40:35Z"
+      },
+      {
+        "title": "Launch HN: Roundtable (YC S23) – Using AI to Simulate Surveys",
+        "source": "HackerNews AI",
+        "url": "https://news.ycombinator.com/item?id=36865625",
+        "published_at": "2023-07-25T17:07:12Z"
+      }
+    ],
+    "categories": [
+      "ai_news",
+      "tech_trends",
+      "business_signals"
+    ],
+    "sources": [
+      "TechCrunch AI",
+      "HackerNews AI",
+      "HackerNews Show AI",
+      "IndieHackers"
+    ],
+    "item_count": 11,
+    "rank": 4
+  },
+  {
+    "topic_id": "4840ed7f",
+    "topic_title": "AI Agents & Autonomie",
+    "opp_category": "automation_system",
+    "summary": [
+      "Show HN: Voice AI is wild now. I vibe coded this email agent in 24 hours",
+      "Ask HN: Is a JVM/CDP based browser agent stack fundamentally a bad idea?",
+      "Show HN: Open-sourced AI Agent runtime (YAML-first)",
+      "Show HN: Slot.ai – Goal-Driven AI Phone Call Agent"
+    ],
+    "signal_strength": 43.5,
+    "evidence_links": [
+      "https://openai.com/index/safety-bug-bounty",
+      "https://openai.com/index/powering-product-discovery-in-chatgpt",
+      "https://openai.com/index/introducing-gpt-5-4-mini-and-nano",
+      "https://openai.com/index/rakuten",
+      "https://huggingface.co/blog/Hcompany/holotron-12b",
+      "https://github.com/NikoSokratous/agentctl",
+      "https://www.morningcommute.app/",
+      "https://news.ycombinator.com/item?id=46216634"
+    ],
+    "representative_items": [
+      {
+        "title": "Show HN: Voice AI is wild now. I vibe coded this email agent in 24 hours",
+        "source": "HackerNews AI",
+        "url": "https://www.morningcommute.app/",
+        "published_at": "2025-06-03T16:00:13Z"
+      },
+      {
+        "title": "Ask HN: Is a JVM/CDP based browser agent stack fundamentally a bad idea?",
+        "source": "IndieHackers",
+        "url": "https://news.ycombinator.com/item?id=46216634",
+        "published_at": "2025-12-10T11:40:00Z"
+      },
+      {
+        "title": "Show HN: Open-sourced AI Agent runtime (YAML-first)",
+        "source": "HackerNews AI",
+        "url": "https://github.com/NikoSokratous/agentctl",
+        "published_at": "2026-03-03T13:31:20Z"
+      }
+    ],
+    "categories": [
+      "ai_news",
+      "tech_trends",
+      "business_signals"
+    ],
+    "sources": [
+      "OpenAI Blog",
+      "Hugging Face Blog",
+      "HackerNews AI",
+      "IndieHackers"
+    ],
+    "item_count": 9,
+    "rank": 5
+  },
+  {
+    "topic_id": "63071f0b",
+    "topic_title": "AI in Forschung & Wissenschaft",
+    "opp_category": "other",
+    "summary": [
+      "MIT-IBM Watson AI Lab seed to signal: Amplifying early-career faculty impact: Academia-industry relationship is an early-stage accelerator, supporting professional progress and research.",
+      "Stanford study outlines dangers of asking AI chatbots for personal advice: While there’s been plenty of debate about AI sycophancy, a new study by Stanford computer scientists attempts to measure",
+      "Advancing international trade research and finding community: Sojun Park, a postdoc at the Center for International Studies, has learned much from his research on intellectual proper",
+      "Equipping workers with insights about compensation: New research shows Americans send nearly 3 million daily messages to ChatGPT asking about compensation and earnings, hel"
+    ],
+    "signal_strength": 28.5,
+    "evidence_links": [
+      "https://openai.com/index/equipping-workers-with-insights-about-compensation",
+      "https://techcrunch.com/2026/03/28/stanford-study-outlines-dangers-of-asking-ai-chatbots-for-personal-advice",
+      "https://news.mit.edu/2026/sojun-park-advancing-international-trade-research-finding-community-0323",
+      "https://news.mit.edu/2026/algorithms-life-learning-killian-lecture-dimitris-bertsimas-0323",
+      "https://news.mit.edu/2026/mit-ibm-watson-ai-lab-seed-signal-amplifying-early-career-faculty-impact-0317"
+    ],
+    "representative_items": [
+      {
+        "title": "MIT-IBM Watson AI Lab seed to signal: Amplifying early-career faculty impact",
+        "source": "MIT AI News",
+        "url": "https://news.mit.edu/2026/mit-ibm-watson-ai-lab-seed-signal-amplifying-early-career-faculty-impact-0317",
+        "published_at": "Tue, 17 Mar 2026 16:35:44 -0400"
+      },
+      {
+        "title": "Stanford study outlines dangers of asking AI chatbots for personal advice",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/03/28/stanford-study-outlines-dangers-of-asking-ai-chatbots-for-personal-advice",
+        "published_at": "Sat, 28 Mar 2026 20:45:54 +0000"
+      },
+      {
+        "title": "Advancing international trade research and finding community",
+        "source": "MIT AI News",
+        "url": "https://news.mit.edu/2026/sojun-park-advancing-international-trade-research-finding-community-0323",
+        "published_at": "Mon, 23 Mar 2026 17:00:00 -0400"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "OpenAI Blog",
+      "TechCrunch AI",
+      "MIT AI News"
+    ],
+    "item_count": 5,
+    "rank": 6
+  },
+  {
+    "topic_id": "4560d908",
+    "topic_title": "Video & Multimedia AI",
+    "opp_category": "other",
+    "summary": [
+      "Show HN: I'm launching an AI tool to summarize YouTube Video and Comments",
+      "Sora’s shutdown could be a reality check moment for AI video: Is this just normal corporate strategy, or are we about to see a broader pullback on AI-generated video?",
+      "Seeing sounds: Mariano Salcedo ’25, a master’s student in the new Music Technology and Computation Graduate Program, is designing an AI"
+    ],
+    "signal_strength": 22.6,
+    "evidence_links": [
+      "https://techcrunch.com/2026/03/29/soras-shutdown-could-be-a-reality-check-moment-for-ai-video",
+      "https://news.mit.edu/2026/seeing-sounds-mariano-salcedo-0326",
+      "https://videomind.vercel.app/"
+    ],
+    "representative_items": [
+      {
+        "title": "Show HN: I'm launching an AI tool to summarize YouTube Video and Comments",
+        "source": "HackerNews Show AI",
+        "url": "https://videomind.vercel.app/",
+        "published_at": "2023-04-08T22:14:42Z"
+      },
+      {
+        "title": "Sora’s shutdown could be a reality check moment for AI video",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/03/29/soras-shutdown-could-be-a-reality-check-moment-for-ai-video",
+        "published_at": "Sun, 29 Mar 2026 16:30:00 +0000"
+      },
+      {
+        "title": "Seeing sounds",
+        "source": "MIT AI News",
+        "url": "https://news.mit.edu/2026/seeing-sounds-mariano-salcedo-0326",
+        "published_at": "Thu, 26 Mar 2026 16:45:00 -0400"
+      }
+    ],
+    "categories": [
+      "ai_news",
+      "tech_trends"
+    ],
+    "sources": [
+      "TechCrunch AI",
+      "MIT AI News",
+      "HackerNews Show AI"
+    ],
+    "item_count": 3,
+    "rank": 7
+  },
+  {
+    "topic_id": "37f0568d",
+    "topic_title": "AI Coding & Dev Tools",
+    "opp_category": "micro_saas",
+    "summary": [
+      "Show HN: Superpowered (YC W21) – The AI copilot for your meetings",
+      "Our latest investment in open source security for the AI era: Google is making new investments, building new tools and developing code security to improve open source security.",
+      "How we monitor internal coding agents for misalignment: How OpenAI uses chain-of-thought monitoring to study misalignment in internal coding agents—analyzing real-world deploym"
+    ],
+    "signal_strength": 21.8,
+    "evidence_links": [
+      "https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment",
+      "https://blog.google/innovation-and-ai/technology/safety-security/ai-powered-open-source-security",
+      "https://superpowered.me/"
+    ],
+    "representative_items": [
+      {
+        "title": "Show HN: Superpowered (YC W21) – The AI copilot for your meetings",
+        "source": "HackerNews Show AI",
+        "url": "https://superpowered.me/",
+        "published_at": "2023-06-14T12:59:56Z"
+      },
+      {
+        "title": "Our latest investment in open source security for the AI era",
+        "source": "Google AI Blog",
+        "url": "https://blog.google/innovation-and-ai/technology/safety-security/ai-powered-open-source-security",
+        "published_at": "Tue, 17 Mar 2026 16:00:00 +0000"
+      },
+      {
+        "title": "How we monitor internal coding agents for misalignment",
+        "source": "OpenAI Blog",
+        "url": "https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment",
+        "published_at": "Thu, 19 Mar 2026 10:00:00 GMT"
+      }
+    ],
+    "categories": [
+      "ai_news",
+      "tech_trends"
+    ],
+    "sources": [
+      "OpenAI Blog",
+      "Google AI Blog",
+      "HackerNews Show AI"
+    ],
+    "item_count": 3,
+    "rank": 8
+  },
+  {
+    "topic_id": "47d8b15f",
+    "topic_title": "AI Bots & Integrationen",
+    "opp_category": "bot_platform",
+    "summary": [
+      "The Bing AI bot has been secretly running GPT-4",
+      "I Trained an AI bot to find out how to run a $100M SaaS business"
+    ],
+    "signal_strength": 18.8,
+    "evidence_links": [
+      "https://www.theverge.com/2023/3/14/23639928/microsoft-bing-chatbot-ai-gpt-4-llm",
+      "https://news.ycombinator.com/item?id=41872315"
+    ],
+    "representative_items": [
+      {
+        "title": "The Bing AI bot has been secretly running GPT-4",
+        "source": "HackerNews AI",
+        "url": "https://www.theverge.com/2023/3/14/23639928/microsoft-bing-chatbot-ai-gpt-4-llm",
+        "published_at": "2023-03-14T18:10:59Z"
+      },
+      {
+        "title": "I Trained an AI bot to find out how to run a $100M SaaS business",
+        "source": "IndieHackers",
+        "url": "https://news.ycombinator.com/item?id=41872315",
+        "published_at": "2024-10-17T18:30:06Z"
+      }
+    ],
+    "categories": [
+      "tech_trends",
+      "business_signals"
+    ],
+    "sources": [
+      "HackerNews AI",
+      "IndieHackers"
+    ],
+    "item_count": 2,
+    "rank": 9
+  },
+  {
+    "topic_id": "3bffe8f3",
+    "topic_title": "NLP & Text AI",
+    "opp_category": "micro_saas",
+    "summary": [
+      "A better method for identifying overconfident large language models: This new metric for measuring uncertainty could flag hallucinations and help users know whether to trust an AI model.",
+      "Ulysses Sequence Parallelism: Training with Million-Token Contexts",
+      "PRX Part 3 — Training a Text-to-Image Model in 24h!"
+    ],
+    "signal_strength": 17,
+    "evidence_links": [
+      "https://huggingface.co/blog/ulysses-sp",
+      "https://huggingface.co/blog/Photoroom/prx-part3",
+      "https://news.mit.edu/2026/better-method-identifying-overconfident-large-language-models-0319"
+    ],
+    "representative_items": [
+      {
+        "title": "A better method for identifying overconfident large language models",
+        "source": "MIT AI News",
+        "url": "https://news.mit.edu/2026/better-method-identifying-overconfident-large-language-models-0319",
+        "published_at": "Thu, 19 Mar 2026 00:00:00 -0400"
+      },
+      {
+        "title": "Ulysses Sequence Parallelism: Training with Million-Token Contexts",
+        "source": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/ulysses-sp",
+        "published_at": "Mon, 09 Mar 2026 00:00:00 GMT"
+      },
+      {
+        "title": "PRX Part 3 — Training a Text-to-Image Model in 24h!",
+        "source": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/Photoroom/prx-part3",
+        "published_at": "Tue, 03 Mar 2026 16:50:49 GMT"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "Hugging Face Blog",
+      "MIT AI News"
+    ],
+    "item_count": 3,
+    "rank": 10
+  },
+  {
+    "topic_id": "59b3d31b",
+    "topic_title": "Image & Vision AI",
+    "opp_category": "other",
+    "summary": [
+      "Introducing Modular Diffusers - Composable Building Blocks for Diffusion Pipelines",
+      "Generative AI improves a wireless vision system that sees through obstructions: With this new technique, a robot could more accurately detect hidden objects or understand an indoor scene using reflect",
+      "Augmenting citizen science with computer vision for fish monitoring: MIT Sea Grant works with the Woodwell Climate Research Center and other collaborators to demonstrate a deep learning-bas"
+    ],
+    "signal_strength": 17,
+    "evidence_links": [
+      "https://huggingface.co/blog/modular-diffusers",
+      "https://news.mit.edu/2026/augmenting-citizen-science-computer-vision-fish-monitoring-0325",
+      "https://news.mit.edu/2026/generative-ai-improves-wireless-vision-system-sees-through-obstructions-0319"
+    ],
+    "representative_items": [
+      {
+        "title": "Introducing Modular Diffusers - Composable Building Blocks for Diffusion Pipelines",
+        "source": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/modular-diffusers",
+        "published_at": "Thu, 05 Mar 2026 00:00:00 GMT"
+      },
+      {
+        "title": "Generative AI improves a wireless vision system that sees through obstructions",
+        "source": "MIT AI News",
+        "url": "https://news.mit.edu/2026/generative-ai-improves-wireless-vision-system-sees-through-obstructions-0319",
+        "published_at": "Thu, 19 Mar 2026 00:00:00 -0400"
+      },
+      {
+        "title": "Augmenting citizen science with computer vision for fish monitoring",
+        "source": "MIT AI News",
+        "url": "https://news.mit.edu/2026/augmenting-citizen-science-computer-vision-fish-monitoring-0325",
+        "published_at": "Wed, 25 Mar 2026 17:00:00 -0400"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "Hugging Face Blog",
+      "MIT AI News"
+    ],
+    "item_count": 3,
+    "rank": 11
+  },
+  {
+    "topic_id": "3e096994",
+    "topic_title": "Postgres.new: In-browser Postgres with an AI interface",
+    "opp_category": "other",
+    "summary": [
+      "Postgres.new: In-browser Postgres with an AI interface"
+    ],
+    "signal_strength": 17,
+    "evidence_links": [
+      "https://supabase.com/blog/postgres-new"
+    ],
+    "representative_items": [
+      {
+        "title": "Postgres.new: In-browser Postgres with an AI interface",
+        "source": "HackerNews AI",
+        "url": "https://supabase.com/blog/postgres-new",
+        "published_at": "2024-08-12T13:43:30Z"
+      }
+    ],
+    "categories": [
+      "tech_trends"
+    ],
+    "sources": [
+      "HackerNews AI"
+    ],
+    "item_count": 1,
+    "rank": 12
+  },
+  {
+    "topic_id": "2f95b643",
+    "topic_title": "Pi.ai LLM Outperforms Palm/GPT3.5",
+    "opp_category": "other",
+    "summary": [
+      "Pi.ai LLM Outperforms Palm/GPT3.5"
+    ],
+    "signal_strength": 14.6,
+    "evidence_links": [
+      "https://inflection.ai/inflection-1"
+    ],
+    "representative_items": [
+      {
+        "title": "Pi.ai LLM Outperforms Palm/GPT3.5",
+        "source": "HackerNews AI",
+        "url": "https://inflection.ai/inflection-1",
+        "published_at": "2023-06-24T13:42:57Z"
+      }
+    ],
+    "categories": [
+      "tech_trends"
+    ],
+    "sources": [
+      "HackerNews AI"
+    ],
+    "item_count": 1,
+    "rank": 13
+  },
+  {
+    "topic_id": "59fedb8d",
+    "topic_title": "Local & Privacy AI",
+    "opp_category": "local_ai_tools",
+    "summary": [
+      "Show HN: Omnifact – Self-Hosted, Privacy-First AI Platform for Enterprise",
+      "GGML and llama.cpp join HF to ensure the long-term progress of Local AI"
+    ],
+    "signal_strength": 14.5,
+    "evidence_links": [
+      "https://huggingface.co/blog/ggml-joins-hf",
+      "https://news.ycombinator.com/item?id=41329407"
+    ],
+    "representative_items": [
+      {
+        "title": "Show HN: Omnifact – Self-Hosted, Privacy-First AI Platform for Enterprise",
+        "source": "IndieHackers",
+        "url": "https://news.ycombinator.com/item?id=41329407",
+        "published_at": "2024-08-23T14:37:57Z"
+      },
+      {
+        "title": "GGML and llama.cpp join HF to ensure the long-term progress of Local AI",
+        "source": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/ggml-joins-hf",
+        "published_at": "Fri, 20 Feb 2026 00:00:00 GMT"
+      }
+    ],
+    "categories": [
+      "ai_news",
+      "business_signals"
+    ],
+    "sources": [
+      "Hugging Face Blog",
+      "IndieHackers"
+    ],
+    "item_count": 2,
+    "rank": 14
+  },
+  {
+    "topic_id": "551333c5",
+    "topic_title": "Show HN: Dropbase AI – A Prompt-Based Python Web App Builder",
+    "opp_category": "other",
+    "summary": [
+      "Show HN: Dropbase AI – A Prompt-Based Python Web App Builder"
+    ],
+    "signal_strength": 14.1,
+    "evidence_links": [
+      "https://github.com/DropbaseHQ/dropbase"
+    ],
+    "representative_items": [
+      {
+        "title": "Show HN: Dropbase AI – A Prompt-Based Python Web App Builder",
+        "source": "HackerNews AI",
+        "url": "https://github.com/DropbaseHQ/dropbase",
+        "published_at": "2024-07-12T17:08:19Z"
+      }
+    ],
+    "categories": [
+      "tech_trends"
+    ],
+    "sources": [
+      "HackerNews AI"
+    ],
+    "item_count": 1,
+    "rank": 15
+  },
+  {
+    "topic_id": "0a49db5b",
+    "topic_title": "B2B Productivity & Tools",
+    "opp_category": "micro_saas",
+    "summary": [
+      "STADLER reshapes knowledge work at a 230-year-old company: Learn how STADLER uses ChatGPT to transform knowledge work, saving time and accelerating productivity across 650 employe",
+      "How to create “humble” AI : An MIT-led team is designing artificial intelligence systems for medical diagnosis that are more collaborative and forth"
+    ],
+    "signal_strength": 14,
+    "evidence_links": [
+      "https://openai.com/index/stadler",
+      "https://news.mit.edu/2026/creating-humble-ai-0324"
+    ],
+    "representative_items": [
+      {
+        "title": "STADLER reshapes knowledge work at a 230-year-old company",
+        "source": "OpenAI Blog",
+        "url": "https://openai.com/index/stadler",
+        "published_at": "Fri, 27 Mar 2026 22:00:00 GMT"
+      },
+      {
+        "title": "How to create “humble” AI ",
+        "source": "MIT AI News",
+        "url": "https://news.mit.edu/2026/creating-humble-ai-0324",
+        "published_at": "Tue, 24 Mar 2026 00:00:00 -0400"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "OpenAI Blog",
+      "MIT AI News"
+    ],
+    "item_count": 2,
+    "rank": 16
+  },
+  {
+    "topic_id": "27ee5900",
+    "topic_title": "Show HN: Marvin – build AI functions that use an LLM as a runtime",
+    "opp_category": "other",
+    "summary": [
+      "Show HN: Marvin – build AI functions that use an LLM as a runtime"
+    ],
+    "signal_strength": 13.4,
+    "evidence_links": [
+      "https://github.com/PrefectHQ/marvin"
+    ],
+    "representative_items": [
+      {
+        "title": "Show HN: Marvin – build AI functions that use an LLM as a runtime",
+        "source": "HackerNews AI",
+        "url": "https://github.com/PrefectHQ/marvin",
+        "published_at": "2023-03-30T02:04:39Z"
+      }
+    ],
+    "categories": [
+      "tech_trends"
+    ],
+    "sources": [
+      "HackerNews AI"
+    ],
+    "item_count": 1,
+    "rank": 17
+  },
+  {
+    "topic_id": "2da3e150",
+    "topic_title": "Ask HN: Resources to brush up from 'Intro to ML' to current LLMs/generative AI?",
+    "opp_category": "other",
+    "summary": [
+      "Ask HN: Resources to brush up from 'Intro to ML' to current LLMs/generative AI?",
+      "Ask HN: What are you building with the current wave of AI and LLMs?"
+    ],
+    "signal_strength": 11.7,
+    "evidence_links": [
+      "https://news.ycombinator.com/item?id=35207426",
+      "https://news.ycombinator.com/item?id=38320244"
+    ],
+    "representative_items": [
+      {
+        "title": "Ask HN: Resources to brush up from 'Intro to ML' to current LLMs/generative AI?",
+        "source": "HackerNews AI",
+        "url": "https://news.ycombinator.com/item?id=38320244",
+        "published_at": "2023-11-18T14:50:46Z"
+      },
+      {
+        "title": "Ask HN: What are you building with the current wave of AI and LLMs?",
+        "source": "HackerNews AI",
+        "url": "https://news.ycombinator.com/item?id=35207426",
+        "published_at": "2023-03-18T08:56:28Z"
+      }
+    ],
+    "categories": [
+      "tech_trends"
+    ],
+    "sources": [
+      "HackerNews AI"
+    ],
+    "item_count": 2,
+    "rank": 18
+  },
+  {
+    "topic_id": "7b3bcb3c",
+    "topic_title": "AI Sales & Marketing",
+    "opp_category": "micro_saas",
+    "summary": [
+      "Show HN: Drafting AI – Human-in-the-loop AI automation for ops teams' email",
+      "What tools are you using to manage sales, operations, and customers?"
+    ],
+    "signal_strength": 11.5,
+    "evidence_links": [
+      "https://getdrafting.com/",
+      "https://news.ycombinator.com/item?id=43736535"
+    ],
+    "representative_items": [
+      {
+        "title": "Show HN: Drafting AI – Human-in-the-loop AI automation for ops teams' email",
+        "source": "IndieHackers",
+        "url": "https://getdrafting.com/",
+        "published_at": "2024-11-26T16:23:50Z"
+      },
+      {
+        "title": "What tools are you using to manage sales, operations, and customers?",
+        "source": "IndieHackers",
+        "url": "https://news.ycombinator.com/item?id=43736535",
+        "published_at": "2025-04-19T14:09:12Z"
+      }
+    ],
+    "categories": [
+      "business_signals"
+    ],
+    "sources": [
+      "IndieHackers"
+    ],
+    "item_count": 2,
+    "rank": 19
+  },
+  {
+    "topic_id": "02ef3fc6",
+    "topic_title": "Show HN: AI-Less Hacker News",
+    "opp_category": "other",
+    "summary": [
+      "Show HN: AI-Less Hacker News"
+    ],
+    "signal_strength": 10.5,
+    "evidence_links": [
+      "https://save-buffer.github.io/no_ai"
+    ],
+    "representative_items": [
+      {
+        "title": "Show HN: AI-Less Hacker News",
+        "source": "HackerNews AI",
+        "url": "https://save-buffer.github.io/no_ai",
+        "published_at": "2023-04-05T18:54:53Z"
+      }
+    ],
+    "categories": [
+      "tech_trends"
+    ],
+    "sources": [
+      "HackerNews AI"
+    ],
+    "item_count": 1,
+    "rank": 20
+  },
+  {
+    "topic_id": "2d45b660",
+    "topic_title": "Show HN: We analyzed AI tool launches – here's why GTM breaks",
+    "opp_category": "other",
+    "summary": [
+      "Show HN: We analyzed AI tool launches – here's why GTM breaks",
+      "Show HN: TinTekka – AI tool roadmap for agencies"
+    ],
+    "signal_strength": 10.1,
+    "evidence_links": [
+      "https://news.ycombinator.com/item?id=46821933",
+      "https://tintekka.com/"
+    ],
+    "representative_items": [
+      {
+        "title": "Show HN: We analyzed AI tool launches – here's why GTM breaks",
+        "source": "HackerNews Show AI",
+        "url": "https://news.ycombinator.com/item?id=46821933",
+        "published_at": "2026-01-30T08:33:23Z"
+      },
+      {
+        "title": "Show HN: TinTekka – AI tool roadmap for agencies",
+        "source": "HackerNews Show AI",
+        "url": "https://tintekka.com/",
+        "published_at": "2025-12-14T18:55:10Z"
+      }
+    ],
+    "categories": [
+      "tech_trends"
+    ],
+    "sources": [
+      "HackerNews Show AI"
+    ],
+    "item_count": 2,
+    "rank": 21
+  },
+  {
+    "topic_id": "2f8c0540",
+    "topic_title": "AI Safety & Regulation",
+    "opp_category": "other",
+    "summary": [
+      "OpenAI Japan announces Japan Teen Safety Blueprint to put teen safety first: OpenAI Japan announces the Japan Teen Safety Blueprint, introducing stronger age protections, parental controls, and wel",
+      "Inside our approach to the Model Spec: Learn how OpenAI’s Model Spec serves as a public framework for model behavior, balancing safety, user freedom, and accou"
+    ],
+    "signal_strength": 10,
+    "evidence_links": [
+      "https://openai.com/index/our-approach-to-the-model-spec",
+      "https://openai.com/index/japan-teen-safety-blueprint"
+    ],
+    "representative_items": [
+      {
+        "title": "OpenAI Japan announces Japan Teen Safety Blueprint to put teen safety first",
+        "source": "OpenAI Blog",
+        "url": "https://openai.com/index/japan-teen-safety-blueprint",
+        "published_at": "Tue, 17 Mar 2026 10:00:00 GMT"
+      },
+      {
+        "title": "Inside our approach to the Model Spec",
+        "source": "OpenAI Blog",
+        "url": "https://openai.com/index/our-approach-to-the-model-spec",
+        "published_at": "Wed, 25 Mar 2026 10:00:00 GMT"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "OpenAI Blog"
+    ],
+    "item_count": 2,
+    "rank": 22
+  },
+  {
+    "topic_id": "2978e608",
+    "topic_title": "Helping disaster response teams turn AI into action across Asia",
+    "opp_category": "other",
+    "summary": [
+      "Helping disaster response teams turn AI into action across Asia: AI for Disaster Response in Asia: OpenAI Workshop with Gates Foundation"
+    ],
+    "signal_strength": 8.5,
+    "evidence_links": [
+      "https://openai.com/index/helping-disaster-response-teams-asia"
+    ],
+    "representative_items": [
+      {
+        "title": "Helping disaster response teams turn AI into action across Asia",
+        "source": "OpenAI Blog",
+        "url": "https://openai.com/index/helping-disaster-response-teams-asia",
+        "published_at": "Sun, 29 Mar 2026 22:15:00 GMT"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "OpenAI Blog"
+    ],
+    "item_count": 1,
+    "rank": 23
+  },
+  {
+    "topic_id": "13de9fbd",
+    "topic_title": "Bluesky leans into AI with Attie, an app for building custom feeds",
+    "opp_category": "other",
+    "summary": [
+      "Bluesky leans into AI with Attie, an app for building custom feeds: Bluesky’s new app Attie uses AI to help people build custom feeds the open social networking protocol atproto."
+    ],
+    "signal_strength": 8.5,
+    "evidence_links": [
+      "https://techcrunch.com/2026/03/28/bluesky-leans-into-ai-with-attie-an-app-for-building-custom-feeds"
+    ],
+    "representative_items": [
+      {
+        "title": "Bluesky leans into AI with Attie, an app for building custom feeds",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/03/28/bluesky-leans-into-ai-with-attie-an-app-for-building-custom-feeds",
+        "published_at": "Sat, 28 Mar 2026 23:00:00 +0000"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "TechCrunch AI"
+    ],
+    "item_count": 1,
+    "rank": 24
+  },
+  {
+    "topic_id": "1d4c2d4f",
+    "topic_title": "Elon Musk’s last co-founder reportedly leaves xAI",
+    "opp_category": "other",
+    "summary": [
+      "Elon Musk’s last co-founder reportedly leaves xAI: All but two of Musk's 11 xAI co-founders departed before this week."
+    ],
+    "signal_strength": 8.5,
+    "evidence_links": [
+      "https://techcrunch.com/2026/03/28/elon-musks-last-co-founder-reportedly-leaves-xai"
+    ],
+    "representative_items": [
+      {
+        "title": "Elon Musk’s last co-founder reportedly leaves xAI",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/03/28/elon-musks-last-co-founder-reportedly-leaves-xai",
+        "published_at": "Sat, 28 Mar 2026 16:11:16 +0000"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "TechCrunch AI"
+    ],
+    "item_count": 1,
+    "rank": 25
+  },
+  {
+    "topic_id": "5f7ea215",
+    "topic_title": "Ask HN: Are you working on a non AI project?",
+    "opp_category": "other",
+    "summary": [
+      "Ask HN: Are you working on a non AI project?"
+    ],
+    "signal_strength": 7.7,
+    "evidence_links": [
+      "https://news.ycombinator.com/item?id=35918477"
+    ],
+    "representative_items": [
+      {
+        "title": "Ask HN: Are you working on a non AI project?",
+        "source": "HackerNews AI",
+        "url": "https://news.ycombinator.com/item?id=35918477",
+        "published_at": "2023-05-12T16:31:30Z"
+      }
+    ],
+    "categories": [
+      "tech_trends"
+    ],
+    "sources": [
+      "HackerNews AI"
+    ],
+    "item_count": 1,
+    "rank": 26
+  },
+  {
+    "topic_id": "170d36eb",
+    "topic_title": "Show HN: Video2SRT",
+    "opp_category": "other",
+    "summary": [
+      "Show HN: Video2SRT"
+    ],
+    "signal_strength": 7.5,
+    "evidence_links": [
+      "https://news.ycombinator.com/item?id=37309042"
+    ],
+    "representative_items": [
+      {
+        "title": "Show HN: Video2SRT",
+        "source": "HackerNews Show AI",
+        "url": "https://news.ycombinator.com/item?id=37309042",
+        "published_at": "2023-08-29T15:07:19Z"
+      }
+    ],
+    "categories": [
+      "tech_trends"
+    ],
+    "sources": [
+      "HackerNews Show AI"
+    ],
+    "item_count": 1,
+    "rank": 27
+  },
+  {
+    "topic_id": "485ebbbe",
+    "topic_title": "Show HN: Technical diagrams were slowing me down, so I built a faster way",
+    "opp_category": "other",
+    "summary": [
+      "Show HN: Technical diagrams were slowing me down, so I built a faster way"
+    ],
+    "signal_strength": 7.3,
+    "evidence_links": [
+      "https://www.rapidcharts.ai/"
+    ],
+    "representative_items": [
+      {
+        "title": "Show HN: Technical diagrams were slowing me down, so I built a faster way",
+        "source": "HackerNews AI",
+        "url": "https://www.rapidcharts.ai/",
+        "published_at": "2025-07-16T07:53:20Z"
+      }
+    ],
+    "categories": [
+      "tech_trends"
+    ],
+    "sources": [
+      "HackerNews AI"
+    ],
+    "item_count": 1,
+    "rank": 28
+  },
+  {
+    "topic_id": "420a93e7",
+    "topic_title": "Compiling a list of tools for building LLM apps",
+    "opp_category": "other",
+    "summary": [
+      "Compiling a list of tools for building LLM apps"
+    ],
+    "signal_strength": 7.3,
+    "evidence_links": [
+      "https://news.ycombinator.com/item?id=34429971"
+    ],
+    "representative_items": [
+      {
+        "title": "Compiling a list of tools for building LLM apps",
+        "source": "HackerNews AI",
+        "url": "https://news.ycombinator.com/item?id=34429971",
+        "published_at": "2023-01-18T17:38:50Z"
+      }
+    ],
+    "categories": [
+      "tech_trends"
+    ],
+    "sources": [
+      "HackerNews AI"
+    ],
+    "item_count": 1,
+    "rank": 29
+  },
+  {
+    "topic_id": "1eec55dc",
+    "topic_title": "Show HN: Startfa.st – A curated, fast directory of AI, dev, and product tools",
+    "opp_category": "other",
+    "summary": [
+      "Show HN: Startfa.st – A curated, fast directory of AI, dev, and product tools"
+    ],
+    "signal_strength": 7.3,
+    "evidence_links": [
+      "https://startfa.st/"
+    ],
+    "representative_items": [
+      {
+        "title": "Show HN: Startfa.st – A curated, fast directory of AI, dev, and product tools",
+        "source": "HackerNews Show AI",
+        "url": "https://startfa.st/",
+        "published_at": "2025-11-18T12:00:20Z"
+      }
+    ],
+    "categories": [
+      "tech_trends"
+    ],
+    "sources": [
+      "HackerNews Show AI"
+    ],
+    "item_count": 1,
+    "rank": 30
+  },
+  {
+    "topic_id": "2b7dc333",
+    "topic_title": "Show HN: Botais (Battle of the AI's) – Competitive Snake Game for LLMs",
+    "opp_category": "other",
+    "summary": [
+      "Show HN: Botais (Battle of the AI's) – Competitive Snake Game for LLMs"
+    ],
+    "signal_strength": 7.2,
+    "evidence_links": [
+      "https://botais.sello.dev/"
+    ],
+    "representative_items": [
+      {
+        "title": "Show HN: Botais (Battle of the AI's) – Competitive Snake Game for LLMs",
+        "source": "HackerNews AI",
+        "url": "https://botais.sello.dev/",
+        "published_at": "2026-03-09T08:30:25Z"
+      }
+    ],
+    "categories": [
+      "tech_trends"
+    ],
+    "sources": [
+      "HackerNews AI"
+    ],
+    "item_count": 1,
+    "rank": 31
+  },
+  {
+    "topic_id": "441f7db3",
+    "topic_title": "Show HN: Free create high-quality coloring sheets online no login In",
+    "opp_category": "other",
+    "summary": [
+      "Show HN: Free create high-quality coloring sheets online no login In"
+    ],
+    "signal_strength": 7.2,
+    "evidence_links": [
+      "https://colorifyai.art/"
+    ],
+    "representative_items": [
+      {
+        "title": "Show HN: Free create high-quality coloring sheets online no login In",
+        "source": "HackerNews Show AI",
+        "url": "https://colorifyai.art/",
+        "published_at": "2024-04-28T02:56:05Z"
+      }
+    ],
+    "categories": [
+      "tech_trends"
+    ],
+    "sources": [
+      "HackerNews Show AI"
+    ],
+    "item_count": 1,
+    "rank": 32
+  },
+  {
+    "topic_id": "07c87234",
+    "topic_title": "Ask HN: Who are your favourite AI content creators?",
+    "opp_category": "other",
+    "summary": [
+      "Ask HN: Who are your favourite AI content creators?"
+    ],
+    "signal_strength": 7.1,
+    "evidence_links": [
+      "https://news.ycombinator.com/item?id=42403942"
+    ],
+    "representative_items": [
+      {
+        "title": "Ask HN: Who are your favourite AI content creators?",
+        "source": "HackerNews AI",
+        "url": "https://news.ycombinator.com/item?id=42403942",
+        "published_at": "2024-12-12T22:10:43Z"
+      }
+    ],
+    "categories": [
+      "tech_trends"
+    ],
+    "sources": [
+      "HackerNews AI"
+    ],
+    "item_count": 1,
+    "rank": 33
+  },
+  {
+    "topic_id": "2bf9b721",
+    "topic_title": "We are witnessing the rise of AI Sex",
+    "opp_category": "other",
+    "summary": [
+      "We are witnessing the rise of AI Sex"
+    ],
+    "signal_strength": 7.1,
+    "evidence_links": [
+      "https://gptweekly.beehiiv.com/p/week-google-ai-large-llm-gpt-plugin"
+    ],
+    "representative_items": [
+      {
+        "title": "We are witnessing the rise of AI Sex",
+        "source": "HackerNews AI",
+        "url": "https://gptweekly.beehiiv.com/p/week-google-ai-large-llm-gpt-plugin",
+        "published_at": "2023-05-15T18:03:43Z"
+      }
+    ],
+    "categories": [
+      "tech_trends"
+    ],
+    "sources": [
+      "HackerNews AI"
+    ],
+    "item_count": 1,
+    "rank": 34
+  },
+  {
+    "topic_id": "1661512d",
+    "topic_title": "Show HN: Everyone's Building AI Startups – But Most Are Missing This One Thing",
+    "opp_category": "other",
+    "summary": [
+      "Show HN: Everyone's Building AI Startups – But Most Are Missing This One Thing"
+    ],
+    "signal_strength": 7.1,
+    "evidence_links": [
+      "https://news.ycombinator.com/item?id=44320918"
+    ],
+    "representative_items": [
+      {
+        "title": "Show HN: Everyone's Building AI Startups – But Most Are Missing This One Thing",
+        "source": "HackerNews Show AI",
+        "url": "https://news.ycombinator.com/item?id=44320918",
+        "published_at": "2025-06-19T17:51:19Z"
+      }
+    ],
+    "categories": [
+      "tech_trends"
+    ],
+    "sources": [
+      "HackerNews Show AI"
+    ],
+    "item_count": 1,
+    "rank": 35
+  },
+  {
+    "topic_id": "311efffe",
+    "topic_title": "Show HN: Mocked – AI-powered mock interview tool for PMs",
+    "opp_category": "other",
+    "summary": [
+      "Show HN: Mocked – AI-powered mock interview tool for PMs"
+    ],
+    "signal_strength": 7.1,
+    "evidence_links": [
+      "https://trymocked.com/"
+    ],
+    "representative_items": [
+      {
+        "title": "Show HN: Mocked – AI-powered mock interview tool for PMs",
+        "source": "HackerNews Show AI",
+        "url": "https://trymocked.com/",
+        "published_at": "2025-09-28T08:38:39Z"
+      }
+    ],
+    "categories": [
+      "tech_trends"
+    ],
+    "sources": [
+      "HackerNews Show AI"
+    ],
+    "item_count": 1,
+    "rank": 36
+  },
+  {
+    "topic_id": "638405c5",
+    "topic_title": "Show HN: AI Directories – Submit your AI tool to 300 directories (2 minutes)",
+    "opp_category": "other",
+    "summary": [
+      "Show HN: AI Directories – Submit your AI tool to 300 directories (2 minutes)"
+    ],
+    "signal_strength": 7.1,
+    "evidence_links": [
+      "https://300aidirectories.com/"
+    ],
+    "representative_items": [
+      {
+        "title": "Show HN: AI Directories – Submit your AI tool to 300 directories (2 minutes)",
+        "source": "HackerNews Show AI",
+        "url": "https://300aidirectories.com/",
+        "published_at": "2025-12-26T19:01:26Z"
+      }
+    ],
+    "categories": [
+      "tech_trends"
+    ],
+    "sources": [
+      "HackerNews Show AI"
+    ],
+    "item_count": 1,
+    "rank": 37
+  },
+  {
+    "topic_id": "58bb9fce",
+    "topic_title": "Show HN: WildfireDeals – Daily AI Tool Deals (50-90% Off)",
+    "opp_category": "other",
+    "summary": [
+      "Show HN: WildfireDeals – Daily AI Tool Deals (50-90% Off)"
+    ],
+    "signal_strength": 7.1,
+    "evidence_links": [
+      "https://wildfire.deals/"
+    ],
+    "representative_items": [
+      {
+        "title": "Show HN: WildfireDeals – Daily AI Tool Deals (50-90% Off)",
+        "source": "HackerNews Show AI",
+        "url": "https://wildfire.deals/",
+        "published_at": "2025-04-04T11:11:16Z"
+      }
+    ],
+    "categories": [
+      "tech_trends"
+    ],
+    "sources": [
+      "HackerNews Show AI"
+    ],
+    "item_count": 1,
+    "rank": 38
+  },
+  {
+    "topic_id": "785cfac4",
+    "topic_title": "Show HN: Sysmodeler.ai – AI-native modeling for cars, aircraft, & space systems",
+    "opp_category": "other",
+    "summary": [
+      "Show HN: Sysmodeler.ai – AI-native modeling for cars, aircraft, & space systems"
+    ],
+    "signal_strength": 7.1,
+    "evidence_links": [
+      "https://sysmodeler.ai/home"
+    ],
+    "representative_items": [
+      {
+        "title": "Show HN: Sysmodeler.ai – AI-native modeling for cars, aircraft, & space systems",
+        "source": "IndieHackers",
+        "url": "https://sysmodeler.ai/home",
+        "published_at": "2025-08-08T10:49:40Z"
+      }
+    ],
+    "categories": [
+      "business_signals"
+    ],
+    "sources": [
+      "IndieHackers"
+    ],
+    "item_count": 1,
+    "rank": 39
+  },
+  {
+    "topic_id": "10437c3b",
+    "topic_title": "Show HN: Usplus.ai – Build an AI-Native Company with Agents in your Org Chart",
+    "opp_category": "other",
+    "summary": [
+      "Show HN: Usplus.ai – Build an AI-Native Company with Agents in your Org Chart"
+    ],
+    "signal_strength": 7.1,
+    "evidence_links": [
+      "https://usplus.ai/"
+    ],
+    "representative_items": [
+      {
+        "title": "Show HN: Usplus.ai – Build an AI-Native Company with Agents in your Org Chart",
+        "source": "IndieHackers",
+        "url": "https://usplus.ai/",
+        "published_at": "2026-03-01T00:15:24Z"
+      }
+    ],
+    "categories": [
+      "business_signals"
+    ],
+    "sources": [
+      "IndieHackers"
+    ],
+    "item_count": 1,
+    "rank": 40
+  },
+  {
+    "topic_id": "29dfda9d",
+    "topic_title": "Show HN: My spreadsheet automation suite is making $5K without VC funding",
+    "opp_category": "other",
+    "summary": [
+      "Show HN: My spreadsheet automation suite is making $5K without VC funding"
+    ],
+    "signal_strength": 7.1,
+    "evidence_links": [
+      "https://smartspreadsheets.co/"
+    ],
+    "representative_items": [
+      {
+        "title": "Show HN: My spreadsheet automation suite is making $5K without VC funding",
+        "source": "IndieHackers",
+        "url": "https://smartspreadsheets.co/",
+        "published_at": "2025-04-09T05:43:57Z"
+      }
+    ],
+    "categories": [
+      "business_signals"
+    ],
+    "sources": [
+      "IndieHackers"
+    ],
+    "item_count": 1,
+    "rank": 41
+  },
+  {
+    "topic_id": "50754d8c",
+    "topic_title": "What Makes a Good QA?",
+    "opp_category": "other",
+    "summary": [
+      "What Makes a Good QA?"
+    ],
+    "signal_strength": 7.1,
+    "evidence_links": [
+      "https://news.ycombinator.com/item?id=45847255"
+    ],
+    "representative_items": [
+      {
+        "title": "What Makes a Good QA?",
+        "source": "IndieHackers",
+        "url": "https://news.ycombinator.com/item?id=45847255",
+        "published_at": "2025-11-07T15:14:25Z"
+      }
+    ],
+    "categories": [
+      "business_signals"
+    ],
+    "sources": [
+      "IndieHackers"
+    ],
+    "item_count": 1,
+    "rank": 42
+  },
+  {
+    "topic_id": "6730f142",
+    "topic_title": "AI Infrastructure & APIs",
+    "opp_category": "other",
+    "summary": [
+      "Creating with Sora Safely: To address the novel safety challenges posed by a state-of-the-art video model as well as a new social creation platform"
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://openai.com/index/creating-with-sora-safely"
+    ],
+    "representative_items": [
+      {
+        "title": "Creating with Sora Safely",
+        "source": "OpenAI Blog",
+        "url": "https://openai.com/index/creating-with-sora-safely",
+        "published_at": "Mon, 23 Mar 2026 00:00:00 GMT"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "OpenAI Blog"
+    ],
+    "item_count": 1,
+    "rank": 43
+  },
+  {
+    "topic_id": "00c88a3e",
+    "topic_title": "Voice & Audio AI",
+    "opp_category": "automation_system",
+    "summary": [
+      "A New Framework for Evaluating Voice Agents (EVA)"
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://huggingface.co/blog/ServiceNow-AI/eva"
+    ],
+    "representative_items": [
+      {
+        "title": "A New Framework for Evaluating Voice Agents (EVA)",
+        "source": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/ServiceNow-AI/eva",
+        "published_at": "Tue, 24 Mar 2026 02:01:52 GMT"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "Hugging Face Blog"
+    ],
+    "item_count": 1,
+    "rank": 44
+  },
+  {
+    "topic_id": "31514315",
+    "topic_title": "Model Fine-tuning & Training",
+    "opp_category": "other",
+    "summary": [
+      "Bringing Robotics AI to Embedded Platforms: Dataset Recording, VLA Fine‑Tuning, and On‑Device Optimizations"
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://huggingface.co/blog/nxp/bringing-robotics-ai-to-embedded-platforms"
+    ],
+    "representative_items": [
+      {
+        "title": "Bringing Robotics AI to Embedded Platforms: Dataset Recording, VLA Fine‑Tuning, and On‑Device Optimizations",
+        "source": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/nxp/bringing-robotics-ai-to-embedded-platforms",
+        "published_at": "Thu, 05 Mar 2026 14:16:49 GMT"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "Hugging Face Blog"
+    ],
+    "item_count": 1,
+    "rank": 45
+  },
+  {
+    "topic_id": "039ae4d6",
+    "topic_title": "Update on the OpenAI Foundation",
+    "opp_category": "other",
+    "summary": [
+      "Update on the OpenAI Foundation: The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilie"
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://openai.com/index/update-on-the-openai-foundation"
+    ],
+    "representative_items": [
+      {
+        "title": "Update on the OpenAI Foundation",
+        "source": "OpenAI Blog",
+        "url": "https://openai.com/index/update-on-the-openai-foundation",
+        "published_at": "Tue, 24 Mar 2026 09:00:00 GMT"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "OpenAI Blog"
+    ],
+    "item_count": 1,
+    "rank": 46
+  },
+  {
+    "topic_id": "40d4e6ad",
+    "topic_title": "OpenAI to acquire Astral",
+    "opp_category": "other",
+    "summary": [
+      "OpenAI to acquire Astral: Accelerates Codex growth to power the next generation of Python developer tools"
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://openai.com/index/openai-to-acquire-astral"
+    ],
+    "representative_items": [
+      {
+        "title": "OpenAI to acquire Astral",
+        "source": "OpenAI Blog",
+        "url": "https://openai.com/index/openai-to-acquire-astral",
+        "published_at": "Thu, 19 Mar 2026 00:00:00 GMT"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "OpenAI Blog"
+    ],
+    "item_count": 1,
+    "rank": 47
+  },
+  {
+    "topic_id": "54397f83",
+    "topic_title": "Watch James Manyika talk AI and creativity with LL COOL J.",
+    "opp_category": "other",
+    "summary": [
+      "Watch James Manyika talk AI and creativity with LL COOL J.: In the latest episode of our Dialogues on Technology and Society series, LL COOL J sits down with James Manyika."
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://blog.google/innovation-and-ai/technology/ai/ll-cool-j-dialogues"
+    ],
+    "representative_items": [
+      {
+        "title": "Watch James Manyika talk AI and creativity with LL COOL J.",
+        "source": "Google AI Blog",
+        "url": "https://blog.google/innovation-and-ai/technology/ai/ll-cool-j-dialogues",
+        "published_at": "Thu, 26 Mar 2026 17:00:00 +0000"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "Google AI Blog"
+    ],
+    "item_count": 1,
+    "rank": 48
+  },
+  {
+    "topic_id": "7d31d194",
+    "topic_title": "Transform your headphones into a live personal translator on iOS.",
+    "opp_category": "other",
+    "summary": [
+      "Transform your headphones into a live personal translator on iOS.: Google Translate’s Live translate with headphones is officially arriving on iOS! And we're expanding the capability for "
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://blog.google/products-and-platforms/products/translate/live-translate-with-headphones"
+    ],
+    "representative_items": [
+      {
+        "title": "Transform your headphones into a live personal translator on iOS.",
+        "source": "Google AI Blog",
+        "url": "https://blog.google/products-and-platforms/products/translate/live-translate-with-headphones",
+        "published_at": "Thu, 26 Mar 2026 16:00:00 +0000"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "Google AI Blog"
+    ],
+    "item_count": 1,
+    "rank": 49
+  },
+  {
+    "topic_id": "4270cfe3",
+    "topic_title": "Search Live is expanding globally",
+    "opp_category": "other",
+    "summary": [
+      "Search Live is expanding globally: We’re expanding Search Live globally, to all languages and locations where AI Mode is available."
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://blog.google/products-and-platforms/products/search/search-live-global-expansion"
+    ],
+    "representative_items": [
+      {
+        "title": "Search Live is expanding globally",
+        "source": "Google AI Blog",
+        "url": "https://blog.google/products-and-platforms/products/search/search-live-global-expansion",
+        "published_at": "Thu, 26 Mar 2026 15:00:00 +0000"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "Google AI Blog"
+    ],
+    "item_count": 1,
+    "rank": 50
+  },
+  {
+    "topic_id": "0ae25e38",
+    "topic_title": "Lyria 3 Pro: Create longer tracks in more Google products",
+    "opp_category": "other",
+    "summary": [
+      "Lyria 3 Pro: Create longer tracks in more Google products: We are bringing Lyria 3 to the tools where professionals work and create every day."
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://blog.google/innovation-and-ai/technology/ai/lyria-3-pro"
+    ],
+    "representative_items": [
+      {
+        "title": "Lyria 3 Pro: Create longer tracks in more Google products",
+        "source": "Google AI Blog",
+        "url": "https://blog.google/innovation-and-ai/technology/ai/lyria-3-pro",
+        "published_at": "Wed, 25 Mar 2026 16:00:00 +0000"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "Google AI Blog"
+    ],
+    "item_count": 1,
+    "rank": 51
+  },
+  {
+    "topic_id": "3ab8a9bb",
+    "topic_title": "How AI is helping improve heart health in rural Australia",
+    "opp_category": "other",
+    "summary": [
+      "How AI is helping improve heart health in rural Australia: A new Google AI initiative aims to improve heart health outcomes for people living in remote Australian communities."
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://blog.google/innovation-and-ai/technology/health/google-ai-heart-health-australia"
+    ],
+    "representative_items": [
+      {
+        "title": "How AI is helping improve heart health in rural Australia",
+        "source": "Google AI Blog",
+        "url": "https://blog.google/innovation-and-ai/technology/health/google-ai-heart-health-australia",
+        "published_at": "Thu, 12 Mar 2026 15:00:00 +0000"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "Google AI Blog"
+    ],
+    "item_count": 1,
+    "rank": 52
+  },
+  {
+    "topic_id": "1273054b",
+    "topic_title": "Ask a Techspert: How does AI understand my visual searches?",
+    "opp_category": "other",
+    "summary": [
+      "Ask a Techspert: How does AI understand my visual searches?: Learn more about AI Mode in Search’s query fan-out method for visual search."
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://blog.google/company-news/inside-google/googlers/how-google-ai-visual-search-works"
+    ],
+    "representative_items": [
+      {
+        "title": "Ask a Techspert: How does AI understand my visual searches?",
+        "source": "Google AI Blog",
+        "url": "https://blog.google/company-news/inside-google/googlers/how-google-ai-visual-search-works",
+        "published_at": "Thu, 05 Mar 2026 18:00:00 +0000"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "Google AI Blog"
+    ],
+    "item_count": 1,
+    "rank": 53
+  },
+  {
+    "topic_id": "3e75cb09",
+    "topic_title": "The latest AI news we announced in February",
+    "opp_category": "other",
+    "summary": [
+      "The latest AI news we announced in February: Here are Google’s latest AI updates from February 2026"
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://blog.google/innovation-and-ai/products/google-ai-updates-february-2026"
+    ],
+    "representative_items": [
+      {
+        "title": "The latest AI news we announced in February",
+        "source": "Google AI Blog",
+        "url": "https://blog.google/innovation-and-ai/products/google-ai-updates-february-2026",
+        "published_at": "Thu, 05 Mar 2026 16:30:00 +0000"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "Google AI Blog"
+    ],
+    "item_count": 1,
+    "rank": 54
+  },
+  {
+    "topic_id": "666ed564",
+    "topic_title": "Use Canvas in AI Mode to get things done and bring your ideas to life, right in Search.",
+    "opp_category": "other",
+    "summary": [
+      "Use Canvas in AI Mode to get things done and bring your ideas to life, right in Search.: Canvas in AI Mode is now available for everyone in the U.S. Plus, it can now help you draft documents or build interacti"
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://blog.google/products-and-platforms/products/search/ai-mode-canvas-writing-coding"
+    ],
+    "representative_items": [
+      {
+        "title": "Use Canvas in AI Mode to get things done and bring your ideas to life, right in Search.",
+        "source": "Google AI Blog",
+        "url": "https://blog.google/products-and-platforms/products/search/ai-mode-canvas-writing-coding",
+        "published_at": "Wed, 04 Mar 2026 17:00:00 +0000"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "Google AI Blog"
+    ],
+    "item_count": 1,
+    "rank": 55
+  },
+  {
+    "topic_id": "0da7310d",
+    "topic_title": "Create new worlds in Project Genie with these 4 tips",
+    "opp_category": "other",
+    "summary": [
+      "Create new worlds in Project Genie with these 4 tips: Learn more about Google DeepMind’s Project Genie and how to write prompts to create your own worlds."
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/tips-prompt-writing-project-genie"
+    ],
+    "representative_items": [
+      {
+        "title": "Create new worlds in Project Genie with these 4 tips",
+        "source": "Google AI Blog",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/tips-prompt-writing-project-genie",
+        "published_at": "Tue, 03 Mar 2026 17:00:00 +0000"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "Google AI Blog"
+    ],
+    "item_count": 1,
+    "rank": 56
+  },
+  {
+    "topic_id": "10682a58",
+    "topic_title": "Liberate your OpenClaw",
+    "opp_category": "other",
+    "summary": [
+      "Liberate your OpenClaw"
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://huggingface.co/blog/liberate-your-openclaw"
+    ],
+    "representative_items": [
+      {
+        "title": "Liberate your OpenClaw",
+        "source": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/liberate-your-openclaw",
+        "published_at": "Fri, 27 Mar 2026 00:00:00 GMT"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "Hugging Face Blog"
+    ],
+    "item_count": 1,
+    "rank": 57
+  },
+  {
+    "topic_id": "51866cc6",
+    "topic_title": "Build a Domain-Specific Embedding Model in Under a Day",
+    "opp_category": "other",
+    "summary": [
+      "Build a Domain-Specific Embedding Model in Under a Day"
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://huggingface.co/blog/nvidia/domain-specific-embedding-finetune"
+    ],
+    "representative_items": [
+      {
+        "title": "Build a Domain-Specific Embedding Model in Under a Day",
+        "source": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/nvidia/domain-specific-embedding-finetune",
+        "published_at": "Fri, 20 Mar 2026 19:38:16 GMT"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "Hugging Face Blog"
+    ],
+    "item_count": 1,
+    "rank": 58
+  },
+  {
+    "topic_id": "779993a0",
+    "topic_title": "What's New in Mellea 0.4.0 + Granite Libraries Release",
+    "opp_category": "other",
+    "summary": [
+      "What's New in Mellea 0.4.0 + Granite Libraries Release"
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://huggingface.co/blog/ibm-granite/granite-libraries"
+    ],
+    "representative_items": [
+      {
+        "title": "What's New in Mellea 0.4.0 + Granite Libraries Release",
+        "source": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/ibm-granite/granite-libraries",
+        "published_at": "Fri, 20 Mar 2026 14:14:46 GMT"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "Hugging Face Blog"
+    ],
+    "item_count": 1,
+    "rank": 59
+  },
+  {
+    "topic_id": "7899157c",
+    "topic_title": "Introducing Storage Buckets on the Hugging Face Hub",
+    "opp_category": "other",
+    "summary": [
+      "Introducing Storage Buckets on the Hugging Face Hub"
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://huggingface.co/blog/storage-buckets"
+    ],
+    "representative_items": [
+      {
+        "title": "Introducing Storage Buckets on the Hugging Face Hub",
+        "source": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/storage-buckets",
+        "published_at": "Tue, 10 Mar 2026 00:00:00 GMT"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "Hugging Face Blog"
+    ],
+    "item_count": 1,
+    "rank": 60
+  },
+  {
+    "topic_id": "1e8fc5e7",
+    "topic_title": "LeRobot v0.5.0: Scaling Every Dimension",
+    "opp_category": "other",
+    "summary": [
+      "LeRobot v0.5.0: Scaling Every Dimension"
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://huggingface.co/blog/lerobot-release-v050"
+    ],
+    "representative_items": [
+      {
+        "title": "LeRobot v0.5.0: Scaling Every Dimension",
+        "source": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/lerobot-release-v050",
+        "published_at": "Mon, 09 Mar 2026 00:00:00 GMT"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "Hugging Face Blog"
+    ],
+    "item_count": 1,
+    "rank": 61
+  },
+  {
+    "topic_id": "5e2ccda4",
+    "topic_title": "Mixture of Experts (MoEs) in Transformers",
+    "opp_category": "other",
+    "summary": [
+      "Mixture of Experts (MoEs) in Transformers"
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://huggingface.co/blog/moe-transformers"
+    ],
+    "representative_items": [
+      {
+        "title": "Mixture of Experts (MoEs) in Transformers",
+        "source": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/moe-transformers",
+        "published_at": "Thu, 26 Feb 2026 00:00:00 GMT"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "Hugging Face Blog"
+    ],
+    "item_count": 1,
+    "rank": 62
+  },
+  {
+    "topic_id": "3aaa2c22",
+    "topic_title": "Why SoftBank’s new $40B loan points to a 2026 OpenAI IPO",
+    "opp_category": "other",
+    "summary": [
+      "Why SoftBank’s new $40B loan points to a 2026 OpenAI IPO: Wall Street giants JPMorgan and Goldman Sachs are extending a 12-month, unsecured loan to the Japanese conglomerate."
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://techcrunch.com/2026/03/27/why-softbanks-new-40b-loan-points-to-a-2026-openai-ipo"
+    ],
+    "representative_items": [
+      {
+        "title": "Why SoftBank’s new $40B loan points to a 2026 OpenAI IPO",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/03/27/why-softbanks-new-40b-loan-points-to-a-2026-openai-ipo",
+        "published_at": "Fri, 27 Mar 2026 21:44:45 +0000"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "TechCrunch AI"
+    ],
+    "item_count": 1,
+    "rank": 63
+  },
+  {
+    "topic_id": "390dd261",
+    "topic_title": "Memory chip giant SK hynix could help end ‘RAMmageddon’ with blockbuster US IPO",
+    "opp_category": "other",
+    "summary": [
+      "Memory chip giant SK hynix could help end ‘RAMmageddon’ with blockbuster US IPO: SK hynix’s potential U.S. listing could raise $10-$14 billion to help it build more capacity, encourage others to follow"
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://techcrunch.com/2026/03/27/memory-chip-giant-sk-hynix-could-help-end-rammageddon-with-blockbuster-us-ipo"
+    ],
+    "representative_items": [
+      {
+        "title": "Memory chip giant SK hynix could help end ‘RAMmageddon’ with blockbuster US IPO",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/03/27/memory-chip-giant-sk-hynix-could-help-end-rammageddon-with-blockbuster-us-ipo",
+        "published_at": "Fri, 27 Mar 2026 19:11:28 +0000"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "TechCrunch AI"
+    ],
+    "item_count": 1,
+    "rank": 64
+  },
+  {
+    "topic_id": "646ede6b",
+    "topic_title": "David Sacks is done as AI czar — here’s what he’s doing instead",
+    "opp_category": "other",
+    "summary": [
+      "David Sacks is done as AI czar — here’s what he’s doing instead: Sacks will be much further from the power center in Washington than since the outset of this second Trump administration"
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://techcrunch.com/2026/03/26/david-sacks-is-done-as-ai-czar-heres-what-hes-doing-instead"
+    ],
+    "representative_items": [
+      {
+        "title": "David Sacks is done as AI czar — here’s what he’s doing instead",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/03/26/david-sacks-is-done-as-ai-czar-heres-what-hes-doing-instead",
+        "published_at": "Fri, 27 Mar 2026 01:26:40 +0000"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "TechCrunch AI"
+    ],
+    "item_count": 1,
+    "rank": 65
+  },
+  {
+    "topic_id": "764c709d",
+    "topic_title": "Anthropic wins injunction against Trump administration over Defense Department saga",
+    "opp_category": "other",
+    "summary": [
+      "Anthropic wins injunction against Trump administration over Defense Department saga: A federal judge has ordered that the Trump administration rescind recent restrictions it placed on the AI company."
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://techcrunch.com/2026/03/26/anthropic-wins-injunction-against-trump-administration-over-defense-department-saga"
+    ],
+    "representative_items": [
+      {
+        "title": "Anthropic wins injunction against Trump administration over Defense Department saga",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/03/26/anthropic-wins-injunction-against-trump-administration-over-defense-department-saga",
+        "published_at": "Fri, 27 Mar 2026 01:18:38 +0000"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "TechCrunch AI"
+    ],
+    "item_count": 1,
+    "rank": 66
+  },
+  {
+    "topic_id": "62a98c99",
+    "topic_title": "Wikipedia cracks down on the use of AI in article writing",
+    "opp_category": "other",
+    "summary": [
+      "Wikipedia cracks down on the use of AI in article writing: The site, whose policies are subject to change, has struggled with the issue of AI-generated writing."
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://techcrunch.com/2026/03/26/wikipedia-cracks-down-on-the-use-of-ai-in-article-writing"
+    ],
+    "representative_items": [
+      {
+        "title": "Wikipedia cracks down on the use of AI in article writing",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/03/26/wikipedia-cracks-down-on-the-use-of-ai-in-article-writing",
+        "published_at": "Thu, 26 Mar 2026 21:50:10 +0000"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "TechCrunch AI"
+    ],
+    "item_count": 1,
+    "rank": 67
+  },
+  {
+    "topic_id": "1bbb87ca",
+    "topic_title": "MIT engineers design proteins by their motion, not just their shape",
+    "opp_category": "other",
+    "summary": [
+      "MIT engineers design proteins by their motion, not just their shape: An AI model generates novel proteins based on how they vibrate and move, opening new possibilities for dynamic biomateri"
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://news.mit.edu/2026/mit-engineers-design-proteins-by-motion-not-just-shape-0326"
+    ],
+    "representative_items": [
+      {
+        "title": "MIT engineers design proteins by their motion, not just their shape",
+        "source": "MIT AI News",
+        "url": "https://news.mit.edu/2026/mit-engineers-design-proteins-by-motion-not-just-shape-0326",
+        "published_at": "Thu, 26 Mar 2026 16:20:00 -0400"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "MIT AI News"
+    ],
+    "item_count": 1,
+    "rank": 68
+  },
+  {
+    "topic_id": "3c0b828a",
+    "topic_title": "Wristband enables wearers to control a robotic hand with their own movements",
+    "opp_category": "other",
+    "summary": [
+      "Wristband enables wearers to control a robotic hand with their own movements: By moving their hands and fingers, users can direct a robot to play piano or shoot a basketball, or they can manipulate "
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://news.mit.edu/2026/wristband-enables-wearers-control-robotic-hand-with-own-movements-0325"
+    ],
+    "representative_items": [
+      {
+        "title": "Wristband enables wearers to control a robotic hand with their own movements",
+        "source": "MIT AI News",
+        "url": "https://news.mit.edu/2026/wristband-enables-wearers-control-robotic-hand-with-own-movements-0325",
+        "published_at": "Wed, 25 Mar 2026 06:00:00 -0400"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "MIT AI News"
+    ],
+    "item_count": 1,
+    "rank": 69
+  },
+  {
+    "topic_id": "0e94b9f9",
+    "topic_title": "What’s the right path for AI?",
+    "opp_category": "other",
+    "summary": [
+      "What’s the right path for AI?: Conference speakers discussed the unfolding trajectory of AI and the benefits of shaping technology to meet people’s nee"
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://news.mit.edu/2026/right-path-for-ai-karen-hao-paola-ricaurte-0320"
+    ],
+    "representative_items": [
+      {
+        "title": "What’s the right path for AI?",
+        "source": "MIT AI News",
+        "url": "https://news.mit.edu/2026/right-path-for-ai-karen-hao-paola-ricaurte-0320",
+        "published_at": "Fri, 20 Mar 2026 09:30:00 -0400"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "MIT AI News"
+    ],
+    "item_count": 1,
+    "rank": 70
+  },
+  {
+    "topic_id": "3b66c736",
+    "topic_title": "MIT and Hasso Plattner Institute establish collaborative hub for AI and creativity",
+    "opp_category": "other",
+    "summary": [
+      "MIT and Hasso Plattner Institute establish collaborative hub for AI and creativity: Jointly led by the MIT Morningside Academy for Design, MIT Schwarzman College of Computing, and the Hasso Plattner Insti"
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://news.mit.edu/2026/mit-hasso-plattner-institute-collaborative-hub-for-ai-and-creativity-0320"
+    ],
+    "representative_items": [
+      {
+        "title": "MIT and Hasso Plattner Institute establish collaborative hub for AI and creativity",
+        "source": "MIT AI News",
+        "url": "https://news.mit.edu/2026/mit-hasso-plattner-institute-collaborative-hub-for-ai-and-creativity-0320",
+        "published_at": "Fri, 20 Mar 2026 08:45:00 -0400"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "MIT AI News"
+    ],
+    "item_count": 1,
+    "rank": 71
+  },
+  {
+    "topic_id": "39dcfd90",
+    "topic_title": "Sustaining diplomacy amid competition in US-China relations",
+    "opp_category": "other",
+    "summary": [
+      "Sustaining diplomacy amid competition in US-China relations: At MIT, former U.S. ambassador to China Nicholas Burns highlights climate change as an area for diplomatic engagement, w"
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://news.mit.edu/2026/sustaining-diplomacy-amid-us-china-competition-0318"
+    ],
+    "representative_items": [
+      {
+        "title": "Sustaining diplomacy amid competition in US-China relations",
+        "source": "MIT AI News",
+        "url": "https://news.mit.edu/2026/sustaining-diplomacy-amid-us-china-competition-0318",
+        "published_at": "Wed, 18 Mar 2026 00:00:00 -0400"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "MIT AI News"
+    ],
+    "item_count": 1,
+    "rank": 72
+  },
+  {
+    "topic_id": "0ab1acb9",
+    "topic_title": "Can AI help predict which heart-failure patients will worsen within a year?",
+    "opp_category": "other",
+    "summary": [
+      "Can AI help predict which heart-failure patients will worsen within a year?: Researchers at MIT, Mass General Brigham, and Harvard Medical School developed a deep-learning model to forecast a patie"
+    ],
+    "signal_strength": 7,
+    "evidence_links": [
+      "https://news.mit.edu/2026/can-ai-help-predict-which-heart-failure-patients-will-worsen-0312"
+    ],
+    "representative_items": [
+      {
+        "title": "Can AI help predict which heart-failure patients will worsen within a year?",
+        "source": "MIT AI News",
+        "url": "https://news.mit.edu/2026/can-ai-help-predict-which-heart-failure-patients-will-worsen-0312",
+        "published_at": "Thu, 12 Mar 2026 17:30:00 -0400"
+      }
+    ],
+    "categories": [
+      "ai_news"
+    ],
+    "sources": [
+      "MIT AI News"
+    ],
+    "item_count": 1,
+    "rank": 73
+  }
+]

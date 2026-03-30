@@ -1,0 +1,48 @@
+{
+  "opportunity_id": "793f0671",
+  "name": "Document Processing Micro-SaaS",
+  "category": "micro_saas",
+  "problem": "Unternehmen haben kritisches Wissen in Dokumenten vergraben das niemand findet",
+  "target_buyer": "Wissensarbeiter, Legal-Teams, Compliance-Abteilungen, Consulting-Firmen",
+  "proposed_solution": "Fokussiertes RAG-Tool für eine Dokumenten-Nische: Vertragsprüfung, Compliance-Check, oder internes Wiki-Q&A.",
+  "why_now": "STADLER reshapes knowledge work at a 230-year-old company (OpenAI Blog); Equipping workers with insights about compensation (OpenAI Blog); Search Live is expanding globally (Google AI Blog)",
+  "difficulty": 2,
+  "mvp_weeks": 3,
+  "revenue_model": "subscription",
+  "risks": [
+    "RAG-Qualität schwankt je nach Dokument-Typ",
+    "Onboarding-Hürde bei Dokumenten-Upload",
+    "Notion AI als Konkurrent"
+  ],
+  "next_actions": {
+    "step_30_min": "Sammle 10 Beispiel-Dokumente einer Nische und teste eine einfache RAG-Pipeline",
+    "step_2_hours": "Baue ein Chat-Interface das Fragen über die Dokumente beantwortet mit Quellen-Links",
+    "step_6_hours": "Füge Batch-Upload, Chunk-Visualisierung und Export (Markdown/PDF) hinzu",
+    "artifact_type": "demo_app",
+    "artifact_description": "Web-App: Dokument hochladen, Fragen stellen, Antworten mit Quellenlinks erhalten."
+  },
+  "artifact_type": "demo_app",
+  "artifact_description": "Web-App: Dokument hochladen, Fragen stellen, Antworten mit Quellenlinks erhalten.",
+  "evidence_links": [
+    "https://openai.com/index/stadler",
+    "https://openai.com/index/equipping-workers-with-insights-about-compensation",
+    "https://blog.google/products-and-platforms/products/search/search-live-global-expansion",
+    "https://blog.google/products-and-platforms/products/search/personal-intelligence-expansion",
+    "https://blog.google/company-news/inside-google/googlers/how-google-ai-visual-search-works",
+    "https://blog.google/products-and-platforms/products/search/ai-mode-canvas-writing-coding",
+    "https://huggingface.co/blog/storage-buckets",
+    "https://techcrunch.com/2026/03/27/memory-chip-giant-sk-hynix-could-help-end-rammageddon-with-blockbuster-us-ipo"
+  ],
+  "is_strong": true,
+  "weak_reasons": [],
+  "buyer_specificity_score": 4,
+  "pricing_anchor": "49-99€/Monat",
+  "revenue_potential": "HIGH",
+  "signal_strength": 40,
+  "signal_count": 14,
+  "builder_fit_score": 5,
+  "market_score": 4,
+  "complexity_score": 2,
+  "part_time_fit_score": 4,
+  "final_score": 2516.8
+}

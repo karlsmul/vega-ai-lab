@@ -1,0 +1,48 @@
+{
+  "opportunity_id": "793f0671",
+  "name": "Document Processing Micro-SaaS",
+  "category": "micro_saas",
+  "problem": "Unternehmen haben kritisches Wissen in Dokumenten vergraben das niemand findet",
+  "target_buyer": "Wissensarbeiter, Legal-Teams, Compliance-Abteilungen, Consulting-Firmen",
+  "proposed_solution": "Fokussiertes RAG-Tool für eine Dokumenten-Nische: Vertragsprüfung, Compliance-Check, oder internes Wiki-Q&A.",
+  "why_now": "ChatGPT for research (OpenAI Blog); Healthcare (OpenAI Blog); Search Live is expanding globally (Google AI Blog)",
+  "difficulty": 2,
+  "mvp_weeks": 3,
+  "revenue_model": "subscription",
+  "risks": [
+    "RAG-Qualität schwankt je nach Dokument-Typ",
+    "Onboarding-Hürde bei Dokumenten-Upload",
+    "Notion AI als Konkurrent"
+  ],
+  "next_actions": {
+    "step_30_min": "Sammle 10 Beispiel-Dokumente einer Nische und teste eine einfache RAG-Pipeline",
+    "step_2_hours": "Baue ein Chat-Interface das Fragen über die Dokumente beantwortet mit Quellen-Links",
+    "step_6_hours": "Füge Batch-Upload, Chunk-Visualisierung und Export (Markdown/PDF) hinzu",
+    "artifact_type": "demo_app",
+    "artifact_description": "Web-App: Dokument hochladen, Fragen stellen, Antworten mit Quellenlinks erhalten."
+  },
+  "artifact_type": "demo_app",
+  "artifact_description": "Web-App: Dokument hochladen, Fragen stellen, Antworten mit Quellenlinks erhalten.",
+  "evidence_links": [
+    "https://openai.com/academy/research",
+    "https://openai.com/academy/healthcare",
+    "https://blog.google/products-and-platforms/products/search/search-live-global-expansion",
+    "https://blog.google/products-and-platforms/products/search/personal-intelligence-expansion",
+    "https://huggingface.co/blog/ibm-granite/granite-4-vision",
+    "https://news.mit.edu/2026/philosophy-work-michal-masny-0409",
+    "https://news.mit.edu/2026/new-technique-makes-ai-models-leaner-faster-while-still-learning-0409",
+    "https://news.mit.edu/2026/helping-data-centers-deliver-higher-performance-less-hardware-0407"
+  ],
+  "is_strong": true,
+  "weak_reasons": [],
+  "buyer_specificity_score": 4,
+  "pricing_anchor": "49-99€/Monat",
+  "revenue_potential": "HIGH",
+  "signal_strength": 37,
+  "signal_count": 13,
+  "builder_fit_score": 5,
+  "market_score": 4,
+  "complexity_score": 2,
+  "part_time_fit_score": 4,
+  "final_score": 2328
+}

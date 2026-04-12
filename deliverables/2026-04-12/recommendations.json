@@ -1,0 +1,281 @@
+[
+  {
+    "rank": 1,
+    "name": "Document Processing Micro-SaaS",
+    "opportunity_id": "793f0671",
+    "category": "micro_saas",
+    "category_label": "Micro SaaS",
+    "problem": "Unternehmen haben kritisches Wissen in Dokumenten vergraben das niemand findet",
+    "target_buyer": "Wissensarbeiter, Legal-Teams, Compliance-Abteilungen, Consulting-Firmen",
+    "proposed_solution": "Fokussiertes RAG-Tool für eine Dokumenten-Nische: Vertragsprüfung, Compliance-Check, oder internes Wiki-Q&A.",
+    "pricing_anchor": "49-99€/Monat",
+    "revenue_potential": "HIGH",
+    "revenue_label": "3.000–10.000€/Monat",
+    "revenue_model": "subscription",
+    "niche_refinement": {
+      "needs_refinement": true,
+      "possible_niches": [
+        {
+          "niche": "Kleine Steuerkanzleien in Deutschland (5-15 Mitarbeiter)",
+          "reason": "Klarer Workflow, Dokumentenlast, erreichbar über Steuerberater-Verbände."
+        },
+        {
+          "niche": "Freelance-Übersetzer und Sprachdienstleister",
+          "reason": "Repetitive Dokument-Workflows, preissensitiv aber zahlungsbereit für Zeitersparnis."
+        },
+        {
+          "niche": "Boutique-Personalvermittler (1-5 Personen)",
+          "reason": "Hoher manueller Aufwand, klare Pain Points, reachable über LinkedIn."
+        }
+      ],
+      "recommended_niche": "Kleine Steuerkanzleien in Deutschland (5-15 Mitarbeiter)",
+      "reason": "Klarer Workflow, Dokumentenlast, erreichbar über Steuerberater-Verbände."
+    },
+    "revenue_reality": {
+      "pricing_assumption": "49€/Monat",
+      "monthly_price": 49,
+      "break_even_target": "1000€/Monat",
+      "customers_needed": 21,
+      "scenarios": {
+        "starter": {
+          "customers": 5,
+          "revenue": 245
+        },
+        "realistic": {
+          "customers": 20,
+          "revenue": 980
+        },
+        "strong": {
+          "customers": 50,
+          "revenue": 2450
+        }
+      },
+      "explanation": "21 Kunden bei 49€/Monat sind über 3-6 Monate aufbaubar. Fokus: Content-Marketing + direkter Outreach an Wissensarbeiter."
+    },
+    "builder_fit_score": 5,
+    "part_time_fit_score": 4,
+    "buyer_specificity_score": 4,
+    "fit_reasons": [
+      "Starker Skill-Match",
+      "Gut machbar in 1-2h Sessions",
+      "Klarer Zielkunde identifiziert",
+      "Starke Marktsignale",
+      "Passt zu Fokus: Micro SaaS"
+    ],
+    "time_feasibility": {
+      "total_hours": "22–27 Stunden",
+      "total_hours_num": 27,
+      "weekly_hours": 9,
+      "weekly_schedule": {
+        "dienstag_abend": "1.5h",
+        "donnerstag_abend": "1.5h",
+        "samstag": "3–4h"
+      },
+      "explanation": "Bei ~9h pro Woche neben deinem 35h-Job ist das MVP in 3 Wochen realistisch. Jede Session ist in sich abgeschlossen — du kannst nach 1.5h aufhören und nächste Woche weitermachen. Der Schlüssel: Kleine, abgeschlossene Arbeitspakete statt langer Focus-Sessions."
+    },
+    "weekend_plan": {
+      "week_1": {
+        "title": "Validierung",
+        "hours": "5–7h",
+        "tasks": [
+          "Problem-Recherche: 3 Wissensarbeiter identifizieren und ansprechen",
+          "Konkurrenzanalyse: Top-3 Alternativen und ihre Schwächen dokumentieren",
+          "Sammle 10 Beispiel-Dokumente einer Nische und teste eine einfache RAG-Pipeline",
+          "Entscheidung: Weiterbauen oder Pivot?"
+        ]
+      },
+      "week_2": {
+        "title": "MVP Core",
+        "hours": "8–10h",
+        "tasks": [
+          "Baue ein Chat-Interface das Fragen über die Dokumente beantwortet mit Quellen-Links",
+          "Füge Batch-Upload",
+          "Build Artifact: Demo App",
+          "Ersten Testlauf mit echten Daten"
+        ]
+      },
+      "week_3": {
+        "title": "Deploy + erste Nutzer",
+        "hours": "6–8h",
+        "tasks": [
+          "Deploy auf Hetzner/Vercel/Railway",
+          "Einfache Landing Page oder README",
+          "3 Wissensarbeiter zum Testen einladen",
+          "Feedback sammeln, kritische Bugs fixen"
+        ]
+      },
+      "total_hours": "19–25h"
+    },
+    "artifact": {
+      "type": "demo_app",
+      "type_label": "Demo App",
+      "description": "Web-App: Dokument hochladen, Fragen stellen, Antworten mit Quellenlinks erhalten."
+    },
+    "next_actions": {
+      "step_30_min": "Sammle 10 Beispiel-Dokumente einer Nische und teste eine einfache RAG-Pipeline",
+      "step_2_hours": "Baue ein Chat-Interface das Fragen über die Dokumente beantwortet mit Quellen-Links",
+      "step_6_hours": "Füge Batch-Upload, Chunk-Visualisierung und Export (Markdown/PDF) hinzu",
+      "artifact_type": "demo_app",
+      "artifact_description": "Web-App: Dokument hochladen, Fragen stellen, Antworten mit Quellenlinks erhalten."
+    },
+    "risks": [
+      "RAG-Qualität schwankt je nach Dokument-Typ",
+      "Onboarding-Hürde bei Dokumenten-Upload",
+      "Notion AI als Konkurrent"
+    ],
+    "evidence_links": [
+      "https://openai.com/academy/research",
+      "https://openai.com/academy/healthcare",
+      "https://blog.google/products-and-platforms/products/search/search-live-global-expansion",
+      "https://blog.google/products-and-platforms/products/search/personal-intelligence-expansion",
+      "https://huggingface.co/blog/ibm-granite/granite-4-vision",
+      "https://news.mit.edu/2026/philosophy-work-michal-masny-0409",
+      "https://news.mit.edu/2026/new-technique-makes-ai-models-leaner-faster-while-still-learning-0409",
+      "https://news.mit.edu/2026/helping-data-centers-deliver-higher-performance-less-hardware-0407"
+    ],
+    "final_score": 2328,
+    "signal_strength": 37,
+    "market_score": 4,
+    "mvp_weeks": 3,
+    "why_now": "ChatGPT for research (OpenAI Blog); Healthcare (OpenAI Blog); Search Live is expanding globally (Google AI Blog)"
+  },
+  {
+    "rank": 2,
+    "name": "Developer Niche SaaS",
+    "opportunity_id": "3c1d386f",
+    "category": "micro_saas",
+    "category_label": "Micro SaaS",
+    "problem": "Entwickler brauchen fokussierte Tools für spezifische Pain Points in ihrem Workflow",
+    "target_buyer": "Solo-Entwickler, kleine Dev-Teams (2-10), DevOps-Engineers",
+    "proposed_solution": "Ein CLI-Tool oder API-Service der genau einen Dev-Workflow löst (Changelog-Gen, PR-Review, Doc-Gen, Error-Triage).",
+    "pricing_anchor": "19-39€/Monat",
+    "revenue_potential": "MEDIUM",
+    "revenue_label": "500–3.000€/Monat",
+    "revenue_model": "subscription",
+    "niche_refinement": {
+      "needs_refinement": true,
+      "possible_niches": [
+        {
+          "niche": "Kleine Steuerkanzleien in Deutschland (5-15 Mitarbeiter)",
+          "reason": "Klarer Workflow, Dokumentenlast, erreichbar über Steuerberater-Verbände."
+        },
+        {
+          "niche": "Freelance-Übersetzer und Sprachdienstleister",
+          "reason": "Repetitive Dokument-Workflows, preissensitiv aber zahlungsbereit für Zeitersparnis."
+        },
+        {
+          "niche": "Boutique-Personalvermittler (1-5 Personen)",
+          "reason": "Hoher manueller Aufwand, klare Pain Points, reachable über LinkedIn."
+        }
+      ],
+      "recommended_niche": "Kleine Steuerkanzleien in Deutschland (5-15 Mitarbeiter)",
+      "reason": "Klarer Workflow, Dokumentenlast, erreichbar über Steuerberater-Verbände."
+    },
+    "revenue_reality": {
+      "pricing_assumption": "19€/Monat",
+      "monthly_price": 19,
+      "break_even_target": "1000€/Monat",
+      "customers_needed": 53,
+      "scenarios": {
+        "starter": {
+          "customers": 5,
+          "revenue": 95
+        },
+        "realistic": {
+          "customers": 20,
+          "revenue": 380
+        },
+        "strong": {
+          "customers": 50,
+          "revenue": 950
+        }
+      },
+      "explanation": "53 Kunden bei 19€/Monat erfordern systematisches Marketing. Erwäge höheren Preis oder Premium-Tier für schnelleres Break-even."
+    },
+    "builder_fit_score": 5,
+    "part_time_fit_score": 5,
+    "buyer_specificity_score": 4,
+    "fit_reasons": [
+      "Starker Skill-Match",
+      "Perfekt für Teilzeit-Sessions",
+      "Klarer Zielkunde identifiziert",
+      "Passt zu Fokus: Micro SaaS"
+    ],
+    "time_feasibility": {
+      "total_hours": "10–15 Stunden",
+      "total_hours_num": 15,
+      "weekly_hours": 7,
+      "weekly_schedule": {
+        "dienstag_abend": "1.5h",
+        "donnerstag_abend": "1.5h",
+        "samstag": "3–4h"
+      },
+      "explanation": "Bei ~7h pro Woche neben deinem 35h-Job ist das MVP in 2 Wochen realistisch. Jede Session ist in sich abgeschlossen — du kannst nach 1.5h aufhören und nächste Woche weitermachen. Der Schlüssel: Kleine, abgeschlossene Arbeitspakete statt langer Focus-Sessions."
+    },
+    "weekend_plan": {
+      "week_1": {
+        "title": "Validierung",
+        "hours": "5–7h",
+        "tasks": [
+          "Problem-Recherche: 3 Solo-Entwickler identifizieren und ansprechen",
+          "Konkurrenzanalyse: Top-3 Alternativen und ihre Schwächen dokumentieren",
+          "Liste 5 nervige Dev-Workflows auf die du selbst hast und prüfe existierende Lösungen",
+          "Entscheidung: Weiterbauen oder Pivot?"
+        ]
+      },
+      "week_2": {
+        "title": "MVP Core",
+        "hours": "8–10h",
+        "tasks": [
+          "Baue ein CLI-Tool (Node.js + Commander.js) das einen davon löst und teste es an 3 eigenen Repos",
+          "Veröffentliche als npm-Paket mit README",
+          "Build Artifact: GitHub Repo",
+          "Ersten Testlauf mit echten Daten"
+        ]
+      },
+      "week_3": {
+        "title": "Deploy + erste Nutzer",
+        "hours": "6–8h",
+        "tasks": [
+          "Deploy auf Hetzner/Vercel/Railway",
+          "Einfache Landing Page oder README",
+          "3 Solo-Entwickler zum Testen einladen",
+          "Feedback sammeln, kritische Bugs fixen"
+        ]
+      },
+      "total_hours": "19–25h"
+    },
+    "artifact": {
+      "type": "github_repo",
+      "type_label": "GitHub Repo",
+      "description": "npm-Paket auf GitHub mit CLI-Tool, README, Installationsanleitung und Freemium-Limit."
+    },
+    "next_actions": {
+      "step_30_min": "Liste 5 nervige Dev-Workflows auf die du selbst hast und prüfe existierende Lösungen",
+      "step_2_hours": "Baue ein CLI-Tool (Node.js + Commander.js) das einen davon löst und teste es an 3 eigenen Repos",
+      "step_6_hours": "Veröffentliche als npm-Paket mit README, Config-Support und Freemium-Limit",
+      "artifact_type": "github_repo",
+      "artifact_description": "npm-Paket auf GitHub mit CLI-Tool, README, Installationsanleitung und Freemium-Limit."
+    },
+    "risks": [
+      "GitHub/JetBrains integrieren ähnliche Features nativ",
+      "Preis-Sensitivität bei Dev-Tools",
+      "Schnelllebiger Markt"
+    ],
+    "evidence_links": [
+      "https://openai.com/index/axios-developer-tool-compromise",
+      "https://openai.com/academy/healthcare",
+      "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-flex-and-priority-inference",
+      "https://blog.google/innovation-and-ai/technology/ai/veo-3-1-lite",
+      "https://blog.google/innovation-and-ai/technology/developers-tools/lyria-3-developers",
+      "https://techcrunch.com/2026/04/10/techcrunch-is-heading-to-tokyo-and-bringing-the-startup-battlefield-with-it",
+      "https://techcrunch.com/2026/04/09/meta-ai-app-climbs-to-no-5-on-the-app-store-after-muse-spark-launch",
+      "https://techcrunch.com/2026/04/09/sierras-bret-taylor-says-the-era-of-clicking-buttons-is-over"
+    ],
+    "final_score": 1832.5,
+    "signal_strength": 31.1,
+    "market_score": 3,
+    "mvp_weeks": 2,
+    "why_now": "Our response to the Axios developer tool compromise (OpenAI Blog); Healthcare (OpenAI Blog); New ways to balance cost and reliability in the Gemini API (Google AI Blog)"
+  }
+]

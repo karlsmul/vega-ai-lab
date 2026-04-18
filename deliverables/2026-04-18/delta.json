@@ -1,0 +1,914 @@
+{
+  "date": "2026-04-18",
+  "compared_to": "2026-04-17",
+  "new_topics": [
+    {
+      "topic_id": "7e3a7f9e",
+      "topic_title": "Tokenmaxxing, OpenAI’s shopping spree, and the AI Anxiety Gap ",
+      "rank": 17,
+      "signal_strength": 13
+    },
+    {
+      "topic_id": "4bcfef57",
+      "topic_title": "7 ways to travel smarter this summer, with help from Google",
+      "rank": 23,
+      "signal_strength": 8.5
+    },
+    {
+      "topic_id": "3622ef6d",
+      "topic_title": "Healthcare",
+      "rank": 46,
+      "signal_strength": 7
+    },
+    {
+      "topic_id": "42abd3eb",
+      "topic_title": "Using projects in ChatGPT",
+      "rank": 47,
+      "signal_strength": 7
+    },
+    {
+      "topic_id": "109d8563",
+      "topic_title": "Brainstorming with ChatGPT",
+      "rank": 49,
+      "signal_strength": 7
+    },
+    {
+      "topic_id": "6d60df6f",
+      "topic_title": "Ecom-RLVE: Adaptive Verifiable Environments for E-Commerce Conversational Agents",
+      "rank": 57,
+      "signal_strength": 7
+    }
+  ],
+  "dropped_topics": [
+    {
+      "topic_id": "646a607d",
+      "topic_title": "AI Automation & Workflows",
+      "previous_rank": 8
+    },
+    {
+      "topic_id": "1eafc786",
+      "topic_title": "Google is now targeting bad ads over bad actors",
+      "previous_rank": 26
+    },
+    {
+      "topic_id": "153402bd",
+      "topic_title": "Meta raises Quest 3 and Quest 3S prices due to RAM shortage",
+      "previous_rank": 27
+    },
+    {
+      "topic_id": "00c88a3e",
+      "topic_title": "Voice & Audio AI",
+      "previous_rank": 48
+    },
+    {
+      "topic_id": "4c0397f7",
+      "topic_title": "Applications of AI at OpenAI",
+      "previous_rank": 50
+    },
+    {
+      "topic_id": "10682a58",
+      "topic_title": "Liberate your OpenClaw",
+      "previous_rank": 64
+    }
+  ],
+  "movers_up": [
+    {
+      "topic_id": "63071f0b",
+      "topic_title": "AI in Forschung & Wissenschaft",
+      "rank": 9,
+      "previous_rank": 49,
+      "rank_change": 40,
+      "evidence_count_change": 2
+    },
+    {
+      "topic_id": "0a49db5b",
+      "topic_title": "B2B Productivity & Tools",
+      "rank": 22,
+      "previous_rank": 47,
+      "rank_change": 25,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "37f0568d",
+      "topic_title": "AI Coding & Dev Tools",
+      "rank": 7,
+      "previous_rank": 28,
+      "rank_change": 21,
+      "evidence_count_change": 3
+    },
+    {
+      "topic_id": "0d8ed32e",
+      "topic_title": "Creating images with ChatGPT",
+      "rank": 45,
+      "previous_rank": 52,
+      "rank_change": 7,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "6730f142",
+      "topic_title": "AI Infrastructure & APIs",
+      "rank": 12,
+      "previous_rank": 16,
+      "rank_change": 4,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "2dc907f1",
+      "topic_title": "ChatGPT for operations teams",
+      "rank": 48,
+      "previous_rank": 51,
+      "rank_change": 3,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "63c7abce",
+      "topic_title": "Turn your best AI prompts into one-click tools in Chrome",
+      "rank": 50,
+      "previous_rank": 53,
+      "rank_change": 3,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "0ab03e3a",
+      "topic_title": "Bringing people together at AI for the Economy Forum",
+      "rank": 51,
+      "previous_rank": 54,
+      "rank_change": 3,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "76bcdbc0",
+      "topic_title": "We’re creating a new satellite imagery map to help protect Brazil’s forests.",
+      "rank": 52,
+      "previous_rank": 55,
+      "rank_change": 3,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "2d0612d7",
+      "topic_title": "The latest AI news we announced in March 2026",
+      "rank": 53,
+      "previous_rank": 56,
+      "rank_change": 3,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "54397f83",
+      "topic_title": "Watch James Manyika talk AI and creativity with LL COOL J.",
+      "rank": 54,
+      "previous_rank": 57,
+      "rank_change": 3,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "7d31d194",
+      "topic_title": "Transform your headphones into a live personal translator on iOS.",
+      "rank": 55,
+      "previous_rank": 58,
+      "rank_change": 3,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "4270cfe3",
+      "topic_title": "Search Live is expanding globally",
+      "rank": 56,
+      "previous_rank": 59,
+      "rank_change": 3,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "5f7ea215",
+      "topic_title": "Ask HN: Are you working on a non AI project?",
+      "rank": 27,
+      "previous_rank": 29,
+      "rank_change": 2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "59fedb8d",
+      "topic_title": "Local & Privacy AI",
+      "rank": 28,
+      "previous_rank": 30,
+      "rank_change": 2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "170d36eb",
+      "topic_title": "Show HN: Video2SRT",
+      "rank": 29,
+      "previous_rank": 31,
+      "rank_change": 2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "485ebbbe",
+      "topic_title": "Show HN: Technical diagrams were slowing me down, so I built a faster way",
+      "rank": 30,
+      "previous_rank": 32,
+      "rank_change": 2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "420a93e7",
+      "topic_title": "Compiling a list of tools for building LLM apps",
+      "rank": 31,
+      "previous_rank": 33,
+      "rank_change": 2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "1eec55dc",
+      "topic_title": "Show HN: Startfa.st – A curated, fast directory of AI, dev, and product tools",
+      "rank": 32,
+      "previous_rank": 34,
+      "rank_change": 2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "2b7dc333",
+      "topic_title": "Show HN: Botais (Battle of the AI's) – Competitive Snake Game for LLMs",
+      "rank": 33,
+      "previous_rank": 35,
+      "rank_change": 2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "441f7db3",
+      "topic_title": "Show HN: Free create high-quality coloring sheets online no login In",
+      "rank": 34,
+      "previous_rank": 36,
+      "rank_change": 2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "07c87234",
+      "topic_title": "Ask HN: Who are your favourite AI content creators?",
+      "rank": 35,
+      "previous_rank": 37,
+      "rank_change": 2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "2bf9b721",
+      "topic_title": "We are witnessing the rise of AI Sex",
+      "rank": 36,
+      "previous_rank": 38,
+      "rank_change": 2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "1661512d",
+      "topic_title": "Show HN: Everyone's Building AI Startups – But Most Are Missing This One Thing",
+      "rank": 37,
+      "previous_rank": 39,
+      "rank_change": 2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "311efffe",
+      "topic_title": "Show HN: Mocked – AI-powered mock interview tool for PMs",
+      "rank": 38,
+      "previous_rank": 40,
+      "rank_change": 2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "638405c5",
+      "topic_title": "Show HN: AI Directories – Submit your AI tool to 300 directories (2 minutes)",
+      "rank": 39,
+      "previous_rank": 41,
+      "rank_change": 2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "58bb9fce",
+      "topic_title": "Show HN: WildfireDeals – Daily AI Tool Deals (50-90% Off)",
+      "rank": 40,
+      "previous_rank": 42,
+      "rank_change": 2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "785cfac4",
+      "topic_title": "Show HN: Sysmodeler.ai – AI-native modeling for cars, aircraft, & space systems",
+      "rank": 41,
+      "previous_rank": 43,
+      "rank_change": 2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "10437c3b",
+      "topic_title": "Show HN: Usplus.ai – Build an AI-Native Company with Agents in your Org Chart",
+      "rank": 42,
+      "previous_rank": 44,
+      "rank_change": 2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "29dfda9d",
+      "topic_title": "Show HN: My spreadsheet automation suite is making $5K without VC funding",
+      "rank": 43,
+      "previous_rank": 45,
+      "rank_change": 2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "50754d8c",
+      "topic_title": "What Makes a Good QA?",
+      "rank": 44,
+      "previous_rank": 46,
+      "rank_change": 2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "4f4a1096",
+      "topic_title": "Data & Analytics AI",
+      "rank": 3,
+      "previous_rank": 4,
+      "rank_change": 1,
+      "evidence_count_change": 1
+    }
+  ],
+  "movers_down": [
+    {
+      "topic_id": "0c8ec4c6",
+      "topic_title": "The PR you would have opened yourself",
+      "rank": 58,
+      "previous_rank": 21,
+      "rank_change": -37,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "1a19da56",
+      "topic_title": "Training and Finetuning Multimodal Embedding & Reranker Models with Sentence Transformers",
+      "rank": 59,
+      "previous_rank": 22,
+      "rank_change": -37,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "20b770de",
+      "topic_title": "Meet HoloTab by HCompany. Your AI browser companion. ",
+      "rank": 60,
+      "previous_rank": 23,
+      "rank_change": -37,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "53b1a13e",
+      "topic_title": "A new way to explore the web with AI Mode in Chrome",
+      "rank": 24,
+      "previous_rank": 20,
+      "rank_change": -4,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "2da3e150",
+      "topic_title": "Ask HN: Resources to brush up from 'Intro to ML' to current LLMs/generative AI?",
+      "rank": 18,
+      "previous_rank": 15,
+      "rank_change": -3,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "59b3d31b",
+      "topic_title": "Image & Vision AI",
+      "rank": 11,
+      "previous_rank": 9,
+      "rank_change": -2,
+      "evidence_count_change": -1
+    },
+    {
+      "topic_id": "2f95b643",
+      "topic_title": "Pi.ai LLM Outperforms Palm/GPT3.5",
+      "rank": 13,
+      "previous_rank": 11,
+      "rank_change": -2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "551333c5",
+      "topic_title": "Show HN: Dropbase AI – A Prompt-Based Python Web App Builder",
+      "rank": 14,
+      "previous_rank": 12,
+      "rank_change": -2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "3bffe8f3",
+      "topic_title": "NLP & Text AI",
+      "rank": 15,
+      "previous_rank": 13,
+      "rank_change": -2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "27ee5900",
+      "topic_title": "Show HN: Marvin – build AI functions that use an LLM as a runtime",
+      "rank": 16,
+      "previous_rank": 14,
+      "rank_change": -2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "7b3bcb3c",
+      "topic_title": "AI Sales & Marketing",
+      "rank": 19,
+      "previous_rank": 17,
+      "rank_change": -2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "02ef3fc6",
+      "topic_title": "Show HN: AI-Less Hacker News",
+      "rank": 20,
+      "previous_rank": 18,
+      "rank_change": -2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "2d45b660",
+      "topic_title": "Show HN: We analyzed AI tool launches – here's why GTM breaks",
+      "rank": 21,
+      "previous_rank": 19,
+      "rank_change": -2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "4840ed7f",
+      "topic_title": "AI Agents & Autonomie",
+      "rank": 4,
+      "previous_rank": 3,
+      "rank_change": -1,
+      "evidence_count_change": -2
+    },
+    {
+      "topic_id": "47d8b15f",
+      "topic_title": "AI Bots & Integrationen",
+      "rank": 8,
+      "previous_rank": 7,
+      "rank_change": -1,
+      "evidence_count_change": -1
+    },
+    {
+      "topic_id": "0ad93259",
+      "topic_title": "Google now lets you explore the web side-by-side with AI Mode",
+      "rank": 25,
+      "previous_rank": 24,
+      "rank_change": -1,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "07cbb084",
+      "topic_title": "InsightFinder raises $15M to help companies figure out where AI agents go wrong",
+      "rank": 26,
+      "previous_rank": 25,
+      "rank_change": -1,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "79e1b5b1",
+      "topic_title": "Waypoint-1.5: Higher-Fidelity Interactive Worlds for Everyday GPUs",
+      "rank": 61,
+      "previous_rank": 60,
+      "rank_change": -1,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "4c65f172",
+      "topic_title": "Safetensors is Joining the PyTorch Foundation",
+      "rank": 62,
+      "previous_rank": 61,
+      "rank_change": -1,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "3f48c34f",
+      "topic_title": "Any Custom Frontend with Gradio's Backend",
+      "rank": 63,
+      "previous_rank": 62,
+      "rank_change": -1,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "1a86ccfc",
+      "topic_title": "TRL v1.0: Post-Training Library Built to Move with the Field",
+      "rank": 64,
+      "previous_rank": 63,
+      "rank_change": -1,
+      "evidence_count_change": 0
+    }
+  ],
+  "recurring_topics": [
+    {
+      "topic_id": "54eb4ba2",
+      "topic_title": "Chatbots & Conversational AI",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "321894ca",
+      "topic_title": "AI Produkte & SaaS",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "4840ed7f",
+      "topic_title": "AI Agents & Autonomie",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "4f4a1096",
+      "topic_title": "Data & Analytics AI",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "722264e9",
+      "topic_title": "Open Source AI",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "4560d908",
+      "topic_title": "Video & Multimedia AI",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "47d8b15f",
+      "topic_title": "AI Bots & Integrationen",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "59b3d31b",
+      "topic_title": "Image & Vision AI",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "3e096994",
+      "topic_title": "Postgres.new: In-browser Postgres with an AI interface",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "2f95b643",
+      "topic_title": "Pi.ai LLM Outperforms Palm/GPT3.5",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "551333c5",
+      "topic_title": "Show HN: Dropbase AI – A Prompt-Based Python Web App Builder",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "3bffe8f3",
+      "topic_title": "NLP & Text AI",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "27ee5900",
+      "topic_title": "Show HN: Marvin – build AI functions that use an LLM as a runtime",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "2da3e150",
+      "topic_title": "Ask HN: Resources to brush up from 'Intro to ML' to current LLMs/generative AI?",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "7b3bcb3c",
+      "topic_title": "AI Sales & Marketing",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "02ef3fc6",
+      "topic_title": "Show HN: AI-Less Hacker News",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "2d45b660",
+      "topic_title": "Show HN: We analyzed AI tool launches – here's why GTM breaks",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "37f0568d",
+      "topic_title": "AI Coding & Dev Tools",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "5f7ea215",
+      "topic_title": "Ask HN: Are you working on a non AI project?",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "59fedb8d",
+      "topic_title": "Local & Privacy AI",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "170d36eb",
+      "topic_title": "Show HN: Video2SRT",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "485ebbbe",
+      "topic_title": "Show HN: Technical diagrams were slowing me down, so I built a faster way",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "420a93e7",
+      "topic_title": "Compiling a list of tools for building LLM apps",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "1eec55dc",
+      "topic_title": "Show HN: Startfa.st – A curated, fast directory of AI, dev, and product tools",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "2b7dc333",
+      "topic_title": "Show HN: Botais (Battle of the AI's) – Competitive Snake Game for LLMs",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "441f7db3",
+      "topic_title": "Show HN: Free create high-quality coloring sheets online no login In",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "07c87234",
+      "topic_title": "Ask HN: Who are your favourite AI content creators?",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "2bf9b721",
+      "topic_title": "We are witnessing the rise of AI Sex",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "1661512d",
+      "topic_title": "Show HN: Everyone's Building AI Startups – But Most Are Missing This One Thing",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "311efffe",
+      "topic_title": "Show HN: Mocked – AI-powered mock interview tool for PMs",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "638405c5",
+      "topic_title": "Show HN: AI Directories – Submit your AI tool to 300 directories (2 minutes)",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "58bb9fce",
+      "topic_title": "Show HN: WildfireDeals – Daily AI Tool Deals (50-90% Off)",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "785cfac4",
+      "topic_title": "Show HN: Sysmodeler.ai – AI-native modeling for cars, aircraft, & space systems",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "10437c3b",
+      "topic_title": "Show HN: Usplus.ai – Build an AI-Native Company with Agents in your Org Chart",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "29dfda9d",
+      "topic_title": "Show HN: My spreadsheet automation suite is making $5K without VC funding",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "50754d8c",
+      "topic_title": "What Makes a Good QA?",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "63071f0b",
+      "topic_title": "AI in Forschung & Wissenschaft",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "76bcdbc0",
+      "topic_title": "We’re creating a new satellite imagery map to help protect Brazil’s forests.",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "2d0612d7",
+      "topic_title": "The latest AI news we announced in March 2026",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "54397f83",
+      "topic_title": "Watch James Manyika talk AI and creativity with LL COOL J.",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "7d31d194",
+      "topic_title": "Transform your headphones into a live personal translator on iOS.",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "4270cfe3",
+      "topic_title": "Search Live is expanding globally",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "79e1b5b1",
+      "topic_title": "Waypoint-1.5: Higher-Fidelity Interactive Worlds for Everyday GPUs",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "4c65f172",
+      "topic_title": "Safetensors is Joining the PyTorch Foundation",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "3f48c34f",
+      "topic_title": "Any Custom Frontend with Gradio's Backend",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "1a86ccfc",
+      "topic_title": "TRL v1.0: Post-Training Library Built to Move with the Field",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "03c021ef",
+      "topic_title": "New technique makes AI models leaner and faster while they’re still learning",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "0fe1e6f5",
+      "topic_title": "MIT researchers use AI to uncover atomic defects in materials ",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "1bbb87ca",
+      "topic_title": "MIT engineers design proteins by their motion, not just their shape",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "6730f142",
+      "topic_title": "AI Infrastructure & APIs",
+      "days_seen": 7
+    },
+    {
+      "topic_id": "0a49db5b",
+      "topic_title": "B2B Productivity & Tools",
+      "days_seen": 7
+    },
+    {
+      "topic_id": "00c88a3e",
+      "topic_title": "Voice & Audio AI",
+      "days_seen": 7
+    },
+    {
+      "topic_id": "10682a58",
+      "topic_title": "Liberate your OpenClaw",
+      "days_seen": 7
+    },
+    {
+      "topic_id": "2f8c0540",
+      "topic_title": "AI Safety & Regulation",
+      "days_seen": 6
+    },
+    {
+      "topic_id": "415bbaf0",
+      "topic_title": "Writing with ChatGPT",
+      "days_seen": 6
+    },
+    {
+      "topic_id": "0ae25e38",
+      "topic_title": "Lyria 3 Pro: Create longer tracks in more Google products",
+      "days_seen": 6
+    },
+    {
+      "topic_id": "457afa28",
+      "topic_title": "Multimodal Embedding & Reranker Models with Sentence Transformers",
+      "days_seen": 6
+    },
+    {
+      "topic_id": "51866cc6",
+      "topic_title": "Build a Domain-Specific Embedding Model in Under a Day",
+      "days_seen": 6
+    },
+    {
+      "topic_id": "3c0b828a",
+      "topic_title": "Wristband enables wearers to control a robotic hand with their own movements",
+      "days_seen": 6
+    },
+    {
+      "topic_id": "2dc907f1",
+      "topic_title": "ChatGPT for operations teams",
+      "days_seen": 5
+    },
+    {
+      "topic_id": "0d8ed32e",
+      "topic_title": "Creating images with ChatGPT",
+      "days_seen": 5
+    },
+    {
+      "topic_id": "688e0fc5",
+      "topic_title": "Using custom GPTs",
+      "days_seen": 5
+    },
+    {
+      "topic_id": "5227e9ce",
+      "topic_title": "ALTK‑Evolve: On‑the‑Job Learning for AI Agents",
+      "days_seen": 5
+    },
+    {
+      "topic_id": "270960d9",
+      "topic_title": "Holo3: Breaking the Computer Use Frontier",
+      "days_seen": 5
+    },
+    {
+      "topic_id": "4c0397f7",
+      "topic_title": "Applications of AI at OpenAI",
+      "days_seen": 4
+    },
+    {
+      "topic_id": "63c7abce",
+      "topic_title": "Turn your best AI prompts into one-click tools in Chrome",
+      "days_seen": 4
+    },
+    {
+      "topic_id": "0ab03e3a",
+      "topic_title": "Bringing people together at AI for the Economy Forum",
+      "days_seen": 4
+    },
+    {
+      "topic_id": "384d38b6",
+      "topic_title": "Q&A: MIT SHASS and the future of education in the age of AI",
+      "days_seen": 4
+    },
+    {
+      "topic_id": "42abd3eb",
+      "topic_title": "Using projects in ChatGPT",
+      "days_seen": 4
+    },
+    {
+      "topic_id": "109d8563",
+      "topic_title": "Brainstorming with ChatGPT",
+      "days_seen": 4
+    },
+    {
+      "topic_id": "3ab8a9bb",
+      "topic_title": "How AI is helping improve heart health in rural Australia",
+      "days_seen": 4
+    },
+    {
+      "topic_id": "1d32a497",
+      "topic_title": "Stalking victim sues OpenAI, claims ChatGPT fueled her abuser’s delusions and ignored her warnings",
+      "days_seen": 4
+    },
+    {
+      "topic_id": "105697fb",
+      "topic_title": "Last 24 hours: Save up to $500 on your TechCrunch Disrupt 2026 pass",
+      "days_seen": 4
+    },
+    {
+      "topic_id": "77f1d894",
+      "topic_title": "ChatGPT finally offers $100/month Pro plan",
+      "days_seen": 4
+    },
+    {
+      "topic_id": "24492219",
+      "topic_title": "The largest orbital compute cluster is open for business",
+      "days_seen": 3
+    },
+    {
+      "topic_id": "646a607d",
+      "topic_title": "AI Automation & Workflows",
+      "days_seen": 3
+    },
+    {
+      "topic_id": "20b770de",
+      "topic_title": "Meet HoloTab by HCompany. Your AI browser companion. ",
+      "days_seen": 3
+    },
+    {
+      "topic_id": "06c9cd33",
+      "topic_title": "Prompting fundamentals",
+      "days_seen": 3
+    },
+    {
+      "topic_id": "665d72a5",
+      "topic_title": "From LLMs to hallucinations, here’s a simple guide to common AI terms",
+      "days_seen": 3
+    },
+    {
+      "topic_id": "3622ef6d",
+      "topic_title": "Healthcare",
+      "days_seen": 3
+    },
+    {
+      "topic_id": "366be524",
+      "topic_title": "Sam Altman responds to ‘incendiary’ New Yorker article after attack on his home",
+      "days_seen": 3
+    },
+    {
+      "topic_id": "48aae745",
+      "topic_title": "ChatGPT for customer success teams",
+      "days_seen": 3
+    }
+  ]
+}

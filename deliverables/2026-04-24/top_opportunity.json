@@ -1,0 +1,48 @@
+{
+  "opportunity_id": "7e580772",
+  "name": "AI Workflow Micro-SaaS",
+  "category": "micro_saas",
+  "problem": "KMUs verschwenden Stunden mit repetitiven Aufgaben die KI in Sekunden erledigen könnte",
+  "target_buyer": "Ops-Manager in 5-50 Personen Unternehmen, Freelancer mit wiederkehrenden Prozessen",
+  "proposed_solution": "Fokussiertes Automations-Tool für eine Workflow-Nische (z.B. Invoice-Processing, Termin-Followups). Ein Workflow, perfekt gelöst.",
+  "why_now": "n8n-io/n8n (GitHub Trending AI); Automations (OpenAI Blog); Top 10 uses for Codex at work (OpenAI Blog)",
+  "difficulty": 2,
+  "mvp_weeks": 2,
+  "revenue_model": "subscription",
+  "risks": [
+    "Zapier/Make sind etabliert — Nische muss eng genug sein",
+    "Kunden erwarten sofort Ergebnisse",
+    "Support-Aufwand bei Edge Cases"
+  ],
+  "next_actions": {
+    "step_30_min": "Identifiziere 3 spezifische Workflows die schlecht automatisiert sind (Reddit/HN/eigene Erfahrung)",
+    "step_2_hours": "Baue einen Prototyp für einen Workflow mit Node.js + Claude API und teste mit echten Daten",
+    "step_6_hours": "Implementiere einen funktionierenden API-Endpunkt + Cron-Trigger + minimales Web-Dashboard",
+    "artifact_type": "working_script",
+    "artifact_description": "Node.js API-Endpunkt + Cron-Job der einen konkreten Workflow automatisiert (z.B. Invoice-Verarbeitung)."
+  },
+  "artifact_type": "working_script",
+  "artifact_description": "Node.js API-Endpunkt + Cron-Job der einen konkreten Workflow automatisiert (z.B. Invoice-Verarbeitung).",
+  "evidence_links": [
+    "https://github.com/n8n-io/n8n",
+    "https://openai.com/academy/codex-automations",
+    "https://openai.com/academy/top-10-use-cases-codex-for-work",
+    "https://openai.com/academy/codex-plugins-and-skills",
+    "https://openai.com/academy/codex-settings",
+    "https://openai.com/academy/what-is-codex",
+    "https://openai.com/academy/workspace-agents",
+    "https://openai.com/index/speeding-up-agentic-workflows-with-websockets"
+  ],
+  "is_strong": true,
+  "weak_reasons": [],
+  "buyer_specificity_score": 4,
+  "pricing_anchor": "29-49€/Monat",
+  "revenue_potential": "MEDIUM",
+  "signal_strength": 41.7,
+  "signal_count": 16,
+  "builder_fit_score": 5,
+  "market_score": 4,
+  "complexity_score": 2,
+  "part_time_fit_score": 5,
+  "final_score": 3279.7
+}

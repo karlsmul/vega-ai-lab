@@ -1,0 +1,268 @@
+[
+  {
+    "rank": 1,
+    "name": "AI Intake Bot",
+    "opportunity_id": "6aa9ba35",
+    "category": "bot_platform",
+    "category_label": "Bot Platform",
+    "problem": "Onboarding-Prozesse und Intake-Formulare sind starr — Kunden brechen ab oder geben schlechte Daten",
+    "target_buyer": "Agenturen, Kanzleien, Berater mit Kunden-Onboarding-Prozess",
+    "proposed_solution": "Conversational AI-Bot der Intake-Prozesse führt: Fragen stellt, validiert, nachfragt, strukturierte Daten liefert.",
+    "pricing_anchor": "39-79€/Monat",
+    "revenue_potential": "MEDIUM",
+    "revenue_label": "500–3.000€/Monat",
+    "revenue_model": "subscription",
+    "niche_refinement": {
+      "needs_refinement": false,
+      "recommended_niche": "Agenturen",
+      "possible_niches": [],
+      "reason": "Zielkunde ist bereits spezifisch genug."
+    },
+    "revenue_reality": {
+      "pricing_assumption": "39€/Monat",
+      "monthly_price": 39,
+      "break_even_target": "1000€/Monat",
+      "customers_needed": 26,
+      "scenarios": {
+        "starter": {
+          "customers": 5,
+          "revenue": 195
+        },
+        "realistic": {
+          "customers": 20,
+          "revenue": 780
+        },
+        "strong": {
+          "customers": 50,
+          "revenue": 1950
+        }
+      },
+      "explanation": "26 Kunden bei 39€/Monat sind über 3-6 Monate aufbaubar. Fokus: Content-Marketing + direkter Outreach an Agenturen."
+    },
+    "builder_fit_score": 3,
+    "part_time_fit_score": 5,
+    "buyer_specificity_score": 4,
+    "fit_reasons": [
+      "Perfekt für Teilzeit-Sessions",
+      "Klarer Zielkunde identifiziert",
+      "Starke Marktsignale",
+      "Passt zu Fokus: Bot Platform"
+    ],
+    "time_feasibility": {
+      "total_hours": "10–15 Stunden",
+      "total_hours_num": 15,
+      "weekly_hours": 7,
+      "weekly_schedule": {
+        "dienstag_abend": "1.5h",
+        "donnerstag_abend": "1.5h",
+        "samstag": "3–4h"
+      },
+      "explanation": "Bei ~7h pro Woche neben deinem 35h-Job ist das MVP in 2 Wochen realistisch. Jede Session ist in sich abgeschlossen — du kannst nach 1.5h aufhören und nächste Woche weitermachen. Der Schlüssel: Kleine, abgeschlossene Arbeitspakete statt langer Focus-Sessions."
+    },
+    "weekend_plan": {
+      "week_1": {
+        "title": "Validierung",
+        "hours": "5–7h",
+        "tasks": [
+          "Problem-Recherche: 3 Agenturen identifizieren und ansprechen",
+          "Konkurrenzanalyse: Top-3 Alternativen und ihre Schwächen dokumentieren",
+          "Definiere einen konkreten Intake-Prozess (z.B. Mandanten-Aufnahme bei Anwalt) und schreibe den Frage-Flow",
+          "Entscheidung: Weiterbauen oder Pivot?"
+        ]
+      },
+      "week_2": {
+        "title": "MVP Core",
+        "hours": "8–10h",
+        "tasks": [
+          "Baue einen Web-Chat der den Flow conversational durchführt und JSON-Output generiert",
+          "Füge WhatsApp/Telegram-Integration und Admin-Dashboard für Flow-Konfiguration hinzu",
+          "Build Artifact: Bot Prototype",
+          "Ersten Testlauf mit echten Daten"
+        ]
+      },
+      "week_3": {
+        "title": "Deploy + erste Nutzer",
+        "hours": "6–8h",
+        "tasks": [
+          "Deploy auf Hetzner/Vercel/Railway",
+          "Einfache Landing Page oder README",
+          "3 Agenturen zum Testen einladen",
+          "Feedback sammeln, kritische Bugs fixen"
+        ]
+      },
+      "total_hours": "19–25h"
+    },
+    "artifact": {
+      "type": "bot_prototype",
+      "type_label": "Bot Prototype",
+      "description": "Web-Chat: Conversational Intake-Flow mit Validierung, Rückfragen und JSON-Output."
+    },
+    "next_actions": {
+      "step_30_min": "Definiere einen konkreten Intake-Prozess (z.B. Mandanten-Aufnahme bei Anwalt) und schreibe den Frage-Flow",
+      "step_2_hours": "Baue einen Web-Chat der den Flow conversational durchführt und JSON-Output generiert",
+      "step_6_hours": "Füge WhatsApp/Telegram-Integration und Admin-Dashboard für Flow-Konfiguration hinzu",
+      "artifact_type": "bot_prototype",
+      "artifact_description": "Web-Chat: Conversational Intake-Flow mit Validierung, Rückfragen und JSON-Output."
+    },
+    "risks": [
+      "Typeform/Tally haben KI-Features",
+      "Nutzer-Akzeptanz von Bot-basierten Formularen",
+      "Domain-spezifische Fragen brauchen Konfiguration"
+    ],
+    "evidence_links": [
+      "https://inflection.ai/inflection-1",
+      "https://llm-timeline.com/",
+      "https://github.com/microsoft/onnxruntime",
+      "https://news.ycombinator.com/item?id=36865625",
+      "https://github.com/n8n-io/n8n",
+      "https://openai.com/index/introducing-openai-privacy-filter",
+      "https://blog.google/products-and-platforms/products/search/ai-mode-chrome",
+      "https://huggingface.co/blog/transformersjs-chrome-extension"
+    ],
+    "final_score": 2971.7,
+    "signal_strength": 63,
+    "market_score": 4,
+    "mvp_weeks": 2,
+    "why_now": "Pi.ai LLM Outperforms Palm/GPT3.5 (HackerNews AI); Show HN: AI Timeline – 171 LLMs from Transformer (2017) to GPT-5.3 (2026) (HackerNews AI); microsoft/onnxruntime (GitHub Trending AI)"
+  },
+  {
+    "rank": 2,
+    "name": "AI Workflow Micro-SaaS",
+    "opportunity_id": "7e580772",
+    "category": "micro_saas",
+    "category_label": "Micro SaaS",
+    "problem": "KMUs verschwenden Stunden mit repetitiven Aufgaben die KI in Sekunden erledigen könnte",
+    "target_buyer": "Ops-Manager in 5-50 Personen Unternehmen, Freelancer mit wiederkehrenden Prozessen",
+    "proposed_solution": "Fokussiertes Automations-Tool für eine Workflow-Nische (z.B. Invoice-Processing, Termin-Followups). Ein Workflow, perfekt gelöst.",
+    "pricing_anchor": "29-49€/Monat",
+    "revenue_potential": "MEDIUM",
+    "revenue_label": "500–3.000€/Monat",
+    "revenue_model": "subscription",
+    "niche_refinement": {
+      "needs_refinement": true,
+      "possible_niches": [
+        {
+          "niche": "Kleine Steuerkanzleien in Deutschland (5-15 Mitarbeiter)",
+          "reason": "Klarer Workflow, Dokumentenlast, erreichbar über Steuerberater-Verbände."
+        },
+        {
+          "niche": "Freelance-Übersetzer und Sprachdienstleister",
+          "reason": "Repetitive Dokument-Workflows, preissensitiv aber zahlungsbereit für Zeitersparnis."
+        },
+        {
+          "niche": "Boutique-Personalvermittler (1-5 Personen)",
+          "reason": "Hoher manueller Aufwand, klare Pain Points, reachable über LinkedIn."
+        }
+      ],
+      "recommended_niche": "Kleine Steuerkanzleien in Deutschland (5-15 Mitarbeiter)",
+      "reason": "Klarer Workflow, Dokumentenlast, erreichbar über Steuerberater-Verbände."
+    },
+    "revenue_reality": {
+      "pricing_assumption": "29€/Monat",
+      "monthly_price": 29,
+      "break_even_target": "1000€/Monat",
+      "customers_needed": 35,
+      "scenarios": {
+        "starter": {
+          "customers": 5,
+          "revenue": 145
+        },
+        "realistic": {
+          "customers": 20,
+          "revenue": 580
+        },
+        "strong": {
+          "customers": 50,
+          "revenue": 1450
+        }
+      },
+      "explanation": "35 Kunden bei 29€/Monat erfordern systematisches Marketing. Erwäge höheren Preis oder Premium-Tier für schnelleres Break-even."
+    },
+    "builder_fit_score": 5,
+    "part_time_fit_score": 5,
+    "buyer_specificity_score": 4,
+    "fit_reasons": [
+      "Starker Skill-Match",
+      "Perfekt für Teilzeit-Sessions",
+      "Klarer Zielkunde identifiziert",
+      "Starke Marktsignale",
+      "Passt zu Fokus: Micro SaaS"
+    ],
+    "time_feasibility": {
+      "total_hours": "10–15 Stunden",
+      "total_hours_num": 15,
+      "weekly_hours": 7,
+      "weekly_schedule": {
+        "dienstag_abend": "1.5h",
+        "donnerstag_abend": "1.5h",
+        "samstag": "3–4h"
+      },
+      "explanation": "Bei ~7h pro Woche neben deinem 35h-Job ist das MVP in 2 Wochen realistisch. Jede Session ist in sich abgeschlossen — du kannst nach 1.5h aufhören und nächste Woche weitermachen. Der Schlüssel: Kleine, abgeschlossene Arbeitspakete statt langer Focus-Sessions."
+    },
+    "weekend_plan": {
+      "week_1": {
+        "title": "Validierung",
+        "hours": "5–7h",
+        "tasks": [
+          "Problem-Recherche: 3 Ops-Manager in 5-50 Personen Unternehmen identifizieren und ansprechen",
+          "Konkurrenzanalyse: Top-3 Alternativen und ihre Schwächen dokumentieren",
+          "Identifiziere 3 spezifische Workflows die schlecht automatisiert sind (Reddit/HN/eigene Erfahrung)",
+          "Entscheidung: Weiterbauen oder Pivot?"
+        ]
+      },
+      "week_2": {
+        "title": "MVP Core",
+        "hours": "8–10h",
+        "tasks": [
+          "Baue einen Prototyp für einen Workflow mit Node.js + Claude API und teste mit echten Daten",
+          "Implementiere einen funktionierenden API-Endpunkt + Cron-Trigger + minimales Web-Dashboard",
+          "Build Artifact: Working Script",
+          "Ersten Testlauf mit echten Daten"
+        ]
+      },
+      "week_3": {
+        "title": "Deploy + erste Nutzer",
+        "hours": "6–8h",
+        "tasks": [
+          "Deploy auf Hetzner/Vercel/Railway",
+          "Einfache Landing Page oder README",
+          "3 Ops-Manager in 5-50 Personen Unternehmen zum Testen einladen",
+          "Feedback sammeln, kritische Bugs fixen"
+        ]
+      },
+      "total_hours": "19–25h"
+    },
+    "artifact": {
+      "type": "working_script",
+      "type_label": "Working Script",
+      "description": "Node.js API-Endpunkt + Cron-Job der einen konkreten Workflow automatisiert (z.B. Invoice-Verarbeitung)."
+    },
+    "next_actions": {
+      "step_30_min": "Identifiziere 3 spezifische Workflows die schlecht automatisiert sind (Reddit/HN/eigene Erfahrung)",
+      "step_2_hours": "Baue einen Prototyp für einen Workflow mit Node.js + Claude API und teste mit echten Daten",
+      "step_6_hours": "Implementiere einen funktionierenden API-Endpunkt + Cron-Trigger + minimales Web-Dashboard",
+      "artifact_type": "working_script",
+      "artifact_description": "Node.js API-Endpunkt + Cron-Job der einen konkreten Workflow automatisiert (z.B. Invoice-Verarbeitung)."
+    },
+    "risks": [
+      "Zapier/Make sind etabliert — Nische muss eng genug sein",
+      "Kunden erwarten sofort Ergebnisse",
+      "Support-Aufwand bei Edge Cases"
+    ],
+    "evidence_links": [
+      "https://github.com/n8n-io/n8n",
+      "https://openai.com/academy/codex-automations",
+      "https://openai.com/academy/top-10-use-cases-codex-for-work",
+      "https://openai.com/academy/codex-plugins-and-skills",
+      "https://openai.com/academy/codex-settings",
+      "https://openai.com/academy/what-is-codex",
+      "https://openai.com/academy/workspace-agents",
+      "https://openai.com/index/speeding-up-agentic-workflows-with-websockets"
+    ],
+    "final_score": 2826.7,
+    "signal_strength": 35.9,
+    "market_score": 4,
+    "mvp_weeks": 2,
+    "why_now": "n8n-io/n8n (GitHub Trending AI); Automations (OpenAI Blog); Top 10 uses for Codex at work (OpenAI Blog)"
+  }
+]

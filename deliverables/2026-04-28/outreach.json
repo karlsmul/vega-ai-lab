@@ -1,0 +1,134 @@
+[
+  {
+    "name": "AI Intake Bot",
+    "category_label": "Bot Platform",
+    "linkedin_message": {
+      "subject": null,
+      "body": "Hi! Ich bin Samuel und baue gerade ein Tool für Agenturen.\n\nKurze Frage: Wie gehst du aktuell mit [Onboarding-Prozesse und Intake-Formulare sind starr — Kunden...] um?\n\nIch suche 5 Leute für ein kurzes Feedback-Gespräch (15 min). Kein Verkauf — ich will verstehen, ob das Problem real ist.\n\nHättest du Interesse?",
+      "notes": "Personalisiere die erste Zeile mit etwas Spezifischem aus dem Profil der Person."
+    },
+    "cold_email": {
+      "subject": "Kurze Frage: Wie löst ihr [Onboarding-Prozesse und Intake-Formulare]?",
+      "body": "Hi [Name],\n\nich bin Samuel und recherchiere gerade ein Problem, das viele Agenturen betrifft:\n\nOnboarding-Prozesse und Intake-Formulare sind starr — Kunden brechen ab oder geben schlechte Daten\n\nIch baue einen Prototyp und suche 5 Leute für ein kurzes Feedback-Gespräch (15 min, remote). Kein Sales-Pitch — ich will nur verstehen, ob und wie ihr das Problem habt.\n\nAls Dankeschön: Früher Zugang zum Tool + Lifetime-Rabatt, wenn es was wird.\n\nHättest du 15 Minuten diese Woche?\n\nBeste Grüße\nSamuel",
+      "notes": "Verwende den echten Firmennamen statt [Name]. Halte es unter 150 Wörtern."
+    },
+    "discovery_questions": [
+      {
+        "phase": "Einstieg",
+        "questions": [
+          "Erzähl mir kurz: Was ist deine Rolle und was machst du täglich?",
+          "Wie sieht dein typischer Workflow für [Onboarding-Prozesse und Intake-Formulare sind star] aus?"
+        ]
+      },
+      {
+        "phase": "Problem-Tiefe",
+        "questions": [
+          "Was nervt dich am meisten an deinem aktuellen Prozess?",
+          "Wie viel Zeit verbringst du pro Woche damit?",
+          "Hast du schon versucht, das Problem zu lösen? Was hast du probiert?",
+          "Was würde passieren, wenn das Problem morgen gelöst wäre?"
+        ]
+      },
+      {
+        "phase": "Lösung-Test",
+        "questions": [
+          "Wenn ich dir ein Tool zeige, das [Conversational AI-Bot der Intake-Prozesse führt: Fragen stel] — wäre das interessant?",
+          "Was müsste das Tool UNBEDINGT können?",
+          "Was wäre ein absolutes No-Go?"
+        ]
+      },
+      {
+        "phase": "Zahlungsbereitschaft",
+        "questions": [
+          "Zahlst du aktuell für Tools die dieses Problem lösen? Wenn ja, wie viel?",
+          "Wenn das Tool genau das löst — wären 39-79€/Monat im Rahmen?",
+          "Wer entscheidet bei euch über Tool-Käufe in dieser Preisklasse?"
+        ]
+      },
+      {
+        "phase": "Abschluss",
+        "questions": [
+          "Darf ich dir den Prototyp zeigen, wenn er fertig ist?",
+          "Kennst du 2-3 andere Leute mit dem gleichen Problem?"
+        ]
+      }
+    ],
+    "public_post_linkedin": {
+      "type": "linkedin",
+      "body": "Ich baue gerade ein Tool für Agenturen.\n\nDas Problem: Onboarding-Prozesse und Intake-Formulare sind starr — Kunden brechen ab oder geben schlechte Daten\n\nMein Ansatz: Conversational AI-Bot der Intake-Prozesse führt: Fragen stellt, validiert, nachfragt, strukturierte Daten liefert.\n\nIch suche 5 Beta-Tester die genau dieses Problem haben.\n\n👉 Kommentiere \"Interessiert\" oder schreib mir eine DM.\n\nKein Verkauf. Ich will validieren, ob das Problem echt ist — bevor ich wochenlang baue.\n\n#buildinpublic #chatbots #ai",
+      "notes": "Poste morgens 8-9 Uhr (DACH) für maximale Reichweite. Antworte auf JEDEN Kommentar."
+    },
+    "public_post_hn": {
+      "type": "hackernews",
+      "title": "Show HN: AI Intake Bot – Conversational AI-Bot der Intake-Prozesse führt: Fragen stel",
+      "body": "Hi HN,\n\nI'm building ai intake bot because onboarding-prozesse und intake-formulare sind starr — kunden brechen ab oder geben schlechte daten.\n\nThe idea: Conversational AI-Bot der Intake-Prozesse führt: Fragen stellt, validiert, nachfragt, strukturierte Daten liefert.\n\nTarget users: Agenturen, Kanzleien, Berater mit Kunden-Onboarding-Prozess\n\nI'm looking for feedback from people who have this problem. Is this something you'd pay 39-79€/Monat for?\n\nWhat am I missing? What would make this a must-have vs nice-to-have?",
+      "notes": "HN posts sollten auf Englisch sein. Poste zu US-Morgen (15-17 Uhr MESZ). Antworte sachlich auf Kritik."
+    }
+  },
+  {
+    "name": "AI Workflow Micro-SaaS",
+    "category_label": "Micro SaaS",
+    "linkedin_message": {
+      "subject": null,
+      "body": "Hi! Ich bin Samuel und baue gerade ein Tool für Ops-Manager in 5-50 Personen Unternehmen.\n\nKurze Frage: Wie gehst du aktuell mit [KMUs verschwenden Stunden mit repetitiven Aufgaben die KI in...] um?\n\nIch suche 5 Leute für ein kurzes Feedback-Gespräch (15 min). Kein Verkauf — ich will verstehen, ob das Problem real ist.\n\nHättest du Interesse?",
+      "notes": "Personalisiere die erste Zeile mit etwas Spezifischem aus dem Profil der Person."
+    },
+    "cold_email": {
+      "subject": "Kurze Frage: Wie löst ihr [KMUs verschwenden Stunden mit repetitive]?",
+      "body": "Hi [Name],\n\nich bin Samuel und recherchiere gerade ein Problem, das viele Ops-Manager in 5-50 Personen Unternehmen betrifft:\n\nKMUs verschwenden Stunden mit repetitiven Aufgaben die KI in Sekunden erledigen könnte\n\nIch baue einen Prototyp und suche 5 Leute für ein kurzes Feedback-Gespräch (15 min, remote). Kein Sales-Pitch — ich will nur verstehen, ob und wie ihr das Problem habt.\n\nAls Dankeschön: Früher Zugang zum Tool + Lifetime-Rabatt, wenn es was wird.\n\nHättest du 15 Minuten diese Woche?\n\nBeste Grüße\nSamuel",
+      "notes": "Verwende den echten Firmennamen statt [Name]. Halte es unter 150 Wörtern."
+    },
+    "discovery_questions": [
+      {
+        "phase": "Einstieg",
+        "questions": [
+          "Erzähl mir kurz: Was ist deine Rolle und was machst du täglich?",
+          "Wie sieht dein typischer Workflow für [KMUs verschwenden Stunden mit repetitiven Aufgaben] aus?"
+        ]
+      },
+      {
+        "phase": "Problem-Tiefe",
+        "questions": [
+          "Was nervt dich am meisten an deinem aktuellen Prozess?",
+          "Wie viel Zeit verbringst du pro Woche damit?",
+          "Hast du schon versucht, das Problem zu lösen? Was hast du probiert?",
+          "Was würde passieren, wenn das Problem morgen gelöst wäre?"
+        ]
+      },
+      {
+        "phase": "Lösung-Test",
+        "questions": [
+          "Wenn ich dir ein Tool zeige, das [Fokussiertes Automations-Tool für eine Workflow-Nische (z.B.] — wäre das interessant?",
+          "Was müsste das Tool UNBEDINGT können?",
+          "Was wäre ein absolutes No-Go?"
+        ]
+      },
+      {
+        "phase": "Zahlungsbereitschaft",
+        "questions": [
+          "Zahlst du aktuell für Tools die dieses Problem lösen? Wenn ja, wie viel?",
+          "Wenn das Tool genau das löst — wären 29-49€/Monat im Rahmen?",
+          "Wer entscheidet bei euch über Tool-Käufe in dieser Preisklasse?"
+        ]
+      },
+      {
+        "phase": "Abschluss",
+        "questions": [
+          "Darf ich dir den Prototyp zeigen, wenn er fertig ist?",
+          "Kennst du 2-3 andere Leute mit dem gleichen Problem?"
+        ]
+      }
+    ],
+    "public_post_linkedin": {
+      "type": "linkedin",
+      "body": "Ich baue gerade ein Tool für Ops-Manager in 5-50 Personen Unternehmen.\n\nDas Problem: KMUs verschwenden Stunden mit repetitiven Aufgaben die KI in Sekunden erledigen könnte\n\nMein Ansatz: Fokussiertes Automations-Tool für eine Workflow-Nische (z.B. Invoice-Processing, Termin-Followups). Ein Workflow, perfek\n\nIch suche 5 Beta-Tester die genau dieses Problem haben.\n\n👉 Kommentiere \"Interessiert\" oder schreib mir eine DM.\n\nKein Verkauf. Ich will validieren, ob das Problem echt ist — bevor ich wochenlang baue.\n\n#buildinpublic #microsaas #ai",
+      "notes": "Poste morgens 8-9 Uhr (DACH) für maximale Reichweite. Antworte auf JEDEN Kommentar."
+    },
+    "public_post_hn": {
+      "type": "hackernews",
+      "title": "Show HN: AI Workflow Micro-SaaS – Fokussiertes Automations-Tool für eine Workflow-Nische (z.B.",
+      "body": "Hi HN,\n\nI'm building ai workflow micro-saas because kmus verschwenden stunden mit repetitiven aufgaben die ki in sekunden erledigen könnte.\n\nThe idea: Fokussiertes Automations-Tool für eine Workflow-Nische (z.B. Invoice-Processing, Termin-Followups). Ein Workflow, perfekt gelöst.\n\nTarget users: Ops-Manager in 5-50 Personen Unternehmen, Freelancer mit wiederkehrenden Prozessen\n\nI'm looking for feedback from people who have this problem. Is this something you'd pay 29-49€/Monat for?\n\nWhat am I missing? What would make this a must-have vs nice-to-have?",
+      "notes": "HN posts sollten auf Englisch sein. Poste zu US-Morgen (15-17 Uhr MESZ). Antworte sachlich auf Kritik."
+    }
+  }
+]

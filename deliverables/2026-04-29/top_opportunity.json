@@ -1,0 +1,48 @@
+{
+  "opportunity_id": "793f0671",
+  "name": "Document Processing Micro-SaaS",
+  "category": "micro_saas",
+  "problem": "Unternehmen haben kritisches Wissen in Dokumenten vergraben das niemand findet",
+  "target_buyer": "Wissensarbeiter, Legal-Teams, Compliance-Abteilungen, Consulting-Firmen",
+  "proposed_solution": "Fokussiertes RAG-Tool für eine Dokumenten-Nische: Vertragsprüfung, Compliance-Check, oder internes Wiki-Q&A.",
+  "why_now": "Introducing GPT-5.5 (OpenAI Blog); Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Multimodal Intelligence for Documents, Audio and Video Agents (Hugging Face Blog); YouTube is testing an AI-powered search feature that shows guided answers (TechCrunch AI)",
+  "difficulty": 2,
+  "mvp_weeks": 3,
+  "revenue_model": "subscription",
+  "risks": [
+    "RAG-Qualität schwankt je nach Dokument-Typ",
+    "Onboarding-Hürde bei Dokumenten-Upload",
+    "Notion AI als Konkurrent"
+  ],
+  "next_actions": {
+    "step_30_min": "Sammle 10 Beispiel-Dokumente einer Nische und teste eine einfache RAG-Pipeline",
+    "step_2_hours": "Baue ein Chat-Interface das Fragen über die Dokumente beantwortet mit Quellen-Links",
+    "step_6_hours": "Füge Batch-Upload, Chunk-Visualisierung und Export (Markdown/PDF) hinzu",
+    "artifact_type": "demo_app",
+    "artifact_description": "Web-App: Dokument hochladen, Fragen stellen, Antworten mit Quellenlinks erhalten."
+  },
+  "artifact_type": "demo_app",
+  "artifact_description": "Web-App: Dokument hochladen, Fragen stellen, Antworten mit Quellenlinks erhalten.",
+  "evidence_links": [
+    "https://openai.com/index/introducing-gpt-5-5",
+    "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence",
+    "https://techcrunch.com/2026/04/28/youtube-is-testing-an-ai-powered-search-feature-that-shows-guided-answers",
+    "https://techcrunch.com/2026/04/28/otters-new-feature-lets-users-search-across-their-enterprise-tools",
+    "https://techcrunch.com/2026/04/27/deepminds-david-silver-just-raised-1-1b-to-build-an-ai-that-learns-without-human-data",
+    "https://news.mit.edu/2026/mit-scientists-build-worlds-largest-collection-olympiad-level-math-problems-open-0424",
+    "https://news.mit.edu/2026/jacob-andreas-brett-mcguire-edgerton-award-winners-0417",
+    "https://news.mit.edu/2026/bringing-ai-driven-protein-design-tools-everywhere-0417"
+  ],
+  "is_strong": true,
+  "weak_reasons": [],
+  "buyer_specificity_score": 4,
+  "pricing_anchor": "49-99€/Monat",
+  "revenue_potential": "HIGH",
+  "signal_strength": 40,
+  "signal_count": 14,
+  "builder_fit_score": 5,
+  "market_score": 4,
+  "complexity_score": 2,
+  "part_time_fit_score": 4,
+  "final_score": 2516.8
+}

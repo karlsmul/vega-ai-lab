@@ -1,0 +1,17 @@
+[
+  {
+    "type": "newsjacking",
+    "title": "Chatbots & Conversational AI",
+    "content": "Newsjacking: Chatbots & Conversational AI"
+  },
+  {
+    "type": "evergreen",
+    "title": "How to Use Transformers.js in a Chrome Extension",
+    "content": "Evergreen: How to Use Transformers.js in a Chrome Extension"
+  },
+  {
+    "type": "build_in_public",
+    "title": "Document Processing Micro-SaaS",
+    "content": "Build: Document Processing Micro-SaaS"
+  }
+]

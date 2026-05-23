@@ -1,0 +1,17 @@
+[
+  {
+    "type": "newsjacking",
+    "title": "AI Produkte & SaaS",
+    "content": "Newsjacking: AI Produkte & SaaS"
+  },
+  {
+    "type": "evergreen",
+    "title": "Model Fine-tuning & Training",
+    "content": "Evergreen: Model Fine-tuning & Training"
+  },
+  {
+    "type": "build_in_public",
+    "title": "Document Processing Micro-SaaS",
+    "content": "Build: Document Processing Micro-SaaS"
+  }
+]

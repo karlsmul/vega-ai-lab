@@ -1,0 +1,17 @@
+[
+  {
+    "type": "newsjacking",
+    "title": "Chatbots & Conversational AI",
+    "content": "Newsjacking: Chatbots & Conversational AI"
+  },
+  {
+    "type": "evergreen",
+    "title": "Building Blocks for Foundation Model Training and Inference on AWS",
+    "content": "Evergreen: Building Blocks for Foundation Model Training and Inference on AWS"
+  },
+  {
+    "type": "build_in_public",
+    "title": "Document Processing Micro-SaaS",
+    "content": "Build: Document Processing Micro-SaaS"
+  }
+]

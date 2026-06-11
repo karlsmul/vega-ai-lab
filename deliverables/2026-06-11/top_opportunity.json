@@ -1,0 +1,48 @@
+{
+  "opportunity_id": "793f0671",
+  "name": "Document Processing Micro-SaaS",
+  "category": "micro_saas",
+  "problem": "Unternehmen haben kritisches Wissen in Dokumenten vergraben das niemand findet",
+  "target_buyer": "Wissensarbeiter, Legal-Teams, Compliance-Abteilungen, Consulting-Firmen",
+  "proposed_solution": "Fokussiertes RAG-Tool für eine Dokumenten-Nische: Vertragsprüfung, Compliance-Check, oder internes Wiki-Q&A.",
+  "why_now": "Introducing the OpenAI Economic Research Exchange (OpenAI Blog); Introducing new capabilities to GPT-Rosalind (OpenAI Blog); 5 ways Google Search can level up your thrift and vintage shopping (Google AI Blog)",
+  "difficulty": 2,
+  "mvp_weeks": 3,
+  "revenue_model": "subscription",
+  "risks": [
+    "RAG-Qualität schwankt je nach Dokument-Typ",
+    "Onboarding-Hürde bei Dokumenten-Upload",
+    "Notion AI als Konkurrent"
+  ],
+  "next_actions": {
+    "step_30_min": "Sammle 10 Beispiel-Dokumente einer Nische und teste eine einfache RAG-Pipeline",
+    "step_2_hours": "Baue ein Chat-Interface das Fragen über die Dokumente beantwortet mit Quellen-Links",
+    "step_6_hours": "Füge Batch-Upload, Chunk-Visualisierung und Export (Markdown/PDF) hinzu",
+    "artifact_type": "demo_app",
+    "artifact_description": "Web-App: Dokument hochladen, Fragen stellen, Antworten mit Quellenlinks erhalten."
+  },
+  "artifact_type": "demo_app",
+  "artifact_description": "Web-App: Dokument hochladen, Fragen stellen, Antworten mit Quellenlinks erhalten.",
+  "evidence_links": [
+    "https://openai.com/index/economic-research-exchange",
+    "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
+    "https://blog.google/products-and-platforms/products/search/thrifting-tips",
+    "https://blog.google/products-and-platforms/products/search/ai-mode-us-insights",
+    "https://techcrunch.com/2026/06/10/how-memory-tools-can-make-ai-models-worse",
+    "https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable",
+    "https://news.mit.edu/2026/nuclear-inspired-cooling-system-ferveret-could-make-data-centers-more-sustainable-0610",
+    "https://news.mit.edu/2026/crucial-human-component-computing-and-ai-0605"
+  ],
+  "is_strong": true,
+  "weak_reasons": [],
+  "buyer_specificity_score": 4,
+  "pricing_anchor": "49-99€/Monat",
+  "revenue_potential": "HIGH",
+  "signal_strength": 31,
+  "signal_count": 11,
+  "builder_fit_score": 5,
+  "market_score": 4,
+  "complexity_score": 2,
+  "part_time_fit_score": 4,
+  "final_score": 1950.5
+}

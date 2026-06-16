@@ -1,0 +1,593 @@
+{
+  "date": "2026-06-16",
+  "compared_to": "2026-06-15",
+  "new_topics": [
+    {
+      "topic_id": "5a654844",
+      "topic_title": "Sundar Pichai faces boos, walkout at Stanford graduation ceremony over Google’s Israel, ICE ties",
+      "rank": 24,
+      "signal_strength": 8.5
+    },
+    {
+      "topic_id": "0fcc2ff8",
+      "topic_title": "SpaceX is public: Everything you need to know post-IPO",
+      "rank": 25,
+      "signal_strength": 8.5
+    },
+    {
+      "topic_id": "0d3190c0",
+      "topic_title": "As AI agents become employees, NewCore emerges with $66M to give them identities",
+      "rank": 26,
+      "signal_strength": 8.5
+    },
+    {
+      "topic_id": "599e7f44",
+      "topic_title": "A satellite just learned to find things on its own — here’s what that means",
+      "rank": 27,
+      "signal_strength": 8.5
+    }
+  ],
+  "dropped_topics": [
+    {
+      "topic_id": "295eaebd",
+      "topic_title": "SpaceX, Anthropic, and OpenAI’s hot IPO summer",
+      "previous_rank": 23
+    },
+    {
+      "topic_id": "4eb3b7d0",
+      "topic_title": "Amazon CEO reportedly raised Anthropic model concerns before government crackdown",
+      "previous_rank": 28
+    },
+    {
+      "topic_id": "0bc5bd58",
+      "topic_title": "SpaceX IPO: Live updates on everything you need to know",
+      "previous_rank": 64
+    }
+  ],
+  "movers_up": [
+    {
+      "topic_id": "2f8c0540",
+      "topic_title": "AI Safety & Regulation",
+      "rank": 11,
+      "previous_rank": 17,
+      "rank_change": 6,
+      "evidence_count_change": 1
+    },
+    {
+      "topic_id": "6730f142",
+      "topic_title": "AI Infrastructure & APIs",
+      "rank": 7,
+      "previous_rank": 12,
+      "rank_change": 5,
+      "evidence_count_change": 1
+    },
+    {
+      "topic_id": "0a49db5b",
+      "topic_title": "B2B Productivity & Tools",
+      "rank": 5,
+      "previous_rank": 9,
+      "rank_change": 4,
+      "evidence_count_change": 1
+    },
+    {
+      "topic_id": "73ce512f",
+      "topic_title": "Introducing the OpenAI Partner Network",
+      "rank": 23,
+      "previous_rank": 24,
+      "rank_change": 1,
+      "evidence_count_change": 0
+    }
+  ],
+  "movers_down": [
+    {
+      "topic_id": "31c151f1",
+      "topic_title": "As Anthropic suspends access to new models, India debates its AI future",
+      "rank": 64,
+      "previous_rank": 26,
+      "rank_change": -38,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "7552a527",
+      "topic_title": "Meta reportedly moves to unwind $2B Manus deal after Beijing’s demand",
+      "rank": 65,
+      "previous_rank": 27,
+      "rank_change": -38,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "3bffe8f3",
+      "topic_title": "NLP & Text AI",
+      "rank": 17,
+      "previous_rank": 10,
+      "rank_change": -7,
+      "evidence_count_change": -1
+    },
+    {
+      "topic_id": "722264e9",
+      "topic_title": "Open Source AI",
+      "rank": 9,
+      "previous_rank": 5,
+      "rank_change": -4,
+      "evidence_count_change": -1
+    },
+    {
+      "topic_id": "0a69212f",
+      "topic_title": "As AI companies race to go public, who else is along for the ride?",
+      "rank": 28,
+      "previous_rank": 25,
+      "rank_change": -3,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "37f0568d",
+      "topic_title": "AI Coding & Dev Tools",
+      "rank": 10,
+      "previous_rank": 8,
+      "rank_change": -2,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "63071f0b",
+      "topic_title": "AI in Forschung & Wissenschaft",
+      "rank": 8,
+      "previous_rank": 7,
+      "rank_change": -1,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "47d8b15f",
+      "topic_title": "AI Bots & Integrationen",
+      "rank": 12,
+      "previous_rank": 11,
+      "rank_change": -1,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "7e90ee75",
+      "topic_title": "Jinhua Zhao named head of the Department of Urban Studies and Planning",
+      "rank": 66,
+      "previous_rank": 65,
+      "rank_change": -1,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "1e665e6d",
+      "topic_title": "When it comes to predicting people’s preferences, it pays to consider “the power of three”",
+      "rank": 67,
+      "previous_rank": 66,
+      "rank_change": -1,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "37fa9b5a",
+      "topic_title": "MIT affiliates win 2026 Hertz Foundation Fellowships",
+      "rank": 68,
+      "previous_rank": 67,
+      "rank_change": -1,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "3dec9c04",
+      "topic_title": "NSF renews support for MIT-led AI and physics institute, expanding a new model for discovery",
+      "rank": 69,
+      "previous_rank": 68,
+      "rank_change": -1,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "2909b98f",
+      "topic_title": "Teaching AI agents to ask better questions by playing “Battleship”",
+      "rank": 70,
+      "previous_rank": 69,
+      "rank_change": -1,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "034ee2a7",
+      "topic_title": "Media Advisory: MIT to establish regional quantum hub",
+      "rank": 71,
+      "previous_rank": 70,
+      "rank_change": -1,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "6179e453",
+      "topic_title": "Building AI models that understand chemical principles",
+      "rank": 72,
+      "previous_rank": 71,
+      "rank_change": -1,
+      "evidence_count_change": 0
+    },
+    {
+      "topic_id": "26656895",
+      "topic_title": "Justin Solomon appointed associate dean of engineering education",
+      "rank": 73,
+      "previous_rank": 72,
+      "rank_change": -1,
+      "evidence_count_change": 0
+    }
+  ],
+  "recurring_topics": [
+    {
+      "topic_id": "17829898",
+      "topic_title": "We’re announcing new community investments in Missouri.",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "24737148",
+      "topic_title": "100 things we announced at I/O 2026",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "26656895",
+      "topic_title": "Justin Solomon appointed associate dean of engineering education",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "321894ca",
+      "topic_title": "AI Produkte & SaaS",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "54eb4ba2",
+      "topic_title": "Chatbots & Conversational AI",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "4f4a1096",
+      "topic_title": "Data & Analytics AI",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "4840ed7f",
+      "topic_title": "AI Agents & Autonomie",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "722264e9",
+      "topic_title": "Open Source AI",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "59fedb8d",
+      "topic_title": "Local & Privacy AI",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "63071f0b",
+      "topic_title": "AI in Forschung & Wissenschaft",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "37f0568d",
+      "topic_title": "AI Coding & Dev Tools",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "0a49db5b",
+      "topic_title": "B2B Productivity & Tools",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "3bffe8f3",
+      "topic_title": "NLP & Text AI",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "47d8b15f",
+      "topic_title": "AI Bots & Integrationen",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "6730f142",
+      "topic_title": "AI Infrastructure & APIs",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "3e096994",
+      "topic_title": "Postgres.new: In-browser Postgres with an AI interface",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "2f95b643",
+      "topic_title": "Pi.ai LLM Outperforms Palm/GPT3.5",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "4560d908",
+      "topic_title": "Video & Multimedia AI",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "551333c5",
+      "topic_title": "Show HN: Dropbase AI – A Prompt-Based Python Web App Builder",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "2f8c0540",
+      "topic_title": "AI Safety & Regulation",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "27ee5900",
+      "topic_title": "Show HN: Marvin – build AI functions that use an LLM as a runtime",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "2da3e150",
+      "topic_title": "Ask HN: Resources to brush up from 'Intro to ML' to current LLMs/generative AI?",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "7b3bcb3c",
+      "topic_title": "AI Sales & Marketing",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "02ef3fc6",
+      "topic_title": "Show HN: AI-Less Hacker News",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "2d45b660",
+      "topic_title": "Show HN: We analyzed AI tool launches – here's why GTM breaks",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "5f7ea215",
+      "topic_title": "Ask HN: Are you working on a non AI project?",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "170d36eb",
+      "topic_title": "Show HN: Video2SRT",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "13211b6f",
+      "topic_title": "Show HN: Hodor – a 701KB native macOS prompt launcher for AI tools",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "485ebbbe",
+      "topic_title": "Show HN: Technical diagrams were slowing me down, so I built a faster way",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "420a93e7",
+      "topic_title": "Compiling a list of tools for building LLM apps",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "1eec55dc",
+      "topic_title": "Show HN: Startfa.st – A curated, fast directory of AI, dev, and product tools",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "2b7dc333",
+      "topic_title": "Show HN: Botais (Battle of the AI's) – Competitive Snake Game for LLMs",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "441f7db3",
+      "topic_title": "Show HN: Free create high-quality coloring sheets online no login In",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "07c87234",
+      "topic_title": "Ask HN: Who are your favourite AI content creators?",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "2bf9b721",
+      "topic_title": "We are witnessing the rise of AI Sex",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "1661512d",
+      "topic_title": "Show HN: Everyone's Building AI Startups – But Most Are Missing This One Thing",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "311efffe",
+      "topic_title": "Show HN: Mocked – AI-powered mock interview tool for PMs",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "638405c5",
+      "topic_title": "Show HN: AI Directories – Submit your AI tool to 300 directories (2 minutes)",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "58bb9fce",
+      "topic_title": "Show HN: WildfireDeals – Daily AI Tool Deals (50-90% Off)",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "785cfac4",
+      "topic_title": "Show HN: Sysmodeler.ai – AI-native modeling for cars, aircraft, & space systems",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "10437c3b",
+      "topic_title": "Show HN: Usplus.ai – Build an AI-Native Company with Agents in your Org Chart",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "29dfda9d",
+      "topic_title": "Show HN: My spreadsheet automation suite is making $5K without VC funding",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "50754d8c",
+      "topic_title": "What Makes a Good QA?",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "59b3d31b",
+      "topic_title": "Image & Vision AI",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "00c88a3e",
+      "topic_title": "Voice & Audio AI",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "41dfd351",
+      "topic_title": "Confidential submission of draft S-1 to the SEC",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "61a57b2d",
+      "topic_title": "The latest AI news we announced in May 2026",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "243ca33a",
+      "topic_title": "5 ways Google Search can level up your thrift and vintage shopping",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "6b384dbd",
+      "topic_title": "Catch up on the Dialogues stage at Google I/O 2026.",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "3dec9c04",
+      "topic_title": "NSF renews support for MIT-led AI and physics institute, expanding a new model for discovery",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "2909b98f",
+      "topic_title": "Teaching AI agents to ask better questions by playing “Battleship”",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "034ee2a7",
+      "topic_title": "Media Advisory: MIT to establish regional quantum hub",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "6179e453",
+      "topic_title": "Building AI models that understand chemical principles",
+      "days_seen": 8
+    },
+    {
+      "topic_id": "1d4dff2c",
+      "topic_title": "Industrial policy for the Intelligence Age",
+      "days_seen": 7
+    },
+    {
+      "topic_id": "3aaf5b22",
+      "topic_title": "Direct Preference Optimization Beyond Chatbots",
+      "days_seen": 7
+    },
+    {
+      "topic_id": "265db462",
+      "topic_title": "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
+      "days_seen": 7
+    },
+    {
+      "topic_id": "0c6edbac",
+      "topic_title": "Profiling in PyTorch (Part 1): A Beginner's Guide to torch.profiler",
+      "days_seen": 7
+    },
+    {
+      "topic_id": "369c57f3",
+      "topic_title": "Migrating Your GitHub CI to Hugging Face Jobs",
+      "days_seen": 6
+    },
+    {
+      "topic_id": "5b01b903",
+      "topic_title": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL",
+      "days_seen": 6
+    },
+    {
+      "topic_id": "6caeab92",
+      "topic_title": "BBVA puts AI at the core of banking with OpenAI",
+      "days_seen": 5
+    },
+    {
+      "topic_id": "7e90ee75",
+      "topic_title": "Jinhua Zhao named head of the Department of Urban Studies and Planning",
+      "days_seen": 5
+    },
+    {
+      "topic_id": "1e665e6d",
+      "topic_title": "When it comes to predicting people’s preferences, it pays to consider “the power of three”",
+      "days_seen": 5
+    },
+    {
+      "topic_id": "37fa9b5a",
+      "topic_title": "MIT affiliates win 2026 Hertz Foundation Fellowships",
+      "days_seen": 5
+    },
+    {
+      "topic_id": "782ba2a9",
+      "topic_title": "New OpenAI Academy courses for the next era of work",
+      "days_seen": 4
+    },
+    {
+      "topic_id": "646a607d",
+      "topic_title": "AI Automation & Workflows",
+      "days_seen": 4
+    },
+    {
+      "topic_id": "49d050b0",
+      "topic_title": "How Endava is redesigning software delivery around AI agents",
+      "days_seen": 4
+    },
+    {
+      "topic_id": "31514315",
+      "topic_title": "Model Fine-tuning & Training",
+      "days_seen": 3
+    },
+    {
+      "topic_id": "295eaebd",
+      "topic_title": "SpaceX, Anthropic, and OpenAI’s hot IPO summer",
+      "days_seen": 3
+    },
+    {
+      "topic_id": "31c151f1",
+      "topic_title": "As Anthropic suspends access to new models, India debates its AI future",
+      "days_seen": 3
+    },
+    {
+      "topic_id": "7552a527",
+      "topic_title": "Meta reportedly moves to unwind $2B Manus deal after Beijing’s demand",
+      "days_seen": 3
+    },
+    {
+      "topic_id": "0bc5bd58",
+      "topic_title": "SpaceX IPO: Live updates on everything you need to know",
+      "days_seen": 3
+    },
+    {
+      "topic_id": "04c2832a",
+      "topic_title": "AI Reasoning & Chains",
+      "days_seen": 3
+    },
+    {
+      "topic_id": "79dfd8f7",
+      "topic_title": "Dreaming: Better memory for a more helpful ChatGPT",
+      "days_seen": 3
+    },
+    {
+      "topic_id": "09765c26",
+      "topic_title": "Biodefense in the Intelligence Age",
+      "days_seen": 3
+    },
+    {
+      "topic_id": "5ec92370",
+      "topic_title": "Q&A: Expanding MIT’s global reach through Universal Learning",
+      "days_seen": 3
+    },
+    {
+      "topic_id": "2ac72511",
+      "topic_title": "Universal AI is “a pathway to AI fluency that’s accessible and approachable to anyone, anywhere”",
+      "days_seen": 3
+    }
+  ]
+}
